@@ -4,6 +4,7 @@ public class PlayerMove : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rb;
+    public CoinManager cm;
 
 
     [Header("Movement details")]
@@ -119,6 +120,15 @@ public class PlayerMove : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance));
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject); 
+            cm.coinCount++;
+        }
     }
 
 }

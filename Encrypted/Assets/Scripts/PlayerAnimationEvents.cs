@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class PlayerAnimationEvents : MonoBehaviour
 {
-    private PlayerMove player;
+    private Entity player;
 
     private void Awake()
     {
-        player = GetComponentInParent<PlayerMove>();
+        player = GetComponentInParent<Entity>();
 
     }
 

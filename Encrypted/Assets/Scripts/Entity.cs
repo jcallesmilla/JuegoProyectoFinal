@@ -1,15 +1,23 @@
+using System;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
+
+public class Entity : MonoBehaviour
 {
-    private Animator anim;
-    private Rigidbody2D rb;
+    protected Animator anim;
+    protected Rigidbody2D rb;
     public CoinManager cm;
+
+    [Header("Attack details")]
+    [SerializeField] protected float attackRadius;
+    [SerializeField] protected Transform attackPoint;
+    [SerializeField] protected LayerMask whatIsTarget;
 
 
     [Header("Movement details")]
-    [SerializeField] private float moveSpeed = 3.5f;
+    [SerializeField] protected float moveSpeed = 3.5f;
     [SerializeField] private float jumpForce = 8;
+    protected int facingDir = 1;
     private float xInput;
     private bool facingRight = true;
 
@@ -17,7 +25,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
     private bool isGrounded;
-    private bool canMove = true;
+    protected bool canMove = true;
     private bool canJump = true;
 
 
@@ -27,7 +35,7 @@ public class PlayerMove : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         HandleCollision();
         HandleInput();
@@ -36,13 +44,29 @@ public class PlayerMove : MonoBehaviour
         HandleFlip();
     }
 
+    public void DamageTargets()
+    {
+        Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget);
+
+        foreach (Collider2D enemy in enemyColliders)
+        {
+            Entity enemyTarget = enemy.GetComponent<Entity>();
+            enemyTarget.TakeDamage();
+        }
+    }
+
+    public void TakeDamage()
+    {
+        throw new NotImplementedException();
+    }
+
 
     public void EnableMovementAndJump(bool enable)
     {
-        canMove=enable;
-        canJump=enable;
+        canMove = enable;
+        canJump = enable;
     }
-    public void HandleAnimations()
+    protected void HandleAnimations()
     {
         anim.SetFloat("xVelocity", rb.linearVelocity.x);
         anim.SetBool("isGrounded", isGrounded);
@@ -66,7 +90,7 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void TryToAttack()
+    protected virtual void TryToAttack()
     {
         if (isGrounded){
             anim.SetTrigger("attack");
@@ -82,7 +106,7 @@ public class PlayerMove : MonoBehaviour
             
     }
     
-    private void HandleMovement()
+    protected virtual void HandleMovement()
     {
         if (canMove)
         {
@@ -95,12 +119,12 @@ public class PlayerMove : MonoBehaviour
             
     }
 
-    private void HandleCollision()
+    protected virtual void HandleCollision()
     {
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, whatIsGround);
     }
 
-    private void HandleFlip()
+    protected void HandleFlip()
     {
         if (rb.linearVelocity.x > 0 && facingRight == false)
         {
@@ -115,6 +139,7 @@ public class PlayerMove : MonoBehaviour
     {
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
+        facingDir = facingDir * -1;
     }
 
     private void OnDrawGizmos()

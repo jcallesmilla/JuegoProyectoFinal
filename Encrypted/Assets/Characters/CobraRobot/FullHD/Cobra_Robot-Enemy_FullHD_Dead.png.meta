@@ -1,0 +1,3302 @@
+fileFormatVersion: 2
+guid: 73e0aea367a945a42b9a6535c174eac9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6909017307709604058
+    second: Cobra_Robot-Enemy_FullHD_Dead_0
+  - first:
+      213: -6412669720389801240
+    second: Cobra_Robot-Enemy_FullHD_Dead_1
+  - first:
+      213: -2159386387708519590
+    second: Cobra_Robot-Enemy_FullHD_Dead_2
+  - first:
+      213: 2596625306042975734
+    second: Cobra_Robot-Enemy_FullHD_Dead_3
+  - first:
+      213: 562337587377588392
+    second: Cobra_Robot-Enemy_FullHD_Dead_4
+  - first:
+      213: -5844943483052652606
+    second: Cobra_Robot-Enemy_FullHD_Dead_5
+  - first:
+      213: -2388212957003268691
+    second: Cobra_Robot-Enemy_FullHD_Dead_6
+  - first:
+      213: 8099361536809371815
+    second: Cobra_Robot-Enemy_FullHD_Dead_7
+  - first:
+      213: 5224231587540511152
+    second: Cobra_Robot-Enemy_FullHD_Dead_8
+  - first:
+      213: 7507165367540850154
+    second: Cobra_Robot-Enemy_FullHD_Dead_9
+  - first:
+      213: -2012500551184304813
+    second: Cobra_Robot-Enemy_FullHD_Dead_10
+  - first:
+      213: 883395965600842121
+    second: Cobra_Robot-Enemy_FullHD_Dead_11
+  - first:
+      213: 3215766716965322495
+    second: Cobra_Robot-Enemy_FullHD_Dead_12
+  - first:
+      213: 3857806251656805084
+    second: Cobra_Robot-Enemy_FullHD_Dead_13
+  - first:
+      213: -8072813413403747991
+    second: Cobra_Robot-Enemy_FullHD_Dead_14
+  - first:
+      213: 8307919466451731382
+    second: Cobra_Robot-Enemy_FullHD_Dead_15
+  - first:
+      213: 9068270727359315914
+    second: Cobra_Robot-Enemy_FullHD_Dead_16
+  - first:
+      213: -4719267477361008948
+    second: Cobra_Robot-Enemy_FullHD_Dead_17
+  - first:
+      213: -6434315673730346316
+    second: Cobra_Robot-Enemy_FullHD_Dead_18
+  - first:
+      213: -608046357710539557
+    second: Cobra_Robot-Enemy_FullHD_Dead_19
+  - first:
+      213: 6798042975428442563
+    second: Cobra_Robot-Enemy_FullHD_Dead_20
+  - first:
+      213: -4863305491516211743
+    second: Cobra_Robot-Enemy_FullHD_Dead_21
+  - first:
+      213: -118099146626243446
+    second: Cobra_Robot-Enemy_FullHD_Dead_22
+  - first:
+      213: -2627645528854189384
+    second: Cobra_Robot-Enemy_FullHD_Dead_23
+  - first:
+      213: -5280368809857358712
+    second: Cobra_Robot-Enemy_FullHD_Dead_24
+  - first:
+      213: 1999740075916094844
+    second: Cobra_Robot-Enemy_FullHD_Dead_25
+  - first:
+      213: -4672200248677782519
+    second: Cobra_Robot-Enemy_FullHD_Dead_26
+  - first:
+      213: 7778183547644165226
+    second: Cobra_Robot-Enemy_FullHD_Dead_27
+  - first:
+      213: -3908682992361767144
+    second: Cobra_Robot-Enemy_FullHD_Dead_28
+  - first:
+      213: -6453346373988734814
+    second: Cobra_Robot-Enemy_FullHD_Dead_29
+  - first:
+      213: 4049337600124770819
+    second: Cobra_Robot-Enemy_FullHD_Dead_30
+  - first:
+      213: -9043227434401929381
+    second: Cobra_Robot-Enemy_FullHD_Dead_31
+  - first:
+      213: 8453638175611746259
+    second: Cobra_Robot-Enemy_FullHD_Dead_32
+  - first:
+      213: -4657615358621302682
+    second: Cobra_Robot-Enemy_FullHD_Dead_33
+  - first:
+      213: 3083310778386227088
+    second: Cobra_Robot-Enemy_FullHD_Dead_34
+  - first:
+      213: 3351666837818309056
+    second: Cobra_Robot-Enemy_FullHD_Dead_35
+  - first:
+      213: 5733917609804605923
+    second: Cobra_Robot-Enemy_FullHD_Dead_36
+  - first:
+      213: -1929533139816809494
+    second: Cobra_Robot-Enemy_FullHD_Dead_37
+  - first:
+      213: -3862924366475901545
+    second: Cobra_Robot-Enemy_FullHD_Dead_38
+  - first:
+      213: -8786287926964952037
+    second: Cobra_Robot-Enemy_FullHD_Dead_39
+  - first:
+      213: 7070344033141046275
+    second: Cobra_Robot-Enemy_FullHD_Dead_40
+  - first:
+      213: -8194696936973181936
+    second: Cobra_Robot-Enemy_FullHD_Dead_41
+  - first:
+      213: 9057678439482517488
+    second: Cobra_Robot-Enemy_FullHD_Dead_42
+  - first:
+      213: -7656748309372194608
+    second: Cobra_Robot-Enemy_FullHD_Dead_43
+  - first:
+      213: -6665935902544242530
+    second: Cobra_Robot-Enemy_FullHD_Dead_44
+  - first:
+      213: -699603696260493024
+    second: Cobra_Robot-Enemy_FullHD_Dead_45
+  - first:
+      213: -8384668454778130288
+    second: Cobra_Robot-Enemy_FullHD_Dead_46
+  - first:
+      213: 4192135975500637898
+    second: Cobra_Robot-Enemy_FullHD_Dead_47
+  - first:
+      213: 9011771785781883467
+    second: Cobra_Robot-Enemy_FullHD_Dead_48
+  - first:
+      213: -468508891563353027
+    second: Cobra_Robot-Enemy_FullHD_Dead_49
+  - first:
+      213: -3995318315843979880
+    second: Cobra_Robot-Enemy_FullHD_Dead_50
+  - first:
+      213: -7197521687921111127
+    second: Cobra_Robot-Enemy_FullHD_Dead_51
+  - first:
+      213: 7654051741057945505
+    second: Cobra_Robot-Enemy_FullHD_Dead_52
+  - first:
+      213: 9118429020839110699
+    second: Cobra_Robot-Enemy_FullHD_Dead_53
+  - first:
+      213: -2246562451291038642
+    second: Cobra_Robot-Enemy_FullHD_Dead_54
+  - first:
+      213: 4091031395582348022
+    second: Cobra_Robot-Enemy_FullHD_Dead_55
+  - first:
+      213: 8511049303297708352
+    second: Cobra_Robot-Enemy_FullHD_Dead_56
+  - first:
+      213: -2866499310618131027
+    second: Cobra_Robot-Enemy_FullHD_Dead_57
+  - first:
+      213: -463640493184337965
+    second: Cobra_Robot-Enemy_FullHD_Dead_58
+  - first:
+      213: -4608296083710336439
+    second: Cobra_Robot-Enemy_FullHD_Dead_59
+  - first:
+      213: 4183943330142241877
+    second: Cobra_Robot-Enemy_FullHD_Dead_60
+  - first:
+      213: 172764833589095580
+    second: Cobra_Robot-Enemy_FullHD_Dead_61
+  - first:
+      213: 5736261043273548978
+    second: Cobra_Robot-Enemy_FullHD_Dead_62
+  - first:
+      213: -2520284826547212550
+    second: Cobra_Robot-Enemy_FullHD_Dead_63
+  - first:
+      213: -3796603643427811803
+    second: Cobra_Robot-Enemy_FullHD_Dead_64
+  - first:
+      213: 4405616956959230148
+    second: Cobra_Robot-Enemy_FullHD_Dead_65
+  - first:
+      213: -768472308678769493
+    second: Cobra_Robot-Enemy_FullHD_Dead_66
+  - first:
+      213: -3491743719665238541
+    second: Cobra_Robot-Enemy_FullHD_Dead_67
+  - first:
+      213: -7600898082562882064
+    second: Cobra_Robot-Enemy_FullHD_Dead_68
+  - first:
+      213: 7264394355134315919
+    second: Cobra_Robot-Enemy_FullHD_Dead_69
+  - first:
+      213: 5194419180634667700
+    second: Cobra_Robot-Enemy_FullHD_Dead_70
+  - first:
+      213: 5406919918586011557
+    second: Cobra_Robot-Enemy_FullHD_Dead_71
+  - first:
+      213: 3469205052869524652
+    second: Cobra_Robot-Enemy_FullHD_Dead_72
+  - first:
+      213: 2361247438480286996
+    second: Cobra_Robot-Enemy_FullHD_Dead_73
+  - first:
+      213: 815332611700074743
+    second: Cobra_Robot-Enemy_FullHD_Dead_74
+  - first:
+      213: 6203745263756525523
+    second: Cobra_Robot-Enemy_FullHD_Dead_75
+  - first:
+      213: 5276776452272026728
+    second: Cobra_Robot-Enemy_FullHD_Dead_76
+  - first:
+      213: -6178458204710650754
+    second: Cobra_Robot-Enemy_FullHD_Dead_77
+  - first:
+      213: 7869520413296669984
+    second: Cobra_Robot-Enemy_FullHD_Dead_78
+  - first:
+      213: 2599508369847461049
+    second: Cobra_Robot-Enemy_FullHD_Dead_79
+  - first:
+      213: 6916088956823765923
+    second: Cobra_Robot-Enemy_FullHD_Dead_80
+  - first:
+      213: -8655638892719846271
+    second: Cobra_Robot-Enemy_FullHD_Dead_81
+  - first:
+      213: -8389104228814531354
+    second: Cobra_Robot-Enemy_FullHD_Dead_82
+  - first:
+      213: -2039333766487566389
+    second: Cobra_Robot-Enemy_FullHD_Dead_83
+  - first:
+      213: 8532095438081883628
+    second: Cobra_Robot-Enemy_FullHD_Dead_84
+  - first:
+      213: 6160936809922331856
+    second: Cobra_Robot-Enemy_FullHD_Dead_85
+  - first:
+      213: -299630561679001421
+    second: Cobra_Robot-Enemy_FullHD_Dead_86
+  - first:
+      213: 3510552420076795809
+    second: Cobra_Robot-Enemy_FullHD_Dead_87
+  - first:
+      213: 1408360775925412144
+    second: Cobra_Robot-Enemy_FullHD_Dead_88
+  - first:
+      213: 7332770036565721746
+    second: Cobra_Robot-Enemy_FullHD_Dead_89
+  - first:
+      213: 7753869359069935413
+    second: Cobra_Robot-Enemy_FullHD_Dead_90
+  - first:
+      213: 3182793260597153301
+    second: Cobra_Robot-Enemy_FullHD_Dead_91
+  - first:
+      213: -6284232446272950785
+    second: Cobra_Robot-Enemy_FullHD_Dead_92
+  - first:
+      213: 4060068685981708605
+    second: Cobra_Robot-Enemy_FullHD_Dead_93
+  - first:
+      213: 1380070972281245377
+    second: Cobra_Robot-Enemy_FullHD_Dead_94
+  - first:
+      213: 2557351696310808897
+    second: Cobra_Robot-Enemy_FullHD_Dead_95
+  - first:
+      213: 6632097244426700092
+    second: Cobra_Robot-Enemy_FullHD_Dead_96
+  - first:
+      213: 1870769352546576764
+    second: Cobra_Robot-Enemy_FullHD_Dead_97
+  - first:
+      213: -2246218861908248817
+    second: Cobra_Robot-Enemy_FullHD_Dead_98
+  - first:
+      213: -8525306010230052065
+    second: Cobra_Robot-Enemy_FullHD_Dead_99
+  - first:
+      213: 8758305023309436559
+    second: Cobra_Robot-Enemy_FullHD_Dead_100
+  - first:
+      213: 8038329356598749624
+    second: Cobra_Robot-Enemy_FullHD_Dead_101
+  - first:
+      213: 6923092297036244045
+    second: Cobra_Robot-Enemy_FullHD_Dead_102
+  - first:
+      213: -8629435228059319456
+    second: Cobra_Robot-Enemy_FullHD_Dead_103
+  - first:
+      213: -3444840790194344615
+    second: Cobra_Robot-Enemy_FullHD_Dead_104
+  - first:
+      213: -6468570260871033279
+    second: Cobra_Robot-Enemy_FullHD_Dead_105
+  - first:
+      213: 468836818978450593
+    second: Cobra_Robot-Enemy_FullHD_Dead_106
+  - first:
+      213: 4633476317784637442
+    second: Cobra_Robot-Enemy_FullHD_Dead_107
+  - first:
+      213: 5105566439788558564
+    second: Cobra_Robot-Enemy_FullHD_Dead_108
+  - first:
+      213: 6842672463108472944
+    second: Cobra_Robot-Enemy_FullHD_Dead_109
+  - first:
+      213: 5436047111397048735
+    second: Cobra_Robot-Enemy_FullHD_Dead_110
+  - first:
+      213: 1427088291754172821
+    second: Cobra_Robot-Enemy_FullHD_Dead_111
+  - first:
+      213: -3546501770790973227
+    second: Cobra_Robot-Enemy_FullHD_Dead_112
+  - first:
+      213: 3992094399565423896
+    second: Cobra_Robot-Enemy_FullHD_Dead_113
+  - first:
+      213: -3193665729957643211
+    second: Cobra_Robot-Enemy_FullHD_Dead_114
+  - first:
+      213: -7787370906521519959
+    second: Cobra_Robot-Enemy_FullHD_Dead_115
+  - first:
+      213: -7740638517375548043
+    second: Cobra_Robot-Enemy_FullHD_Dead_116
+  - first:
+      213: 6421602344310960875
+    second: Cobra_Robot-Enemy_FullHD_Dead_117
+  - first:
+      213: -8642083492828582931
+    second: Cobra_Robot-Enemy_FullHD_Dead_118
+  - first:
+      213: 3288911780837986957
+    second: Cobra_Robot-Enemy_FullHD_Dead_119
+  - first:
+      213: -8496725477755534333
+    second: Cobra_Robot-Enemy_FullHD_Dead_120
+  - first:
+      213: -1640561313465113615
+    second: Cobra_Robot-Enemy_FullHD_Dead_121
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_0
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 4439
+        width: 625
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f71fa3d5d3e10a0800000000000000
+      internalID: -6909017307709604058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_1
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 4439
+        width: 625
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea23467dde9107a0800000000000000
+      internalID: -6412669720389801240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_2
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 4467
+        width: 629
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bd1d375815802e0800000000000000
+      internalID: -2159386387708519590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_3
+      rect:
+        serializedVersion: 2
+        x: 6368
+        y: 4467
+        width: 629
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f54b7555f0190420800000000000000
+      internalID: 2596625306042975734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_4
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 3359
+        width: 625
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8cd7b6e03ddc700800000000000000
+      internalID: 562337587377588392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_5
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 3359
+        width: 625
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c78968bed692eea0800000000000000
+      internalID: -5844943483052652606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_6
+      rect:
+        serializedVersion: 2
+        x: 4448
+        y: 3387
+        width: 629
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dadb5d908fc5bded0800000000000000
+      internalID: -2388212957003268691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_7
+      rect:
+        serializedVersion: 2
+        x: 6368
+        y: 3387
+        width: 629
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a80cfcc766b66070800000000000000
+      internalID: 8099361536809371815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_8
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 2307
+        width: 629
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b92abf13f2308840800000000000000
+      internalID: 5224231587540511152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_9
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 2307
+        width: 629
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed136a802fce2860800000000000000
+      internalID: 7507165367540850154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_10
+      rect:
+        serializedVersion: 2
+        x: 4577
+        y: 2258
+        width: 352
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355b16059692214e0800000000000000
+      internalID: -2012500551184304813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_11
+      rect:
+        serializedVersion: 2
+        x: 4668
+        y: 2853
+        width: 59
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981c6a543f3724c00800000000000000
+      internalID: 883395965600842121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_12
+      rect:
+        serializedVersion: 2
+        x: 6497
+        y: 2258
+        width: 352
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffefd3d8ac2b0ac20800000000000000
+      internalID: 3215766716965322495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_13
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 2853
+        width: 59
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdaf84aa85ea98530800000000000000
+      internalID: 3857806251656805084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_14
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 2691
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9699f0cd8fa97ff80800000000000000
+      internalID: -8072813413403747991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_15
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 2691
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3886cccb8ab4370800000000000000
+      internalID: 8307919466451731382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_16
+      rect:
+        serializedVersion: 2
+        x: 4287
+        y: 2525
+        width: 183
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf33574e28f8dd70800000000000000
+      internalID: 9068270727359315914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_17
+      rect:
+        serializedVersion: 2
+        x: 4907
+        y: 2614
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cced7dbab3bc18eb0800000000000000
+      internalID: -4719267477361008948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_18
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 2596
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b213963cf7b4b6a0800000000000000
+      internalID: -6434315673730346316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_19
+      rect:
+        serializedVersion: 2
+        x: 6207
+        y: 2525
+        width: 183
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd471b92f09cf87f0800000000000000
+      internalID: -608046357710539557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_20
+      rect:
+        serializedVersion: 2
+        x: 6827
+        y: 2614
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9704e8110875e50800000000000000
+      internalID: 6798042975428442563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_21
+      rect:
+        serializedVersion: 2
+        x: 7043
+        y: 2596
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed38ff1c61128cb0800000000000000
+      internalID: -4863305491516211743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_22
+      rect:
+        serializedVersion: 2
+        x: 4853
+        y: 2495
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84e01da37d6c5ef0800000000000000
+      internalID: -118099146626243446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_23
+      rect:
+        serializedVersion: 2
+        x: 4976
+        y: 2507
+        width: 157
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8baa009305ab88bd0800000000000000
+      internalID: -2627645528854189384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_24
+      rect:
+        serializedVersion: 2
+        x: 5173
+        y: 2542
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88466654b8c58b6b0800000000000000
+      internalID: -5280368809857358712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_25
+      rect:
+        serializedVersion: 2
+        x: 6773
+        y: 2495
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d6714010180cb10800000000000000
+      internalID: 1999740075916094844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_26
+      rect:
+        serializedVersion: 2
+        x: 6896
+        y: 2507
+        width: 157
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ca112d0a2092fb0800000000000000
+      internalID: -4672200248677782519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_27
+      rect:
+        serializedVersion: 2
+        x: 7093
+        y: 2542
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c3e1bd9b8a1fb60800000000000000
+      internalID: 7778183547644165226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_28
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 2478
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f7aac078191c9c0800000000000000
+      internalID: -3908682992361767144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_29
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 2419
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8a8d50aab1176a0800000000000000
+      internalID: -6453346373988734814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_30
+      rect:
+        serializedVersion: 2
+        x: 6338
+        y: 2478
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ad11fc713223830800000000000000
+      internalID: 4049337600124770819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_31
+      rect:
+        serializedVersion: 2
+        x: 7007
+        y: 2419
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57e76dbf80008280800000000000000
+      internalID: -9043227434401929381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_32
+      rect:
+        serializedVersion: 2
+        x: 4298
+        y: 2387
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7f405a12b515570800000000000000
+      internalID: 8453638175611746259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_33
+      rect:
+        serializedVersion: 2
+        x: 4896
+        y: 2305
+        width: 150
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66049f82283dc5fb0800000000000000
+      internalID: -4657615358621302682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_34
+      rect:
+        serializedVersion: 2
+        x: 6218
+        y: 2387
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f18dd11de1aca20800000000000000
+      internalID: 3083310778386227088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_35
+      rect:
+        serializedVersion: 2
+        x: 6816
+        y: 2305
+        width: 150
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9fd992b33838e20800000000000000
+      internalID: 3351666837818309056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_36
+      rect:
+        serializedVersion: 2
+        x: 5036
+        y: 2334
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9a2cfbfa7f29f40800000000000000
+      internalID: 5733917609804605923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_37
+      rect:
+        serializedVersion: 2
+        x: 6956
+        y: 2334
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebffda15dbe835e0800000000000000
+      internalID: -1929533139816809494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_38
+      rect:
+        serializedVersion: 2
+        x: 4719
+        y: 2236
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795c00e51c2246ac0800000000000000
+      internalID: -3862924366475901545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_39
+      rect:
+        serializedVersion: 2
+        x: 4753
+        y: 2225
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1463f2aea5d01680800000000000000
+      internalID: -8786287926964952037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_40
+      rect:
+        serializedVersion: 2
+        x: 6639
+        y: 2236
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30cbc271078ee1260800000000000000
+      internalID: 7070344033141046275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_41
+      rect:
+        serializedVersion: 2
+        x: 6673
+        y: 2225
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c5bbd9d86964e80800000000000000
+      internalID: -8194696936973181936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_42
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1178
+        width: 352
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7e1131d8653bd70800000000000000
+      internalID: 9057678439482517488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_43
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1773
+        width: 59
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d03c45daf3cdb590800000000000000
+      internalID: -7656748309372194608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_44
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 1178
+        width: 352
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e98d3514d96dd73a0800000000000000
+      internalID: -6665935902544242530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_45
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 1773
+        width: 59
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021d7d815228a46f0800000000000000
+      internalID: -699603696260493024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_46
+      rect:
+        serializedVersion: 2
+        x: 4577
+        y: 1178
+        width: 352
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090b689d67ca3ab80800000000000000
+      internalID: -8384668454778130288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_47
+      rect:
+        serializedVersion: 2
+        x: 4668
+        y: 1773
+        width: 59
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6e9d575757d2a30800000000000000
+      internalID: 4192135975500637898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_48
+      rect:
+        serializedVersion: 2
+        x: 6497
+        y: 1178
+        width: 352
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42ba6851be301d70800000000000000
+      internalID: 9011771785781883467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_49
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 1773
+        width: 59
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c114835a58f79f0800000000000000
+      internalID: -468508891563353027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_50
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1611
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895f18be827cd88c0800000000000000
+      internalID: -3995318315843979880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_51
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1611
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afca40b8244d1c90800000000000000
+      internalID: -7197521687921111127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_52
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 1611
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af083e6187a83a60800000000000000
+      internalID: 7654051741057945505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_53
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 1611
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b286ab802ea2b8e70800000000000000
+      internalID: 9118429020839110699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_54
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1445
+        width: 183
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c11157a5b92d0e0800000000000000
+      internalID: -2246562451291038642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_55
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1534
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa08aa016346c830800000000000000
+      internalID: 4091031395582348022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_56
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1516
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04155e47f325d1670800000000000000
+      internalID: 8511049303297708352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_57
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 1445
+        width: 183
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da544b970162838d0800000000000000
+      internalID: -2866499310618131027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_58
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 1534
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7b24c8d61d099f0800000000000000
+      internalID: -463640493184337965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_59
+      rect:
+        serializedVersion: 2
+        x: 3203
+        y: 1516
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9422f9ea02b0c00c0800000000000000
+      internalID: -4608296083710336439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_60
+      rect:
+        serializedVersion: 2
+        x: 4287
+        y: 1445
+        width: 183
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5544e719a4a501a30800000000000000
+      internalID: 4183943330142241877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_61
+      rect:
+        serializedVersion: 2
+        x: 4907
+        y: 1534
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ce1c763b8c56200800000000000000
+      internalID: 172764833589095580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_62
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 1516
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b44b3fd60b4b9f40800000000000000
+      internalID: 5736261043273548978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_63
+      rect:
+        serializedVersion: 2
+        x: 6207
+        y: 1445
+        width: 183
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afea8d4ad46260dd0800000000000000
+      internalID: -2520284826547212550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_64
+      rect:
+        serializedVersion: 2
+        x: 6827
+        y: 1534
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e08800a11cf4bc0800000000000000
+      internalID: -3796603643427811803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_65
+      rect:
+        serializedVersion: 2
+        x: 7043
+        y: 1516
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c80ef7c745e32d30800000000000000
+      internalID: 4405616956959230148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_66
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1415
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba44a7db186d555f0800000000000000
+      internalID: -768472308678769493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_67
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1427
+        width: 157
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdf6a64695da8fc0800000000000000
+      internalID: -3491743719665238541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_68
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 1462
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f544e6177f248690800000000000000
+      internalID: -7600898082562882064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_69
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 1415
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d32267d2050d460800000000000000
+      internalID: 7264394355134315919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_70
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 1427
+        width: 157
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba743c39b8461840800000000000000
+      internalID: 5194419180634667700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_71
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 1462
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af9d44d40d390b40800000000000000
+      internalID: 5406919918586011557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_72
+      rect:
+        serializedVersion: 2
+        x: 4853
+        y: 1415
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac374d6d97152030800000000000000
+      internalID: 3469205052869524652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_73
+      rect:
+        serializedVersion: 2
+        x: 4976
+        y: 1427
+        width: 157
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4152b6de806d4c020800000000000000
+      internalID: 2361247438480286996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_74
+      rect:
+        serializedVersion: 2
+        x: 5173
+        y: 1462
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8ac26c0b4a05b00800000000000000
+      internalID: 815332611700074743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_75
+      rect:
+        serializedVersion: 2
+        x: 6773
+        y: 1415
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df3833d271281650800000000000000
+      internalID: 6203745263756525523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_76
+      rect:
+        serializedVersion: 2
+        x: 6896
+        y: 1427
+        width: 157
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 864f1dcc930ea3940800000000000000
+      internalID: 5276776452272026728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_77
+      rect:
+        serializedVersion: 2
+        x: 7093
+        y: 1462
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cbf986ff4b14aa0800000000000000
+      internalID: -6178458204710650754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_78
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1398
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025bb331f17263d60800000000000000
+      internalID: 7869520413296669984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_79
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1339
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4a96fe61f431420800000000000000
+      internalID: 2599508369847461049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_80
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 1398
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a38b726342eaff50800000000000000
+      internalID: 6916088956823765923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_81
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 1339
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cc06f594ef0e780800000000000000
+      internalID: -8655638892719846271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_82
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 1398
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e458c9b62ae39b80800000000000000
+      internalID: -8389104228814531354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_83
+      rect:
+        serializedVersion: 2
+        x: 5087
+        y: 1339
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc79c068eb4d2b3e0800000000000000
+      internalID: -2039333766487566389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_84
+      rect:
+        serializedVersion: 2
+        x: 6338
+        y: 1398
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cedf9909897186670800000000000000
+      internalID: 8532095438081883628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_85
+      rect:
+        serializedVersion: 2
+        x: 7007
+        y: 1339
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d48c07f26b008550800000000000000
+      internalID: 6160936809922331856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_86
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1307
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8b547779f77dbf0800000000000000
+      internalID: -299630561679001421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_87
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1225
+        width: 150
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7b01c83dcf7b030800000000000000
+      internalID: 3510552420076795809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_88
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 1307
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031b0a4f9a08b8310800000000000000
+      internalID: 1408360775925412144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_89
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 1225
+        width: 150
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292c0216f7b33c560800000000000000
+      internalID: 7332770036565721746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_90
+      rect:
+        serializedVersion: 2
+        x: 4298
+        y: 1307
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537362ea9174b9b60800000000000000
+      internalID: 7753869359069935413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_91
+      rect:
+        serializedVersion: 2
+        x: 4896
+        y: 1225
+        width: 150
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e866b7b9d8b2c20800000000000000
+      internalID: 3182793260597153301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_92
+      rect:
+        serializedVersion: 2
+        x: 6218
+        y: 1307
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdaae9a2ebe9c8a0800000000000000
+      internalID: -6284232446272950785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_93
+      rect:
+        serializedVersion: 2
+        x: 6816
+        y: 1225
+        width: 150
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3170af65f2485830800000000000000
+      internalID: 4060068685981708605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_94
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1254
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cec6a3cc3ff62310800000000000000
+      internalID: 1380070972281245377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_95
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 1254
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141395081d98d7320800000000000000
+      internalID: 2557351696310808897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_96
+      rect:
+        serializedVersion: 2
+        x: 5036
+        y: 1254
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3586e13e41f90c50800000000000000
+      internalID: 6632097244426700092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_97
+      rect:
+        serializedVersion: 2
+        x: 6956
+        y: 1254
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79e93b70de46f910800000000000000
+      internalID: 1870769352546576764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_98
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1156
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f073d2898d3d3d0e0800000000000000
+      internalID: -2246218861908248817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_99
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1145
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b2cba4a5700b980800000000000000
+      internalID: -8525306010230052065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_100
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 1156
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86d0e4e300cb8970800000000000000
+      internalID: 8758305023309436559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_101
+      rect:
+        serializedVersion: 2
+        x: 2833
+        y: 1145
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9a9aff5f1ed8f60800000000000000
+      internalID: 8038329356598749624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_102
+      rect:
+        serializedVersion: 2
+        x: 4719
+        y: 1156
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44a61893c3c31060800000000000000
+      internalID: 6923092297036244045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_103
+      rect:
+        serializedVersion: 2
+        x: 4753
+        y: 1145
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063484b71661e3880800000000000000
+      internalID: -8629435228059319456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_104
+      rect:
+        serializedVersion: 2
+        x: 6639
+        y: 1156
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95da0b88d877130d0800000000000000
+      internalID: -3444840790194344615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_105
+      rect:
+        serializedVersion: 2
+        x: 6673
+        y: 1145
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e4024ae950b36a0800000000000000
+      internalID: -6468570260871033279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_106
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 98
+        width: 352
+        height: 647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aca5d45a94a18600800000000000000
+      internalID: 468836818978450593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_107
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 693
+        width: 59
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2000dbc692a6d4040800000000000000
+      internalID: 4633476317784637442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_108
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 531
+        width: 211
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8b0c460ad9ad640800000000000000
+      internalID: 5105566439788558564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_109
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 365
+        width: 183
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0708de5e95e06fe50800000000000000
+      internalID: 6842672463108472944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_110
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 454
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f910c11eb08b07b40800000000000000
+      internalID: 5436047111397048735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_111
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 436
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59160258d390ec310800000000000000
+      internalID: 1427088291754172821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_112
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 335
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0d5bcfd6b48cec0800000000000000
+      internalID: -3546501770790973227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_113
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 347
+        width: 157
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8156ce394b4c66730800000000000000
+      internalID: 3992094399565423896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_114
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 382
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c398a70f1dda3d0800000000000000
+      internalID: -3193665729957643211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_115
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 318
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8b2967b63bde390800000000000000
+      internalID: -7787370906521519959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_116
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 259
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575cf15b74ab39490800000000000000
+      internalID: -7740638517375548043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_117
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 227
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2787d1f4d1e1950800000000000000
+      internalID: 6421602344310960875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_118
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 145
+        width: 150
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb6faad9d6211880800000000000000
+      internalID: -8642083492828582931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_119
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 174
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82127ad6df84ad20800000000000000
+      internalID: 3288911780837986957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_120
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 76
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304ce501231951a80800000000000000
+      internalID: -8496725477755534333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Dead_121
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 65
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3e9ae6d2e8b39e0800000000000000
+      internalID: -1640561313465113615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cobra_Robot-Enemy_FullHD_Dead_0: -6909017307709604058
+      Cobra_Robot-Enemy_FullHD_Dead_1: -6412669720389801240
+      Cobra_Robot-Enemy_FullHD_Dead_10: -2012500551184304813
+      Cobra_Robot-Enemy_FullHD_Dead_100: 8758305023309436559
+      Cobra_Robot-Enemy_FullHD_Dead_101: 8038329356598749624
+      Cobra_Robot-Enemy_FullHD_Dead_102: 6923092297036244045
+      Cobra_Robot-Enemy_FullHD_Dead_103: -8629435228059319456
+      Cobra_Robot-Enemy_FullHD_Dead_104: -3444840790194344615
+      Cobra_Robot-Enemy_FullHD_Dead_105: -6468570260871033279
+      Cobra_Robot-Enemy_FullHD_Dead_106: 468836818978450593
+      Cobra_Robot-Enemy_FullHD_Dead_107: 4633476317784637442
+      Cobra_Robot-Enemy_FullHD_Dead_108: 5105566439788558564
+      Cobra_Robot-Enemy_FullHD_Dead_109: 6842672463108472944
+      Cobra_Robot-Enemy_FullHD_Dead_11: 883395965600842121
+      Cobra_Robot-Enemy_FullHD_Dead_110: 5436047111397048735
+      Cobra_Robot-Enemy_FullHD_Dead_111: 1427088291754172821
+      Cobra_Robot-Enemy_FullHD_Dead_112: -3546501770790973227
+      Cobra_Robot-Enemy_FullHD_Dead_113: 3992094399565423896
+      Cobra_Robot-Enemy_FullHD_Dead_114: -3193665729957643211
+      Cobra_Robot-Enemy_FullHD_Dead_115: -7787370906521519959
+      Cobra_Robot-Enemy_FullHD_Dead_116: -7740638517375548043
+      Cobra_Robot-Enemy_FullHD_Dead_117: 6421602344310960875
+      Cobra_Robot-Enemy_FullHD_Dead_118: -8642083492828582931
+      Cobra_Robot-Enemy_FullHD_Dead_119: 3288911780837986957
+      Cobra_Robot-Enemy_FullHD_Dead_12: 3215766716965322495
+      Cobra_Robot-Enemy_FullHD_Dead_120: -8496725477755534333
+      Cobra_Robot-Enemy_FullHD_Dead_121: -1640561313465113615
+      Cobra_Robot-Enemy_FullHD_Dead_13: 3857806251656805084
+      Cobra_Robot-Enemy_FullHD_Dead_14: -8072813413403747991
+      Cobra_Robot-Enemy_FullHD_Dead_15: 8307919466451731382
+      Cobra_Robot-Enemy_FullHD_Dead_16: 9068270727359315914
+      Cobra_Robot-Enemy_FullHD_Dead_17: -4719267477361008948
+      Cobra_Robot-Enemy_FullHD_Dead_18: -6434315673730346316
+      Cobra_Robot-Enemy_FullHD_Dead_19: -608046357710539557
+      Cobra_Robot-Enemy_FullHD_Dead_2: -2159386387708519590
+      Cobra_Robot-Enemy_FullHD_Dead_20: 6798042975428442563
+      Cobra_Robot-Enemy_FullHD_Dead_21: -4863305491516211743
+      Cobra_Robot-Enemy_FullHD_Dead_22: -118099146626243446
+      Cobra_Robot-Enemy_FullHD_Dead_23: -2627645528854189384
+      Cobra_Robot-Enemy_FullHD_Dead_24: -5280368809857358712
+      Cobra_Robot-Enemy_FullHD_Dead_25: 1999740075916094844
+      Cobra_Robot-Enemy_FullHD_Dead_26: -4672200248677782519
+      Cobra_Robot-Enemy_FullHD_Dead_27: 7778183547644165226
+      Cobra_Robot-Enemy_FullHD_Dead_28: -3908682992361767144
+      Cobra_Robot-Enemy_FullHD_Dead_29: -6453346373988734814
+      Cobra_Robot-Enemy_FullHD_Dead_3: 2596625306042975734
+      Cobra_Robot-Enemy_FullHD_Dead_30: 4049337600124770819
+      Cobra_Robot-Enemy_FullHD_Dead_31: -9043227434401929381
+      Cobra_Robot-Enemy_FullHD_Dead_32: 8453638175611746259
+      Cobra_Robot-Enemy_FullHD_Dead_33: -4657615358621302682
+      Cobra_Robot-Enemy_FullHD_Dead_34: 3083310778386227088
+      Cobra_Robot-Enemy_FullHD_Dead_35: 3351666837818309056
+      Cobra_Robot-Enemy_FullHD_Dead_36: 5733917609804605923
+      Cobra_Robot-Enemy_FullHD_Dead_37: -1929533139816809494
+      Cobra_Robot-Enemy_FullHD_Dead_38: -3862924366475901545
+      Cobra_Robot-Enemy_FullHD_Dead_39: -8786287926964952037
+      Cobra_Robot-Enemy_FullHD_Dead_4: 562337587377588392
+      Cobra_Robot-Enemy_FullHD_Dead_40: 7070344033141046275
+      Cobra_Robot-Enemy_FullHD_Dead_41: -8194696936973181936
+      Cobra_Robot-Enemy_FullHD_Dead_42: 9057678439482517488
+      Cobra_Robot-Enemy_FullHD_Dead_43: -7656748309372194608
+      Cobra_Robot-Enemy_FullHD_Dead_44: -6665935902544242530
+      Cobra_Robot-Enemy_FullHD_Dead_45: -699603696260493024
+      Cobra_Robot-Enemy_FullHD_Dead_46: -8384668454778130288
+      Cobra_Robot-Enemy_FullHD_Dead_47: 4192135975500637898
+      Cobra_Robot-Enemy_FullHD_Dead_48: 9011771785781883467
+      Cobra_Robot-Enemy_FullHD_Dead_49: -468508891563353027
+      Cobra_Robot-Enemy_FullHD_Dead_5: -5844943483052652606
+      Cobra_Robot-Enemy_FullHD_Dead_50: -3995318315843979880
+      Cobra_Robot-Enemy_FullHD_Dead_51: -7197521687921111127
+      Cobra_Robot-Enemy_FullHD_Dead_52: 7654051741057945505
+      Cobra_Robot-Enemy_FullHD_Dead_53: 9118429020839110699
+      Cobra_Robot-Enemy_FullHD_Dead_54: -2246562451291038642
+      Cobra_Robot-Enemy_FullHD_Dead_55: 4091031395582348022
+      Cobra_Robot-Enemy_FullHD_Dead_56: 8511049303297708352
+      Cobra_Robot-Enemy_FullHD_Dead_57: -2866499310618131027
+      Cobra_Robot-Enemy_FullHD_Dead_58: -463640493184337965
+      Cobra_Robot-Enemy_FullHD_Dead_59: -4608296083710336439
+      Cobra_Robot-Enemy_FullHD_Dead_6: -2388212957003268691
+      Cobra_Robot-Enemy_FullHD_Dead_60: 4183943330142241877
+      Cobra_Robot-Enemy_FullHD_Dead_61: 172764833589095580
+      Cobra_Robot-Enemy_FullHD_Dead_62: 5736261043273548978
+      Cobra_Robot-Enemy_FullHD_Dead_63: -2520284826547212550
+      Cobra_Robot-Enemy_FullHD_Dead_64: -3796603643427811803
+      Cobra_Robot-Enemy_FullHD_Dead_65: 4405616956959230148
+      Cobra_Robot-Enemy_FullHD_Dead_66: -768472308678769493
+      Cobra_Robot-Enemy_FullHD_Dead_67: -3491743719665238541
+      Cobra_Robot-Enemy_FullHD_Dead_68: -7600898082562882064
+      Cobra_Robot-Enemy_FullHD_Dead_69: 7264394355134315919
+      Cobra_Robot-Enemy_FullHD_Dead_7: 8099361536809371815
+      Cobra_Robot-Enemy_FullHD_Dead_70: 5194419180634667700
+      Cobra_Robot-Enemy_FullHD_Dead_71: 5406919918586011557
+      Cobra_Robot-Enemy_FullHD_Dead_72: 3469205052869524652
+      Cobra_Robot-Enemy_FullHD_Dead_73: 2361247438480286996
+      Cobra_Robot-Enemy_FullHD_Dead_74: 815332611700074743
+      Cobra_Robot-Enemy_FullHD_Dead_75: 6203745263756525523
+      Cobra_Robot-Enemy_FullHD_Dead_76: 5276776452272026728
+      Cobra_Robot-Enemy_FullHD_Dead_77: -6178458204710650754
+      Cobra_Robot-Enemy_FullHD_Dead_78: 7869520413296669984
+      Cobra_Robot-Enemy_FullHD_Dead_79: 2599508369847461049
+      Cobra_Robot-Enemy_FullHD_Dead_8: 5224231587540511152
+      Cobra_Robot-Enemy_FullHD_Dead_80: 6916088956823765923
+      Cobra_Robot-Enemy_FullHD_Dead_81: -8655638892719846271
+      Cobra_Robot-Enemy_FullHD_Dead_82: -8389104228814531354
+      Cobra_Robot-Enemy_FullHD_Dead_83: -2039333766487566389
+      Cobra_Robot-Enemy_FullHD_Dead_84: 8532095438081883628
+      Cobra_Robot-Enemy_FullHD_Dead_85: 6160936809922331856
+      Cobra_Robot-Enemy_FullHD_Dead_86: -299630561679001421
+      Cobra_Robot-Enemy_FullHD_Dead_87: 3510552420076795809
+      Cobra_Robot-Enemy_FullHD_Dead_88: 1408360775925412144
+      Cobra_Robot-Enemy_FullHD_Dead_89: 7332770036565721746
+      Cobra_Robot-Enemy_FullHD_Dead_9: 7507165367540850154
+      Cobra_Robot-Enemy_FullHD_Dead_90: 7753869359069935413
+      Cobra_Robot-Enemy_FullHD_Dead_91: 3182793260597153301
+      Cobra_Robot-Enemy_FullHD_Dead_92: -6284232446272950785
+      Cobra_Robot-Enemy_FullHD_Dead_93: 4060068685981708605
+      Cobra_Robot-Enemy_FullHD_Dead_94: 1380070972281245377
+      Cobra_Robot-Enemy_FullHD_Dead_95: 2557351696310808897
+      Cobra_Robot-Enemy_FullHD_Dead_96: 6632097244426700092
+      Cobra_Robot-Enemy_FullHD_Dead_97: 1870769352546576764
+      Cobra_Robot-Enemy_FullHD_Dead_98: -2246218861908248817
+      Cobra_Robot-Enemy_FullHD_Dead_99: -8525306010230052065
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

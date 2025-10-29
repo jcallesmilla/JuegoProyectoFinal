@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 64f9c6db7a642d74fb77af2d8887bb9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4478432760878489348
+    second: Cobra_Robot-Enemy_FullHD_Idle_0
+  - first:
+      213: -4537532518304472721
+    second: Cobra_Robot-Enemy_FullHD_Idle_1
+  - first:
+      213: 5686935627387287554
+    second: Cobra_Robot-Enemy_FullHD_Idle_2
+  - first:
+      213: 8961017095175615588
+    second: Cobra_Robot-Enemy_FullHD_Idle_3
+  - first:
+      213: 3424132941782276397
+    second: Cobra_Robot-Enemy_FullHD_Idle_4
+  - first:
+      213: -2613165467426759343
+    second: Cobra_Robot-Enemy_FullHD_Idle_5
+  - first:
+      213: -4451282221310296238
+    second: Cobra_Robot-Enemy_FullHD_Idle_6
+  - first:
+      213: -2199440231292398642
+    second: Cobra_Robot-Enemy_FullHD_Idle_7
+  - first:
+      213: 1021132976820241325
+    second: Cobra_Robot-Enemy_FullHD_Idle_8
+  - first:
+      213: -483983362016033322
+    second: Cobra_Robot-Enemy_FullHD_Idle_9
+  - first:
+      213: -3431741860086344830
+    second: Cobra_Robot-Enemy_FullHD_Idle_10
+  - first:
+      213: -2091551918869409221
+    second: Cobra_Robot-Enemy_FullHD_Idle_11
+  - first:
+      213: 6919870909677298917
+    second: Cobra_Robot-Enemy_FullHD_Idle_12
+  - first:
+      213: -1532177156227689678
+    second: Cobra_Robot-Enemy_FullHD_Idle_13
+  - first:
+      213: 7659637030679979332
+    second: Cobra_Robot-Enemy_FullHD_Idle_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 4440
+        width: 627
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0ad59b12969d1c0800000000000000
+      internalID: -4478432760878489348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 4440
+        width: 627
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61ada927327701c0800000000000000
+      internalID: -4537532518304472721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 4496
+        y: 4440
+        width: 627
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208beea82dd0cee40800000000000000
+      internalID: 5686935627387287554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 3359
+        width: 652
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4643520129deb5c70800000000000000
+      internalID: 8961017095175615588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 3359
+        width: 652
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2955aac4c6f48f20800000000000000
+      internalID: 3424132941782276397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 4493
+        y: 3359
+        width: 652
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15dd5be3adb2cbbd0800000000000000
+      internalID: -2613165467426759343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 2279
+        width: 663
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25fb9c3576ed932c0800000000000000
+      internalID: -4451282221310296238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 2279
+        width: 663
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec31d1543c40a71e0800000000000000
+      internalID: -2199440231292398642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 4505
+        y: 2279
+        width: 663
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3cecf380bcb2e00800000000000000
+      internalID: 1021132976820241325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1199
+        width: 655
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5c5dd42bb8849f0800000000000000
+      internalID: -483983362016033322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 2595
+        y: 1199
+        width: 655
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28317bcd5f00060d0800000000000000
+      internalID: -3431741860086344830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 4515
+        y: 1199
+        width: 655
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32908e7c9059f2e0800000000000000
+      internalID: -2091551918869409221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 119
+        width: 651
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4efd6ede1580060800000000000000
+      internalID: 6919870909677298917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 2594
+        y: 119
+        width: 651
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23394168efc9cbae0800000000000000
+      internalID: -1532177156227689678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cobra_Robot-Enemy_FullHD_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 4514
+        y: 119
+        width: 651
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445ab120c4f7c4a60800000000000000
+      internalID: 7659637030679979332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cobra_Robot-Enemy_FullHD_Idle_0: -4478432760878489348
+      Cobra_Robot-Enemy_FullHD_Idle_1: -4537532518304472721
+      Cobra_Robot-Enemy_FullHD_Idle_10: -3431741860086344830
+      Cobra_Robot-Enemy_FullHD_Idle_11: -2091551918869409221
+      Cobra_Robot-Enemy_FullHD_Idle_12: 6919870909677298917
+      Cobra_Robot-Enemy_FullHD_Idle_13: -1532177156227689678
+      Cobra_Robot-Enemy_FullHD_Idle_14: 7659637030679979332
+      Cobra_Robot-Enemy_FullHD_Idle_2: 5686935627387287554
+      Cobra_Robot-Enemy_FullHD_Idle_3: 8961017095175615588
+      Cobra_Robot-Enemy_FullHD_Idle_4: 3424132941782276397
+      Cobra_Robot-Enemy_FullHD_Idle_5: -2613165467426759343
+      Cobra_Robot-Enemy_FullHD_Idle_6: -4451282221310296238
+      Cobra_Robot-Enemy_FullHD_Idle_7: -2199440231292398642
+      Cobra_Robot-Enemy_FullHD_Idle_8: 1021132976820241325
+      Cobra_Robot-Enemy_FullHD_Idle_9: -483983362016033322
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

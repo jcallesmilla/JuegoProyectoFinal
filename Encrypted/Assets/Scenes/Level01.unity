@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 303252709}
   - component: {fileID: 303252712}
   - component: {fileID: 303252713}
+  - component: {fileID: 303252714}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -483,6 +484,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.2903206, y: 1.7517688}
   m_Direction: 0
+--- !u!114 &303252714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303252707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93202f05c49a234b88a6671d86b840b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  maxVida: 100
+  cantidadDeVida: 100
+  barraSize: {x: 200, y: 24}
+  margen: {x: 10, y: 10}
+  barraColor: {r: 0, g: 1, b: 0, a: 1}
+  barraPerdidaColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &347660103
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +809,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f1b0787cc8c440929e1070562659f2d, type: 3}
+--- !u!1 &514153621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514153622}
+  m_Layer: 0
+  m_Name: ControladorDisparoJefe1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514153622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514153621}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 810240783}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &525714132
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,6 +1046,7 @@ GameObject:
   - component: {fileID: 810240786}
   - component: {fileID: 810240785}
   - component: {fileID: 810240787}
+  - component: {fileID: 810240788}
   m_Layer: 0
   m_Name: JEFE1
   m_TagString: Untagged
@@ -1070,10 +1121,11 @@ Transform:
   m_GameObject: {fileID: 810240781}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.18, y: 0.28, z: 0}
+  m_LocalPosition: {x: 52.37, y: 0.2, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 514153622}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &810240784
@@ -1185,7 +1237,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::JEFE1
   player: {fileID: 303252707}
   detectionRadius: 10
-  speed: 25
+  speed: 10
+--- !u!114 &810240788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810240781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfeb8765b516114aa97c143d1a63ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  controladorDisparo: {fileID: 514153622}
+  useDistanceDetection: 1
+  distanciaLinea: 9
+  capaJugador:
+    serializedVersion: 2
+    m_Bits: 256
+  jugadorEnRango: 0
+  haciaIzquierda: 1
+  balaPrefab: {fileID: 7074651628508281101, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+  "da\xF1oBala": 10
+  velocidadBala: 15
+  lifetimeBala: 5
+  fireRate: 1
 --- !u!1 &850676300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,7 +1384,7 @@ GameObject:
   - component: {fileID: 1125416356}
   - component: {fileID: 1125416355}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: CoinManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1327,6 +1404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   coinCount: 0
   coinText: {fileID: 1209510134}
+  margin: {x: 7, y: 7}
+  fontSize: 24
 --- !u!4 &1125416356
 Transform:
   m_ObjectHideFlags: 0
@@ -2607,6 +2686,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f1b0787cc8c440929e1070562659f2d, type: 3}
+--- !u!1001 &1822637377706112282
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 697992353400720658, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7074651628508281101, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+      propertyPath: m_Name
+      value: BalaJefe1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
 --- !u!1001 &5617944491353543498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2687,3 +2823,4 @@ SceneRoots:
   - {fileID: 525714136}
   - {fileID: 347660105}
   - {fileID: 810240783}
+  - {fileID: 1822637377706112282}

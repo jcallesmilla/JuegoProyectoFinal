@@ -57,7 +57,7 @@ public class Entity : MonoBehaviour
 
     public void TakeDamage()
     {
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 
 
@@ -86,11 +86,11 @@ public class Entity : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            TryToAttack();
+            HandleAttack();
         }
     }
 
-    protected virtual void TryToAttack()
+    protected virtual void HandleAttack()
     {
         if (isGrounded){
             anim.SetTrigger("attack");
@@ -149,11 +149,12 @@ public class Entity : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Coin"))
+        if (other.CompareTag("Coin") && gameObject.CompareTag("Player"))
         {
-            Destroy(other.gameObject); 
+            Destroy(other.gameObject);
             cm.coinCount++;
         }
     }
+
 
 }

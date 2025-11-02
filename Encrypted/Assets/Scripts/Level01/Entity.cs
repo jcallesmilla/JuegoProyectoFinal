@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 
 public class Entity : MonoBehaviour
@@ -7,6 +8,15 @@ public class Entity : MonoBehaviour
     protected Animator anim;
     protected Rigidbody2D rb;
     public CoinManager cm;
+    protected Collider2D col;
+    protected SpriteRenderer sr;
+
+    [Header("Health")]
+    [SerializeField] private int maxHealth = 1;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private Material damageMaterial;
+    [SerializeField] private float damageFeedbackDuration = .2f;
+    private Coroutine damageFeedbackCoroutine;
 
     [Header("Attack details")]
     [SerializeField] protected float attackRadius;
@@ -32,7 +42,11 @@ public class Entity : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
         anim = GetComponentInChildren<Animator>();
+        sr = GetComponentInChildren<SpriteRenderer>();
+
+        currentHealth = maxHealth;
     }
 
     protected virtual void Update()
@@ -55,9 +69,41 @@ public class Entity : MonoBehaviour
         }
     }
 
-    public void TakeDamage()
+    private void TakeDamage()
     {
-        //throw new NotImplementedException();
+        currentHealth = currentHealth - 1;
+        PlayDamageFeedback();
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void PlayDamageFeedback()
+    {
+        if (damageFeedbackCoroutine != null)
+        {
+            StopCoroutine(damageFeedbackCoroutine);
+        }
+        StartCoroutine(DamageFeedbackCo());
+    }
+
+    private IEnumerator DamageFeedbackCo()
+    {
+        Material originalMaterial = sr.material;
+        sr.material = damageMaterial;
+        yield return new WaitForSeconds(damageFeedbackDuration);
+        sr.material = originalMaterial;
+    }
+
+    protected virtual void Die()
+    {
+        anim.enabled = false;
+        col.enabled = false;
+
+        rb.gravityScale = 12;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
     }
 
 

@@ -436,6 +436,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cm: {fileID: 1125416355}
+  maxHealth: 10
+  currentHealth: 0
+  damageMaterial: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}
+  damageFeedbackDuration: 0.1
   attackRadius: 0
   attackPoint: {fileID: 0}
   whatIsTarget:
@@ -534,6 +538,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   cm: {fileID: 0}
+  maxHealth: 1
+  currentHealth: 0
+  damageMaterial: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}
+  damageFeedbackDuration: 0.2
   attackRadius: 1.5
   attackPoint: {fileID: 850676301}
   whatIsTarget:

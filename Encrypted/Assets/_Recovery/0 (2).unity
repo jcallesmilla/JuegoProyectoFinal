@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 303252713}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -860,6 +860,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cm: {fileID: 1125416355}
+  attackRadius: 0
+  attackPoint: {fileID: 0}
+  whatIsTarget:
+    serializedVersion: 2
+    m_Bits: 0
   moveSpeed: 3.56
   jumpForce: 12
   groundCheckDistance: 0.9
@@ -1757,6 +1762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   coinCount: 0
   coinText: {fileID: 1209510134}
+  margin: {x: 10, y: 10}
+  fontSize: 24
 --- !u!4 &1125416356
 Transform:
   m_ObjectHideFlags: 0

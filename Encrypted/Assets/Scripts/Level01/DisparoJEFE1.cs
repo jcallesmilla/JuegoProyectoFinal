@@ -127,17 +127,7 @@ public class DisparoJEFE1 : MonoBehaviour
             return;
         }
 
-        // Trigger de animación (si se asignó)
-        if (animator != null)
-        {
-            animator.SetTrigger("Disparar");
-        }
-        else
-        {
-            // No hay animator asignado: esto es válido, la bala seguirá instanciándose
-            // pero no habrá animación de disparo.
-            // Debug.Log("DisparoJEFE1: animator no asignado, no se disparará trigger 'Disparar'.");
-        }
+        // Aqui iba lo anterior
 
         // Instanciar la bala en la posición del controlador
         GameObject balaGO = Instantiate(balaPrefab, controladorDisparo.position, Quaternion.identity);

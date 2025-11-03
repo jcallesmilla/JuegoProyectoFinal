@@ -1,75 +1,70 @@
 using UnityEngine;
 
-public class JEFE1 : Entity
+public class JEFE1 : MonoBehaviour
 {
     [Header("Referencias")]
-    [Tooltip("Asigna aquí el GameObject Player (arrástralo desde la Jerarquía). Si queda vacío el script intentará encontrar un objeto con la etiqueta 'Player'.")]
-    public GameObject player;
-    [Tooltip("Radio de detección (unidades) en el que el jefe perseguirá/atacará al jugador")]
-    public float detectionRadius = 5.0f;
-    // Use Entity.moveSpeed (serialized in the base class) for movement speed.
-    // You can edit 'moveSpeed' in the Inspector on this component because it's serialized in the base class `Entity`.
-    [Header("Disparo")]
-    [Tooltip("Referencia al componente DisparoJEFE1 que gestiona la instanciación de balas. Si queda vacío el script intentará encontrar uno en este GameObject o en sus hijos.")]
-    public DisparoJEFE1 disparo;
+    public Transform player;                 // Referencia al objeto Player
+    public Animator animator;                // Controlador de animaciones
+    public float velocidad = 2f;             // Velocidad de movimiento
+    public float rangoDeteccion = 8f;        // Distancia a la que detecta al jugador
 
-    void Start()
+    private bool mirandoDerecha = true;      // Indica hacia qué lado mira el jefe
+
+    void Update()
     {
-        // Try to find a DisparoJEFE1 on this GameObject or children if not assigned
-        if (disparo == null)
-            disparo = GetComponentInChildren<DisparoJEFE1>();
+        if (player == null) return; // Si no hay jugador asignado, salir
 
-        // If player was not assigned in the Inspector try to find it by tag
-        if (player == null)
+        float distancia = Vector2.Distance(transform.position, player.position);
+
+        // El jefe siempre mira hacia el jugador
+        MirarHaciaJugador();
+
+        if (distancia <= rangoDeteccion)
         {
-            GameObject go = GameObject.FindWithTag("Player");
-            if (go != null) player = go;
-            else Debug.LogWarning("JEFE1: 'player' not assigned and no GameObject with tag 'Player' found.", this);
+            // Si el jugador está dentro del rango, camina hacia él
+            animator.SetBool("isWalking", true);
+            MoverHaciaJugador();
         }
-        // Prevent the boss from rotating when colliding (avoid 'rolling' effect)
-        // rb is initialized in Entity.Awake(), Start runs after Awake so it's safe to access.
-        if (rb != null)
+        else
         {
-            // Freeze rotation in Z so physics collisions don't spin the enemy
-            rb.freezeRotation = true;
-            // also clear any residual angular velocity
-            rb.angularVelocity = 0f;
+            // Si el jugador está lejos, se queda en idle
+            animator.SetBool("isWalking", false);
         }
     }
 
-    // Override Entity.Update to implement enemy AI without player input
-    protected override void Update()
+    void MoverHaciaJugador()
     {
-        // reuse collision handling from Entity
-        HandleCollision();
+        // Dirección horizontal hacia el jugador
+        Vector2 direccion = (player.position - transform.position).normalized;
+        transform.position = new Vector2(transform.position.x + direccion.x * velocidad * Time.deltaTime, transform.position.y);
+    }
 
-        if (player == null)
+    void MirarHaciaJugador()
+    {
+        // Si el jugador está a la derecha y el jefe no mira a la derecha → voltear
+        if (player.position.x > transform.position.x && !mirandoDerecha)
         {
-            player = GameObject.FindWithTag("Player");
+            Voltear();
         }
-
-        if (player != null)
+        // Si el jugador está a la izquierda y el jefe mira a la derecha → voltear
+        else if (player.position.x < transform.position.x && mirandoDerecha)
         {
-            float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-            if (distanceToPlayer < detectionRadius)
-            {
-                // Move horizontally towards the player (only X axis)
-                Vector2 direction = (player.transform.position - transform.position).normalized;
-                // Use the inherited moveSpeed from Entity
-                rb.linearVelocity = new Vector2(direction.x * moveSpeed, rb.linearVelocity.y);
-
-                // Let DisparoJEFE1 handle firing cadence; calling Disparar() is safe (it respects cooldown)
-                if (disparo != null)
-                    disparo.Disparar();
-            }
-            else
-            {
-                // Stop horizontal movement when player is out of detection radius
-                rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-            }
+            Voltear();
         }
+    }
 
-        // reuse animation handling but do NOT auto-flip the transform (boss keeps fixed orientation)
-        HandleAnimations();
+    void Voltear()
+    {
+        mirandoDerecha = !mirandoDerecha;
+        Vector3 escala = transform.localScale;
+        escala.x *= -1;
+        transform.localScale = escala;
+    }
+
+    // Dibuja el rango de detección en el editor
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, rangoDeteccion);
     }
 }

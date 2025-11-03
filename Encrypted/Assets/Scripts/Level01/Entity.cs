@@ -52,21 +52,11 @@ public class Entity : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-<<<<<<< HEAD
-        // If animator not set in inspector, try to find in children
-        if (anim == null)
-            anim = GetComponentInChildren<Animator>();
-        // initialize jumpsLeft from serialized value
-        jumpsLeft = maxJumps;
-        if (anim == null)
-            Debug.LogWarning($"Entity ({gameObject.name}): Animator not found. Assign an Animator in the Inspector or add one as a child.");
-=======
         col = GetComponent<Collider2D>();
         anim = GetComponentInChildren<Animator>();
         sr = GetComponentInChildren<SpriteRenderer>();
 
         currentHealth = maxHealth;
->>>>>>> ea43fd5989ee04d702a9bb123ad1ee39156c914b
     }
 
     protected virtual void Update()

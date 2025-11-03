@@ -63,4 +63,10 @@ public class Player : Entity
         base.EnableMovement(enable);
         canJump = enable;
     }
+
+    protected override void Die()
+    {
+        base.Die();
+        UI.instance.EnableGameOverUI();
+    }
 }

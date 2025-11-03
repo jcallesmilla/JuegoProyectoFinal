@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 
 public class Entity : MonoBehaviour
@@ -7,6 +8,15 @@ public class Entity : MonoBehaviour
     [SerializeField] protected Animator anim;
     protected Rigidbody2D rb;
     public CoinManager cm;
+    protected Collider2D col;
+    protected SpriteRenderer sr;
+
+    [Header("Health")]
+    [SerializeField] private int maxHealth = 1;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private Material damageMaterial;
+    [SerializeField] private float damageFeedbackDuration = .2f;
+    private Coroutine damageFeedbackCoroutine;
 
     [Header("Player / Movement")]
     [Tooltip("Si se activa, el flip del sprite se hará invirtiendo localScale.x en vez de rotar el transform")]
@@ -42,6 +52,7 @@ public class Entity : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+<<<<<<< HEAD
         // If animator not set in inspector, try to find in children
         if (anim == null)
             anim = GetComponentInChildren<Animator>();
@@ -49,6 +60,13 @@ public class Entity : MonoBehaviour
         jumpsLeft = maxJumps;
         if (anim == null)
             Debug.LogWarning($"Entity ({gameObject.name}): Animator not found. Assign an Animator in the Inspector or add one as a child.");
+=======
+        col = GetComponent<Collider2D>();
+        anim = GetComponentInChildren<Animator>();
+        sr = GetComponentInChildren<SpriteRenderer>();
+
+        currentHealth = maxHealth;
+>>>>>>> ea43fd5989ee04d702a9bb123ad1ee39156c914b
     }
 
     protected virtual void Update()
@@ -71,9 +89,41 @@ public class Entity : MonoBehaviour
         }
     }
 
-    public void TakeDamage()
+    private void TakeDamage()
     {
-        //throw new NotImplementedException();
+        currentHealth = currentHealth - 1;
+        PlayDamageFeedback();
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void PlayDamageFeedback()
+    {
+        if (damageFeedbackCoroutine != null)
+        {
+            StopCoroutine(damageFeedbackCoroutine);
+        }
+        StartCoroutine(DamageFeedbackCo());
+    }
+
+    private IEnumerator DamageFeedbackCo()
+    {
+        Material originalMaterial = sr.material;
+        sr.material = damageMaterial;
+        yield return new WaitForSeconds(damageFeedbackDuration);
+        sr.material = originalMaterial;
+    }
+
+    protected virtual void Die()
+    {
+        anim.enabled = false;
+        col.enabled = false;
+
+        rb.gravityScale = 12;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
     }
 
 

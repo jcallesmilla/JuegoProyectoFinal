@@ -1,0 +1,23 @@
+- load your unity and on File create new project.
+- drag and drop 3 file from folder JSON to Asset folder on unity.
+download "DragonBonesForUnity.unitypackage" from link below
+
+https://github.com/DragonBones/DragonBonesCSharp/release
+
+right click on unity until pop up window and look out the "import package" then select "custom package"
+select and open "DragonBonesForUnity.unitypackage" 
+on the small windows
+you can uncheck the "demos" or not to touch
+and hit "import" 
+wait for while.
+when finish importing right click on hierarchy panel on unity and select Dragonbones => Armature Object
+hilite New Armature Object on hierarchy panel and look at "inspector tab" 
+and hit JSON button until pop out "select TextAsset" window
+search file exported from dragonbones 
+be sure select file that have "bla-bla-bla_ske"
+double click that
+look at "inspector tab" 
+on "Unity Armature Component(Script)" hit tombol "create"
+and your character will be appear on the screen.
+check "animation" on "Unity Armature Component(Script)"
+you will find the list of animation that you create.

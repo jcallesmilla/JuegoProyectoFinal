@@ -33,6 +33,10 @@ public class DisparoJEFE1 : MonoBehaviour
     [Tooltip("Cadencia de disparo (disparos por segundo)")]
     public float fireRate = 1f;
 
+    [Header("Animator")]
+    [Tooltip("Animator del jefe. Se lanzará el trigger 'Disparar' antes de instanciar la bala (debes añadir ese parámetro en el Animator Controller).")]
+    public Animator animator;
+
     private float fireCooldown = 0f;
     // cached player reference
     private GameObject cachedPlayer;
@@ -98,6 +102,19 @@ public class DisparoJEFE1 : MonoBehaviour
     /// </summary>
     public void Disparar()
     {
+        // Respect internal cooldown so external callers (e.g. JEFE1) can't spam calls
+        if (fireRate <= 0f)
+        {
+            Debug.LogWarning("DisparoJEFE1: fireRate must be > 0 to fire.");
+            return;
+        }
+
+        if (fireCooldown > 0f)
+        {
+            // still cooling down
+            return;
+        }
+
         if (balaPrefab == null)
         {
             Debug.LogWarning("DisparoJEFE1: balaPrefab no asignado.");
@@ -108,6 +125,18 @@ public class DisparoJEFE1 : MonoBehaviour
         {
             Debug.LogWarning("DisparoJEFE1: controladorDisparo no asignado.");
             return;
+        }
+
+        // Trigger de animación (si se asignó)
+        if (animator != null)
+        {
+            animator.SetTrigger("Disparar");
+        }
+        else
+        {
+            // No hay animator asignado: esto es válido, la bala seguirá instanciándose
+            // pero no habrá animación de disparo.
+            // Debug.Log("DisparoJEFE1: animator no asignado, no se disparará trigger 'Disparar'.");
         }
 
         // Instanciar la bala en la posición del controlador
@@ -140,6 +169,9 @@ public class DisparoJEFE1 : MonoBehaviour
         {
             Debug.LogWarning("DisparoJEFE1: el prefab de bala no contiene BalaJEFE1.");
         }
+
+        // set cooldown after firing
+        fireCooldown = 1f / fireRate;
     }
 
     private void OnDrawGizmos()

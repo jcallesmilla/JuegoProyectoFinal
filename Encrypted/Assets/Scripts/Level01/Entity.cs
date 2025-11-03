@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    protected Animator anim;
+    [SerializeField] protected Animator anim;
     protected Rigidbody2D rb;
     public CoinManager cm;
+
+    [Header("Player / Movement")]
+    [Tooltip("Si se activa, el flip del sprite se hará invirtiendo localScale.x en vez de rotar el transform")]
+    [SerializeField] protected bool useScaleFlip = false;
+
+    [Header("Jump settings")]
+    [Tooltip("Número máximo de saltos (1 = salto simple, 2 = doble salto)")]
+    [SerializeField] protected int maxJumps = 2;
+    // runtime jumps counter
+    protected int jumpsLeft;
 
     [Header("Attack details")]
     [SerializeField] protected float attackRadius;
@@ -16,23 +26,29 @@ public class Entity : MonoBehaviour
 
     [Header("Movement details")]
     [SerializeField] protected float moveSpeed = 3.5f;
-    [SerializeField] private float jumpForce = 8;
+    [SerializeField] protected float jumpForce = 8;
     protected int facingDir = 1;
-    private float xInput;
-    private bool facingRight = true;
+    protected float xInput;
+    protected bool facingRight = true;
 
     [Header("Collision details")]
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
     private bool isGrounded;
     protected bool canMove = true;
-    private bool canJump = true;
+    protected bool canJump = true;
 
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponentInChildren<Animator>();
+        // If animator not set in inspector, try to find in children
+        if (anim == null)
+            anim = GetComponentInChildren<Animator>();
+        // initialize jumpsLeft from serialized value
+        jumpsLeft = maxJumps;
+        if (anim == null)
+            Debug.LogWarning($"Entity ({gameObject.name}): Animator not found. Assign an Animator in the Inspector or add one as a child.");
     }
 
     protected virtual void Update()
@@ -68,6 +84,7 @@ public class Entity : MonoBehaviour
     }
     protected void HandleAnimations()
     {
+        if (anim == null) return;
         anim.SetFloat("xVelocity", rb.linearVelocity.x);
         anim.SetBool("isGrounded", isGrounded);
         anim.SetFloat("yVelocity", rb.linearVelocity.y);
@@ -76,7 +93,6 @@ public class Entity : MonoBehaviour
     private void HandleInput()
     {
         xInput = Input.GetAxisRaw("Horizontal");
-
         HandleMovement();
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -99,9 +115,16 @@ public class Entity : MonoBehaviour
 
     private void TryToJump()
     {
-        if (isGrounded && canJump)
+        // reset jumps when grounded
+        if (isGrounded)
+        {
+            jumpsLeft = maxJumps;
+        }
+
+        if (canJump && jumpsLeft > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpsLeft--;
         }
             
     }
@@ -129,7 +152,8 @@ public class Entity : MonoBehaviour
         if (rb.linearVelocity.x > 0 && facingRight == false)
         {
             Flip();
-        }else if (rb.linearVelocity.x < 0 && facingRight == true)
+        }
+        else if (rb.linearVelocity.x < 0 && facingRight == true)
         {
             Flip();
         }
@@ -137,7 +161,16 @@ public class Entity : MonoBehaviour
 
     private void Flip()
     {
-        transform.Rotate(0, 180, 0);
+        if (useScaleFlip)
+        {
+            Vector3 s = transform.localScale;
+            s.x *= -1f;
+            transform.localScale = s;
+        }
+        else
+        {
+            transform.Rotate(0, 180, 0);
+        }
         facingRight = !facingRight;
         facingDir = facingDir * -1;
     }

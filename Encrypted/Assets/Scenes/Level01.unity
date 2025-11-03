@@ -553,15 +553,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   anim: {fileID: 0}
   cm: {fileID: 0}
-<<<<<<< HEAD
-  useScaleFlip: 0
-  maxJumps: 2
-=======
   maxHealth: 1
   currentHealth: 0
   damageMaterial: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}
   damageFeedbackDuration: 0.2
->>>>>>> ea43fd5989ee04d702a9bb123ad1ee39156c914b
   attackRadius: 1.5
   attackPoint: {fileID: 850676301}
   whatIsTarget:
@@ -2534,8 +2529,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f1b0787cc8c440929e1070562659f2d, type: 3}
-<<<<<<< HEAD
-=======
 --- !u!1001 &3206834574353635126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2609,7 +2602,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15afd6bf126a688408734497ac402409, type: 3}
->>>>>>> ea43fd5989ee04d702a9bb123ad1ee39156c914b
 --- !u!1001 &5617944491353543498
 PrefabInstance:
   m_ObjectHideFlags: 0

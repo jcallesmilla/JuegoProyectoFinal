@@ -57,6 +57,7 @@ public class Entity : MonoBehaviour
         sr = GetComponentInChildren<SpriteRenderer>();
 
         currentHealth = maxHealth;
+
     }
 
     protected virtual void Update()

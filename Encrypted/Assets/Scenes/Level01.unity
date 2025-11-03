@@ -438,15 +438,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   anim: {fileID: 0}
   cm: {fileID: 1125416355}
-<<<<<<< HEAD
-  useScaleFlip: 0
-  maxJumps: 2
-=======
   maxHealth: 10
   currentHealth: 0
   damageMaterial: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}
   damageFeedbackDuration: 0.1
->>>>>>> ea43fd5989ee04d702a9bb123ad1ee39156c914b
   attackRadius: 0
   attackPoint: {fileID: 0}
   whatIsTarget:
@@ -2694,7 +2689,4 @@ SceneRoots:
   - {fileID: 1044496441}
   - {fileID: 525714136}
   - {fileID: 347660105}
-<<<<<<< HEAD
-=======
   - {fileID: 3206834574353635126}
->>>>>>> ea43fd5989ee04d702a9bb123ad1ee39156c914b

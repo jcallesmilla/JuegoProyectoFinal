@@ -15,7 +15,7 @@ public class Entity : MonoBehaviour
     [SerializeField] private int maxHealth = 1;
     [SerializeField] private int currentHealth;
     [SerializeField] private Material damageMaterial;
-    [SerializeField] private float damageFeedbackDuration = .2f;
+    [SerializeField] private float damageFeedbackDuration = .1f;
     private Coroutine damageFeedbackCoroutine;
 
     [Header("Player / Movement")]
@@ -33,20 +33,13 @@ public class Entity : MonoBehaviour
     [SerializeField] protected Transform attackPoint;
     [SerializeField] protected LayerMask whatIsTarget;
 
-
-    [Header("Movement details")]
-    [SerializeField] protected float moveSpeed = 3.5f;
-    [SerializeField] protected float jumpForce = 8;
-    protected int facingDir = 1;
-    protected float xInput;
-    protected bool facingRight = true;
-
     [Header("Collision details")]
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
-    private bool isGrounded;
+    protected bool isGrounded;
     protected bool canMove = true;
-    protected bool canJump = true;
+    protected int facingDir = 1;
+    protected bool facingRight = true;
 
 
     private void Awake()
@@ -63,7 +56,6 @@ public class Entity : MonoBehaviour
     protected virtual void Update()
     {
         HandleCollision();
-        HandleInput();
         HandleMovement();
         HandleAnimations();
         HandleFlip();
@@ -115,13 +107,14 @@ public class Entity : MonoBehaviour
 
         rb.gravityScale = 12;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
+        
+        Destroy(gameObject, 3);
     }
 
 
-    public void EnableMovementAndJump(bool enable)
+    public virtual void EnableMovement(bool enable)
     {
         canMove = enable;
-        canJump = enable;
     }
     protected void HandleAnimations()
     {
@@ -131,56 +124,15 @@ public class Entity : MonoBehaviour
         anim.SetFloat("yVelocity", rb.linearVelocity.y);
     }
 
-    private void HandleInput()
-    {
-        xInput = Input.GetAxisRaw("Horizontal");
-        HandleMovement();
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TryToJump();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            HandleAttack();
-        }
-    }
-
     protected virtual void HandleAttack()
     {
         if (isGrounded){
             anim.SetTrigger("attack");
         }
     }
-
-    private void TryToJump()
-    {
-        // reset jumps when grounded
-        if (isGrounded)
-        {
-            jumpsLeft = maxJumps;
-        }
-
-        if (canJump && jumpsLeft > 0)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            jumpsLeft--;
-        }
-            
-    }
     
     protected virtual void HandleMovement()
-    {
-        if (canMove)
-        {
-            rb.linearVelocity = new Vector2(xInput * moveSpeed, rb.linearVelocity.y);
-        }
-        else
-        {
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-        }
-            
+    {       
     }
 
     protected virtual void HandleCollision()

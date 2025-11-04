@@ -12,8 +12,10 @@ public class Entity : MonoBehaviour
     protected SpriteRenderer sr;
 
     [Header("Health")]
-    [SerializeField] private int maxHealth = 1;
-    [SerializeField] private int currentHealth;
+    [SerializeField] public int maxHealth = 1;
+    [SerializeField] public int currentHealth;
+    [SerializeField] protected HealthBar_Behaviour healthBar;
+
     [SerializeField] private Material damageMaterial;
     [SerializeField] private float damageFeedbackDuration = .1f;
     private Coroutine damageFeedbackCoroutine;
@@ -72,7 +74,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    private void TakeDamage()
+    protected virtual void TakeDamage()
     {
         currentHealth = currentHealth - 1;
         PlayDamageFeedback();

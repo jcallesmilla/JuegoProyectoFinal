@@ -5,8 +5,18 @@ public class Player : Entity
     [Header("Movement details")]
     [SerializeField] protected float moveSpeed = 3.5f;
     [SerializeField] protected float jumpForce = 8;
+    [SerializeField] private HealthBarPlayer healthBarPlayer;
+
     private float xInput;
     private bool canJump = true;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        // Inicializar la vida del jugador
+        currentHealth = maxHealth;
+        healthBarPlayer.setMaxHealth(maxHealth);
+    }
 
     protected override void Update()
     {
@@ -64,6 +74,11 @@ public class Player : Entity
         canJump = enable;
     }
 
+    protected override void TakeDamage()
+    {
+        base.TakeDamage();
+        healthBarPlayer.SetHealth(currentHealth);
+    }
     protected override void Die()
     {
         base.Die();

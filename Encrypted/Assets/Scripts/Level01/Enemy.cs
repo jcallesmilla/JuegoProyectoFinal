@@ -5,6 +5,13 @@ public class Enemy : Entity
     [Header("Movement details")]
     [SerializeField] protected float moveSpeed = 3.5f;
     private bool playerDetected;
+    private Transform player;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 
     protected override void Update()
     {
@@ -20,22 +27,21 @@ public class Enemy : Entity
         }
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        if (attackPoint != null)
-        {
-            Gizmos.color = Color.red; // color de la esfera
-            Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
-        }
-    }
-
-
-
     protected override void HandleMovement()
     {
-        if (canMove)
+        if (!canMove || player == null) return;
+
+        float direction = Mathf.Sign(player.position.x - transform.position.x);
+
+        if (!playerDetected)
         {
-            rb.linearVelocity = new Vector2(facingDir * moveSpeed, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+
+            // Voltearse si no está mirando al jugador
+            if ((direction > 0 && !facingRight) || (direction < 0 && facingRight))
+            {
+                Flip();
+            }
         }
         else
         {
@@ -43,9 +49,29 @@ public class Enemy : Entity
         }
     }
 
+    protected override void Flip()
+    {
+        // Solo voltea visualmente el sprite, sin alterar facingDir ni rotar el transform
+        facingRight = !facingRight;
+
+        Vector3 s = transform.localScale;
+        s.x *= -1;
+        transform.localScale = s;
+    }
+
+
     protected override void HandleCollision()
     {
         base.HandleCollision();
         playerDetected = Physics2D.OverlapCircle(attackPoint.position, attackRadius, whatIsTarget);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+        }
     }
 }

@@ -42,7 +42,7 @@ public class Entity : MonoBehaviour
     protected bool facingRight = true;
 
 
-    private void Awake()
+    protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
@@ -107,8 +107,8 @@ public class Entity : MonoBehaviour
 
         rb.gravityScale = 12;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 15);
-        
-        Destroy(gameObject, 3);
+
+        Destroy(gameObject, 0);
     }
 
 
@@ -126,13 +126,14 @@ public class Entity : MonoBehaviour
 
     protected virtual void HandleAttack()
     {
-        if (isGrounded){
+        if (isGrounded)
+        {
             anim.SetTrigger("attack");
         }
     }
-    
+
     protected virtual void HandleMovement()
-    {       
+    {
     }
 
     protected virtual void HandleCollision()
@@ -152,7 +153,7 @@ public class Entity : MonoBehaviour
         }
     }
 
-    private void Flip()
+    protected virtual void Flip()
     {
         if (useScaleFlip)
         {
@@ -164,8 +165,17 @@ public class Entity : MonoBehaviour
         {
             transform.Rotate(0, 180, 0);
         }
+
         facingRight = !facingRight;
-        facingDir = facingDir * -1;
+        facingDir *= -1;
+
+        // 🔹 Invertir posición del punto de ataque
+        if (attackPoint != null)
+        {
+            Vector3 ap = attackPoint.localPosition;
+            ap.x *= -1f;
+            attackPoint.localPosition = ap;
+        }
     }
 
     private void OnDrawGizmos()

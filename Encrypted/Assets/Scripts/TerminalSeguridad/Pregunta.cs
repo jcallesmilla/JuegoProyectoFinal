@@ -1,17 +1,18 @@
-using UnityEngine;
+using System;
 
-[System.Serializable]
+[Serializable]
 public class Pregunta
 {
-    public string texto;
+    public string textoPregunta;
     public string[] opciones;
-    public int indiceCorrecta;
-    public Pregunta siguiente; // nodo siguiente
+    public int respuestaCorrecta; // índice de la opción correcta
+    public Pregunta siguiente; // para lista enlazada circular
 
-    public Pregunta(string texto, string[] opciones, int indiceCorrecta)
+    public Pregunta(string texto, string[] opciones, int indiceCorrecto)
     {
-        this.texto = texto;
+        textoPregunta = texto;
         this.opciones = opciones;
-        this.indiceCorrecta = indiceCorrecta;
+        respuestaCorrecta = indiceCorrecto;
+        siguiente = null;
     }
 }

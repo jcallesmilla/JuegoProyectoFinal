@@ -1787,6 +1787,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 655076718}
   - {fileID: 2131759695}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1813,6 +1814,53 @@ MonoBehaviour:
   - {fileID: 291116402}
   - {fileID: 1613151993}
   - {fileID: 865788015}
+--- !u!1 &655076717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 655076718}
+  - component: {fileID: 655076719}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &655076718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655076717}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -387.7391, y: -224.99472, z: 0}
+  m_LocalScale: {x: 1.4010507, y: 1.4010507, z: 1.4010507}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 643304090}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &655076719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655076717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead5d592dbbafa3408f8fafece1dade1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  panelPregunta: {fileID: 0}
+  textoPregunta: {fileID: 0}
+  botonesOpciones: []
 --- !u!21 &687500062
 Material:
   serializedVersion: 8
@@ -8637,11 +8685,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1546341287970443471, guid: 7fe3665446555574983dbd88b3dc2ca8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 84.5099
+      value: 6.72
       objectReference: {fileID: 0}
     - target: {fileID: 1546341287970443471, guid: 7fe3665446555574983dbd88b3dc2ca8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5479
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: 1546341287970443471, guid: 7fe3665446555574983dbd88b3dc2ca8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8677,11 +8725,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4351204911338025029, guid: 7fe3665446555574983dbd88b3dc2ca8, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7068288058300730676, guid: 7fe3665446555574983dbd88b3dc2ca8, type: 3}
       propertyPath: m_Name
       value: TerminalSeguridad
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068288058300730676, guid: 7fe3665446555574983dbd88b3dc2ca8, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

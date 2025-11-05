@@ -10,21 +10,20 @@ public class ListaPreguntas
         {
             cabeza = nueva;
             cabeza.siguiente = cabeza;
+            return;
         }
-        else
-        {
-            Pregunta temp = cabeza;
-            while (temp.siguiente != cabeza)
-                temp = temp.siguiente;
-            temp.siguiente = nueva;
-            nueva.siguiente = cabeza;
-        }
+
+        Pregunta temp = cabeza;
+        while (temp.siguiente != cabeza)
+            temp = temp.siguiente;
+
+        temp.siguiente = nueva;
+        nueva.siguiente = cabeza;
     }
 
-    public Pregunta ObtenerAleatoria()
+    public Pregunta ObtenerPreguntaAleatoria()
     {
         if (cabeza == null) return null;
-
         int cantidad = Contar();
         int indice = Random.Range(0, cantidad);
         Pregunta actual = cabeza;
@@ -46,4 +45,3 @@ public class ListaPreguntas
         return count;
     }
 }
-

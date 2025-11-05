@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: a1a0b9cc09f7948439757507b3b3ec4d
+guid: c2bd5cc6597332e4fbafe29f89350af7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 591526336708533081
-    second: john_idle_0
+      213: 7815371044791450175
+    second: player-idle_0
   - first:
-      213: 86465375316498939
-    second: john_idle_1
+      213: 1012134607969099132
+    second: player-idle_1
   - first:
-      213: -3486833154839190509
-    second: john_idle_2
+      213: -6563698218304314273
+    second: player-idle_2
   - first:
-      213: 2015082418601771701
-    second: john_idle_3
+      213: 3839310155185486058
+    second: player-idle_3
   - first:
-      213: 4512481057789823894
-    second: john_idle_4
+      213: 552071816459776616
+    second: player-idle_4
+  - first:
+      213: -3283506609186517641
+    second: player-idle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,30 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: john_idle_0
+      name: player-idle_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 0
-        width: 21
-        height: 19
+        width: 23
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95bdcc6b116853800800000000000000
-      internalID: 591526336708533081
+      spriteID: f3afaa0ce86c57c60800000000000000
+      internalID: 7815371044791450175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_1
+      name: player-idle_1
       rect:
         serializedVersion: 2
-        x: 30
+        x: 36
         y: 0
-        width: 21
-        height: 18
+        width: 25
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf95c1dfccf233100800000000000000
-      internalID: 86465375316498939
+      spriteID: c7d90ec3013db0e00800000000000000
+      internalID: 1012134607969099132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_2
+      name: player-idle_2
       rect:
         serializedVersion: 2
-        x: 56
+        x: 68
         y: 0
-        width: 21
-        height: 19
+        width: 25
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31461ce38b74c9fc0800000000000000
-      internalID: -3486833154839190509
+      spriteID: f546b151f3f09e4a0800000000000000
+      internalID: -6563698218304314273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_3
+      name: player-idle_3
       rect:
         serializedVersion: 2
-        x: 82
+        x: 99
         y: 0
-        width: 21
-        height: 19
+        width: 27
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b2c4e988c207fb10800000000000000
-      internalID: 2015082418601771701
+      spriteID: ae8716e9e38f74530800000000000000
+      internalID: 3839310155185486058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_4
+      name: player-idle_4
       rect:
         serializedVersion: 2
-        x: 108
+        x: 131
         y: 0
-        width: 21
-        height: 19
+        width: 27
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +218,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69bcd392d9d8f9e30800000000000000
-      internalID: 4512481057789823894
+      spriteID: 862f69e546a59a700800000000000000
+      internalID: 552071816459776616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player-idle_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d4acdb224ae62d0800000000000000
+      internalID: -3283506609186517641
       vertices: []
       indices: 
       edges: []
@@ -248,11 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      john_idle_0: 591526336708533081
-      john_idle_1: 86465375316498939
-      john_idle_2: -3486833154839190509
-      john_idle_3: 2015082418601771701
-      john_idle_4: 4512481057789823894
+      player-idle_0: 7815371044791450175
+      player-idle_1: 1012134607969099132
+      player-idle_2: -6563698218304314273
+      player-idle_3: 3839310155185486058
+      player-idle_4: 552071816459776616
+      player-idle_5: -3283506609186517641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

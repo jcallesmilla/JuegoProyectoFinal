@@ -4,8 +4,8 @@ public class Enemy : Entity
 {
     [Header("Movement details")]
     [SerializeField] protected float moveSpeed = 3.5f;
-    private bool playerDetected;
-    private Transform player;
+    protected bool playerDetected;
+    protected Transform player;
 
     protected override void Awake()
     {

@@ -778,47 +778,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 347660105}
-  - component: {fileID: 347660104}
   - component: {fileID: 347660107}
   - component: {fileID: 347660106}
+  - component: {fileID: 347660108}
   m_Layer: 7
-  m_Name: Enemy
+  m_Name: Enemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &347660104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 347660103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c641ee268cdab46e59d3ad68b6aeb010, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  anim: {fileID: 0}
-  cm: {fileID: 0}
-  maxHealth: 1
-  currentHealth: 0
-  healthBar: {fileID: 1559285558}
-  damageMaterial: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}
-  damageFeedbackDuration: 0.2
-  useScaleFlip: 0
-  maxJumps: 2
-  attackRadius: 1
-  attackPoint: {fileID: 850676301}
-  whatIsTarget:
-    serializedVersion: 2
-    m_Bits: 256
-  groundCheckDistance: 1
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  moveSpeed: 2
 --- !u!4 &347660105
 Transform:
   m_ObjectHideFlags: 0
@@ -901,6 +870,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &347660108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347660103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6d517c4c4e8e40dd9dbdbc70182ff2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  anim: {fileID: 0}
+  cm: {fileID: 0}
+  maxHealth: 1
+  currentHealth: 0
+  healthBar: {fileID: 1559285558}
+  damageMaterial: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}
+  damageFeedbackDuration: 0.2
+  useScaleFlip: 0
+  maxJumps: 2
+  attackRadius: 1
+  attackPoint: {fileID: 850676301}
+  whatIsTarget:
+    serializedVersion: 2
+    m_Bits: 256
+  groundCheckDistance: 1
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  moveSpeed: 2
 --- !u!1 &421765918
 GameObject:
   m_ObjectHideFlags: 0

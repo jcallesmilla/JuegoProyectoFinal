@@ -5213,6 +5213,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528864081}
   m_CullTransparentMesh: 1
+--- !u!1 &572208306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 478044898355740138, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
+  m_PrefabInstance: {fileID: 685790027}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &640163255
 GameObject:
   m_ObjectHideFlags: 0
@@ -5977,7 +5982,7 @@ GameObject:
   - component: {fileID: 1772384218}
   - component: {fileID: 1772384219}
   - component: {fileID: 1772384220}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: JEFE1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6166,7 +6171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::JEFE1
   player: {fileID: 363135787}
   detectionRadius: 5
-  speed: 9
+  speed: 35
 --- !u!1 &1909286084
 GameObject:
   m_ObjectHideFlags: 0
@@ -6662,7 +6667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7db9a96018674442b258a6c3bce7421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraScript
-  player: {fileID: 0}
+  player: {fileID: 572208306}
   followY: 1
   verticalDeadZone: 0.3
   verticalSmoothSpeed: 0.125

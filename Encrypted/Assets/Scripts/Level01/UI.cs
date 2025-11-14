@@ -6,6 +6,7 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
     private void Awake()
     {
+        gameOverUI.SetActive(false);
         instance = this;
         Time.timeScale = 1;
     }
@@ -15,9 +16,16 @@ public class UI : MonoBehaviour
         gameOverUI.SetActive(true);
 
     }
-    public void RestartLevel()
+    public void Restart()
     {
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

@@ -15,10 +15,10 @@ MonoBehaviour:
   upgradeName: Max Health
   description: Increases maximum health
   icon: {fileID: 0}
-  baseCost: 20
+  baseCost: 1
   costMultiplier: 1.5
   upgradeType: 2
-  incrementValue: 1
+  incrementValue: 10
   maxLevel: 5
   statFormat: '{0:F0}'
   statLabel: Max HP

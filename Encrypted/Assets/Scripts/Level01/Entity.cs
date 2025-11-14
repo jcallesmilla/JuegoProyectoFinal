@@ -7,7 +7,7 @@ public class Entity : MonoBehaviour
 {
     [SerializeField] protected Animator anim;
     protected Rigidbody2D rb;
-    public CoinManager cm;
+    //public CoinManager cm; //no se necesita
     protected Collider2D col;
     protected SpriteRenderer sr;
 
@@ -27,7 +27,6 @@ public class Entity : MonoBehaviour
     [Header("Jump settings")]
     [Tooltip("Número máximo de saltos (1 = salto simple, 2 = doble salto)")]
     [SerializeField] protected int maxJumps = 2;
-    // runtime jumps counter
     protected int jumpsLeft;
 
     [Header("Attack details")]
@@ -171,7 +170,6 @@ public class Entity : MonoBehaviour
         facingRight = !facingRight;
         facingDir *= -1;
 
-        // 🔹 Invertir posición del punto de ataque
         if (attackPoint != null)
         {
             Vector3 ap = attackPoint.localPosition;
@@ -190,9 +188,8 @@ public class Entity : MonoBehaviour
         if (other.CompareTag("Coin") && gameObject.CompareTag("Player"))
         {
             Destroy(other.gameObject);
-            cm.coinCount++;
+            GameManager.Instance.AddCoins(1);
         }
     }
-
 
 }

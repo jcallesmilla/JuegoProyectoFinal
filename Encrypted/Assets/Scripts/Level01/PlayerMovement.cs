@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         groundLayer = LayerMask.GetMask("Ground");
         
         playerStats = GameManager.Instance.playerStats;
+        Debug.Log($"[PlayerMovement] Start - playerStats reference: {(playerStats != null ? playerStats.gameObject.name : "NULL")}");
         UpdateStatsFromPlayerStats();
     }
 
@@ -48,11 +49,18 @@ public class PlayerMovement : MonoBehaviour
     {
         if (playerStats != null)
         {
+            float oldSpeed = speed;
             speed = playerStats.GetCurrentSpeed();
             jumpForce = playerStats.GetCurrentJumpForce();
+            
+            if (oldSpeed != speed)
+            {
+                Debug.Log($"[PlayerMovement] Speed changed from {oldSpeed} to {speed}");
+            }
         }
         else
         {
+            Debug.LogWarning("[PlayerMovement] playerStats is null!");
             speed = 5.0f;
             jumpForce = 7.0f;
         }
@@ -74,4 +82,5 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(playerTransform.position, 0.1f, groundLayer);
     }
 }
+
     

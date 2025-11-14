@@ -5,12 +5,12 @@ using TMPro;
 public class CoinManager : MonoBehaviour
 {
     public int coinCount;
-    public TextMeshProUGUI coinText; 
-    
+    public TextMeshProUGUI coinText;
+
     [Header("UI Position")]
     [Tooltip("Margin in pixels from the top-left corner")]
     public Vector2 margin = new Vector2(10f, 10f);
-    
+
     [Header("Text settings")]
     [Tooltip("Font size for the coin text (editable from Inspector)")]
     public float fontSize = 24f;
@@ -35,24 +35,18 @@ public class CoinManager : MonoBehaviour
         {
             Debug.LogWarning("CoinManager: 'coinText' is not assigned in the Inspector.");
         }
-    } 
+    }
 
-    void Update()
+    void Update() //se elimina update y lateupdate anterior ya que es puramente display el coinmanager y se hace todo desde gamemanager
     {
-        if (coinText == null) return;
+        if (coinText == null || gameManager == null) return;
 
         if (Mathf.Abs(coinText.fontSize - fontSize) > 0.01f)
             coinText.fontSize = fontSize;
 
+        coinCount = gameManager.totalCoins;
         coinText.text = "Coin count: " + coinCount.ToString();
     }
 
-    void LateUpdate()
-    {
-        if (gameManager != null)
-        {
-            gameManager.totalCoins = coinCount;
-        }
-    }
 }
 

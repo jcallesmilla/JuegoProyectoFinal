@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 using System.Collections.Generic;
 
 public class ShopSystem : MonoBehaviour
@@ -86,8 +87,9 @@ public class ShopSystem : MonoBehaviour
         if (shopPanel != null)
         {
             shopPanel.SetActive(true);
-            Time.timeScale = 0f;
+            ForceRebuildLayoutImmediate();
             UpdateShopUI();
+            Time.timeScale = 0f;
         }
     }
 
@@ -97,6 +99,21 @@ public class ShopSystem : MonoBehaviour
         {
             shopPanel.SetActive(false);
             Time.timeScale = 1f;
+        }
+    }
+
+    private void ForceRebuildLayoutImmediate()
+    {
+        Canvas.ForceUpdateCanvases();
+        
+        if (shopPanel != null)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(shopPanel.GetComponent<RectTransform>());
+        }
+        
+        if (upgradeContainer != null)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(upgradeContainer.GetComponent<RectTransform>());
         }
     }
 
@@ -133,7 +150,8 @@ public class ShopSystem : MonoBehaviour
         }
 
         gameManager.SpendCoins(cost);
-        playerStats.UpgradeLevel(upgrade.upgradeType);
+        playerStats.UpgradeLevel(upgrade.upgradeType, upgrade.incrementValue);
+
 
         if (upgrade.upgradeType == UpgradeType.Health)
         {

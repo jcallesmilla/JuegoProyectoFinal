@@ -99,4 +99,19 @@ public class GameManager : MonoBehaviour
     {
         return totalCoins >= amount;
     }
+    public void ResetGameProgress()
+    {
+        totalCoins = 0;
+
+        if (playerStats != null)
+        {
+            playerStats.ResetAllUpgrades();
+        }
+
+        CoinManager coinManager = FindFirstObjectByType<CoinManager>();
+        if (coinManager != null)
+        {
+            coinManager.coinCount = 0;
+        }
+    }
 }

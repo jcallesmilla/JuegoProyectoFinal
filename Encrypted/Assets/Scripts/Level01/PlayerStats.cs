@@ -10,6 +10,7 @@ public class PlayerStats : MonoBehaviour
 
     [Header("Upgrade Levels")]
     private Dictionary<UpgradeType, int> upgradeLevels = new Dictionary<UpgradeType, int>();
+    private Dictionary<UpgradeType, float> upgradeIncrements = new Dictionary<UpgradeType, float>();
 
     private void Awake()
     {
@@ -24,6 +25,10 @@ public class PlayerStats : MonoBehaviour
             {
                 upgradeLevels[type] = 0;
             }
+            if (!upgradeIncrements.ContainsKey(type))
+            {
+                upgradeIncrements[type] = 0f;
+            }
         }
     }
 
@@ -36,27 +41,29 @@ public class PlayerStats : MonoBehaviour
         return upgradeLevels[type];
     }
 
-    public void UpgradeLevel(UpgradeType type)
+    public void UpgradeLevel(UpgradeType type, float incrementValue)
     {
         if (!upgradeLevels.ContainsKey(type))
         {
             upgradeLevels[type] = 0;
         }
         upgradeLevels[type]++;
+        upgradeIncrements[type] = incrementValue;
     }
 
     public float GetCurrentValue(UpgradeType type)
     {
         int level = GetUpgradeLevel(type);
+        float increment = upgradeIncrements.ContainsKey(type) ? upgradeIncrements[type] : 0f;
 
         switch (type)
         {
             case UpgradeType.Speed:
-                return baseSpeed + (level * 1f);
+                return baseSpeed + (level * increment);
             case UpgradeType.Jump:
-                return baseJumpForce + (level * 1f);
+                return baseJumpForce + (level * increment);
             case UpgradeType.Health:
-                return baseMaxHealth + (level * 20);
+                return baseMaxHealth + (level * increment);
             default:
                 return 0f;
         }
@@ -76,4 +83,14 @@ public class PlayerStats : MonoBehaviour
     {
         return Mathf.RoundToInt(GetCurrentValue(UpgradeType.Health));
     }
+     public void ResetAllUpgrades()
+    {
+        foreach (UpgradeType type in System.Enum.GetValues(typeof(UpgradeType)))
+        {
+            upgradeLevels[type] = 0;
+            upgradeIncrements[type] = 0f;
+        }
+        Debug.Log("All upgrades have been reset!");
+    }
 }
+

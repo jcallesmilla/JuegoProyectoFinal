@@ -3,17 +3,22 @@ using UnityEngine;
 public class Player : Entity
 {
     [Header("Movement details")]
-    [SerializeField] protected float moveSpeed = 3.5f;
-    [SerializeField] protected float jumpForce = 8;
     [SerializeField] private HealthBarPlayer healthBarPlayer;
 
     private float xInput;
     private bool canJump = true;
+    private PlayerStats playerStats;
+    private float moveSpeed;
+    private float jumpForce;
 
     protected override void Awake()
     {
         base.Awake();
-        // Inicializar la vida del jugador
+        
+        playerStats = GameManager.Instance.playerStats;
+        
+        UpdateStatsFromPlayerStats();
+        
         currentHealth = maxHealth;
         healthBarPlayer.setMaxHealth(maxHealth);
     }
@@ -21,7 +26,22 @@ public class Player : Entity
     protected override void Update()
     {
         base.Update();
+        UpdateStatsFromPlayerStats();
         HandleInput();
+    }
+
+    private void UpdateStatsFromPlayerStats()
+    {
+        if (playerStats != null)
+        {
+            moveSpeed = playerStats.GetCurrentSpeed();
+            jumpForce = playerStats.GetCurrentJumpForce();
+        }
+        else
+        {
+            moveSpeed = 3.5f;
+            jumpForce = 8f;
+        }
     }
 
     protected override void HandleMovement()
@@ -61,7 +81,6 @@ public class Player : Entity
 
     private void TryToJump()
     {
-        // reset jumps when grounded
         if (isGrounded)
         {
             jumpsLeft = maxJumps;

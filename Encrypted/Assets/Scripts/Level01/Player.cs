@@ -38,20 +38,26 @@ public class Player : Entity
 
 
     private void HandleInput()
+{
+    xInput = Input.GetAxisRaw("Horizontal");
+    HandleMovement();
+
+    if (Input.GetKeyDown(KeyCode.Space))
     {
-        xInput = Input.GetAxisRaw("Horizontal");
-        HandleMovement();
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            TryToJump();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            HandleAttack();
-        }
+        TryToJump();
     }
+
+    if (Input.GetKeyDown(KeyCode.Mouse0))
+    {
+        HandleAttack();
+    }
+
+    if (Input.GetKeyDown(KeyCode.Mouse1))
+    {
+        HandleShoot();
+    }
+}
+
 
     private void TryToJump()
     {
@@ -84,4 +90,13 @@ public class Player : Entity
         base.Die();
         UI.instance.EnableGameOverUI();
     }
+
+    private void HandleShoot()
+{
+    if (anim != null)
+    {
+        anim.SetTrigger("shoot");
+    }
+}
+
 }

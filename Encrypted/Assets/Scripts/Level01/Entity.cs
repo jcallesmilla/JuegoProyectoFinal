@@ -166,7 +166,7 @@ public class Entity : MonoBehaviour
         else
         {
             transform.Rotate(0, 180, 0);
-        }
+        } 
 
         facingRight = !facingRight;
         facingDir *= -1;

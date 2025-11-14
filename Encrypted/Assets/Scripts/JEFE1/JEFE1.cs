@@ -1,57 +1,36 @@
 using UnityEngine;
 
-public class JEFE1 : MonoBehaviour
+public class Jefe1 : Enemy
 {
-    public Transform player;
-    public float detectionRadius = 5f;
-    public float speed = 2f;
-    private Rigidbody2D rb;
-    private Vector2 movement;
-    private bool isRunning;
-    private Animator animator;
-
-    void Start()
+    // The Awake method is called when the script instance is being loaded.
+    // We call base.Awake() to ensure any initialization in the parent class (Enemy) is performed.
+    protected override void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.freezeRotation = true; // 🔒 Evita que el jefe se voltee o rote por las físicas
-        animator = GetComponent<Animator>();
+        base.Awake();
+
+        // Add specific initialization logic for Jefe1 here
+        // For example:
+        // health = 500;
+        // speed = 2.0f; 
     }
 
-    void Update()
+    // The Update method is called every frame.
+    // We call base.Update() to ensure any frame-to-frame logic in the parent class (Enemy) is performed.
+    protected override void Update()
     {
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        if (distanceToPlayer < detectionRadius)
-        {
-            Vector2 direction = (player.position - transform.position).normalized;
-            if (direction.x > 0)
-        {
-                transform.localScale = new Vector3(-2, 2, 1);
-        }
-            if (direction.x < 0)
-        {
-                transform.localScale = new Vector3(2, 2, 1);
-        }
-            movement = new Vector2(direction.x, 0);
-
-            isRunning = true;
-            
-        }
-        else
-        {
-            movement = Vector2.zero;
-            isRunning = false;
-        }
-
-        rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
-
-        animator.SetBool("isRunning", isRunning);
+        base.Update();
+        
+        // Add specific update/game loop logic for Jefe1 here
+        // For example:
+        // if (target != null)
+        // {
+        //     MoveTowards(target.position);
+        // }
     }
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);
-    }
+    
+    // You can add more boss-specific methods here, like:
+    // private void ShootSpecialAbility() 
+    // {
+    //     // Logic for a special attack
+    // }
 }
-

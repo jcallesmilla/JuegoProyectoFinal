@@ -40,7 +40,7 @@ public class Player : Entity
         else
         {
             moveSpeed = 3.5f;
-            jumpForce = 8f;
+            jumpForce = 18f;
         }
     }
 

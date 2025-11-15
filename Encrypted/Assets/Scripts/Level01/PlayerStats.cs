@@ -5,7 +5,7 @@ public class PlayerStats : MonoBehaviour
 {
     [Header("Base Stats")]
     public float baseSpeed = 5.0f;
-    public float baseJumpForce = 7.0f;
+    public float baseJumpForce = 15.0f;
     public int baseMaxHealth = 100;
 
     [Header("Upgrade Levels")]

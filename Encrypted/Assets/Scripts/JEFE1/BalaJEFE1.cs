@@ -4,7 +4,7 @@ public class BalaJEFE1 : MonoBehaviour
 {
     [Header("Bala settings")]
     public float velocidad = 5f;
-    public int daño = 10;
+    // La variable 'daño' ha sido eliminada.
     [Tooltip("Tiempo en segundos tras el cual la bala se destruye automáticamente si no choca")]
     public float lifetime = 5f;
     [Tooltip("Dirección en la que se mueve la bala (por defecto izquierda)")]
@@ -109,21 +109,10 @@ public class BalaJEFE1 : MonoBehaviour
     {
         if (collision == null) return;
 
-        // If we hit the player via trigger, apply damage
+        // If we hit the player via trigger, destroy the projectile
         if (collision.CompareTag("Player"))
         {
-            // Intentar aplicar daño usando el componente VidaPlayer si existe
-            var vida = collision.GetComponent<VidaPlayer>();
-            if (vida != null)
-            {
-                vida.QuitarVida(daño);
-            }
-            else
-            {
-                // Fallback: enviar mensaje (no recomendable pero útil si no hay componente)
-                collision.SendMessage("QuitarVida", daño, SendMessageOptions.DontRequireReceiver);
-            }
-
+            // Lógica de "quitar vida" eliminada. Solo destruye la bala.
             Destroy(gameObject);
             return;
         }
@@ -140,11 +129,10 @@ public class BalaJEFE1 : MonoBehaviour
     {
         if (collision == null) return;
 
+        // If we hit the player via collision, destroy the projectile
         if (collision.collider.CompareTag("Player"))
         {
-            var vida = collision.collider.GetComponent<VidaPlayer>();
-            if (vida != null) vida.QuitarVida(daño);
-            else collision.collider.SendMessage("QuitarVida", daño, SendMessageOptions.DontRequireReceiver);
+            // Lógica de "quitar vida" eliminada. Solo destruye la bala.
             Destroy(gameObject);
             return;
         }

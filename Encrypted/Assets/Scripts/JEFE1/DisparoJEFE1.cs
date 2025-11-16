@@ -18,14 +18,17 @@ public class DisparoJEFE1 : MonoBehaviour
     [Header("Estado")]
     [Tooltip("Resultado de la comprobación: true si el jugador está dentro del rango de la línea")]
     public bool jugadorEnRango;
+    
     [Header("Dirección")]
     [Tooltip("Si está activado, la línea se dibuja hacia la izquierda del controlador; si no, hacia la derecha.")]
     public bool haciaIzquierda = true;
+    
     [Header("Firing")]
+    [Tooltip("Si está activado, disparará automáticamente cuando el jugador esté en rango")]
+    public bool autoFire = false;
     [Tooltip("Prefab de la bala a instanciar (debe contener el script BalaJEFE1)")]
     public GameObject balaPrefab;
-    [Tooltip("Daño que aplicará cada bala")]
-    public int dañoBala = 10;
+    // La variable 'dañoBala' y su Tooltip han sido eliminados.
     [Tooltip("Velocidad que tendrá la bala")]
     public float velocidadBala = 5f;
     [Tooltip("Tiempo de vida de la bala (s)")]
@@ -38,12 +41,8 @@ public class DisparoJEFE1 : MonoBehaviour
     public Animator animator;
 
     private float fireCooldown = 0f;
-    // cached player reference
     private GameObject cachedPlayer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-
-    // Update is called once per frame
     void Update()
     {
         if (controladorDisparo == null)
@@ -52,12 +51,9 @@ public class DisparoJEFE1 : MonoBehaviour
             return;
         }
 
-        // Try to cache player once
         if (cachedPlayer == null)
             cachedPlayer = GameObject.FindWithTag("Player");
 
-        // Use RaycastHit2D so we can explicitly set the bool and avoid implicit conversions
-        // Determine direction: prefer the controladorDisparo.right vector if available
         Vector2 direccion = Vector2.right;
         if (controladorDisparo != null)
             direccion = controladorDisparo.right;
@@ -79,10 +75,8 @@ public class DisparoJEFE1 : MonoBehaviour
 
         jugadorEnRango = detectedByRay || detectedByDistance;
 
-        if (jugadorEnRango)
+        if (autoFire && jugadorEnRango)
         {
-            // aquí puedes añadir lógica cuando el jugador esté en rango
-            // Disparar si toca y si ha pasado el tiempo de recarga
             if (balaPrefab != null && fireRate > 0f)
             {
                 if (fireCooldown <= 0f)
@@ -96,13 +90,8 @@ public class DisparoJEFE1 : MonoBehaviour
         if (fireCooldown > 0f) fireCooldown -= Time.deltaTime;
     }
 
-    /// <summary>
-    /// Instancia una bala desde el controladorDisparo y configura su dirección, velocidad y daño.
-    /// Puedes llamar a este método desde otro script si prefieres controlar el disparo externamente.
-    /// </summary>
     public void Disparar()
     {
-        // Respect internal cooldown so external callers (e.g. JEFE1) can't spam calls
         if (fireRate <= 0f)
         {
             Debug.LogWarning("DisparoJEFE1: fireRate must be > 0 to fire.");
@@ -111,7 +100,6 @@ public class DisparoJEFE1 : MonoBehaviour
 
         if (fireCooldown > 0f)
         {
-            // still cooling down
             return;
         }
 
@@ -127,14 +115,10 @@ public class DisparoJEFE1 : MonoBehaviour
             return;
         }
 
-        // Aqui iba lo anterior
-
-        // Instanciar la bala en la posición del controlador
         GameObject balaGO = Instantiate(balaPrefab, controladorDisparo.position, Quaternion.identity);
         BalaJEFE1 bala = balaGO.GetComponent<BalaJEFE1>();
         if (bala != null)
         {
-            // Determinar dirección hacia el GameObject tagged "Player" si existe
             GameObject playerGO = GameObject.FindWithTag("Player");
             Vector2 dir;
             if (playerGO != null)
@@ -143,16 +127,14 @@ public class DisparoJEFE1 : MonoBehaviour
             }
             else
             {
-                // Fallback: usar la dirección del controlador (o invertida)
                 dir = controladorDisparo.right;
                 if (haciaIzquierda) dir = -dir;
             }
 
             bala.direccion = dir.normalized;
             bala.velocidad = velocidadBala;
-            bala.daño = dañoBala;
+            // La línea para asignar bala.daño ha sido eliminada.
             bala.lifetime = lifetimeBala;
-            // Ensure the bullet uses Rigidbody by default for physics-based movement
             bala.useRigidbody = true;
         }
         else
@@ -160,7 +142,6 @@ public class DisparoJEFE1 : MonoBehaviour
             Debug.LogWarning("DisparoJEFE1: el prefab de bala no contiene BalaJEFE1.");
         }
 
-        // set cooldown after firing
         fireCooldown = 1f / fireRate;
     }
 
@@ -173,3 +154,4 @@ public class DisparoJEFE1 : MonoBehaviour
         Gizmos.DrawLine(controladorDisparo.position, controladorDisparo.position + (Vector3)dirGizmo * distanciaLinea);
     }
 }
+

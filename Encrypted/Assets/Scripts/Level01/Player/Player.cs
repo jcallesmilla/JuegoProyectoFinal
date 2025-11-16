@@ -67,14 +67,16 @@ public class Player : Entity
         TryToJump();
     }
 
+    // Swapped: Left click (Mouse0) now calls HandleShoot()
     if (Input.GetKeyDown(KeyCode.Mouse0))
     {
-        HandleAttack();
+        HandleShoot();
     }
 
+    // Swapped: Right click (Mouse1) now calls HandleAttack()
     if (Input.GetKeyDown(KeyCode.Mouse1))
     {
-        HandleShoot();
+        HandleAttack();
     }
 }
 
@@ -117,5 +119,4 @@ public class Player : Entity
         anim.SetTrigger("shoot");
     }
 }
-
 }

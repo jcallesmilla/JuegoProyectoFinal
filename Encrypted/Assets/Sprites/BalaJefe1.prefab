@@ -151,11 +151,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6646a96151ad1274a9c7ff61dbd626d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  velocidad: 5
+  velocidad: 9
   "da\xF1o": 10
-  lifetime: 5
+  lifetime: 1
   direccion: {x: -1, y: 0}
   useRigidbody: 1
+  homing: 1
+  homingTurnSpeed: 5
 --- !u!50 &-3415099261832993460
 Rigidbody2D:
   serializedVersion: 5

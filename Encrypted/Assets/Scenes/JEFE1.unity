@@ -13275,7 +13275,7 @@ Transform:
   m_GameObject: {fileID: 931287641}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 1.414, y: -0.097, z: 0}
   m_LocalScale: {x: 1, y: -1, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13943,6 +13943,8 @@ GameObject:
   - component: {fileID: 1772384218}
   - component: {fileID: 1772384219}
   - component: {fileID: 1772384220}
+  - component: {fileID: 1772384221}
+  - component: {fileID: 1772384222}
   m_Layer: 7
   m_Name: JEFE1
   m_TagString: Untagged
@@ -14069,7 +14071,52 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  moveSpeed: 2
+  moveSpeed: 3
+  detectionRange: 28
+  shootingRange: 6
+  shootingStateDuration: 2
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  disparoController: {fileID: 1772384221}
+--- !u!114 &1772384221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772384213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfeb8765b516114aa97c143d1a63ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisparoJEFE1
+  controladorDisparo: {fileID: 931287642}
+  useDistanceDetection: 1
+  distanciaLinea: 3
+  capaJugador:
+    serializedVersion: 2
+    m_Bits: 256
+  jugadorEnRango: 0
+  haciaIzquierda: 1
+  balaPrefab: {fileID: 7074651628508281101, guid: daf7d14509f15bc47b7bb381369da6dc, type: 3}
+  "da\xF1oBala": 10
+  velocidadBala: 5
+  lifetimeBala: 5
+  fireRate: 1
+  animator: {fileID: 126764664}
+--- !u!114 &1772384222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772384213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28bca1be569301a4ab38c63281742e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoRotate
 --- !u!1 &1894566554
 GameObject:
   m_ObjectHideFlags: 0

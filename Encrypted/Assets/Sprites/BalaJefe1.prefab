@@ -151,13 +151,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6646a96151ad1274a9c7ff61dbd626d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  velocidad: 9
-  "da\xF1o": 10
-  lifetime: 1
+  anim: {fileID: 0}
+  maxHealth: 1
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  damageMaterial: {fileID: 0}
+  damageFeedbackDuration: 0.1
+  useScaleFlip: 0
+  maxJumps: 2
+  attackRadius: 0
+  attackPoint: {fileID: 0}
+  whatIsTarget:
+    serializedVersion: 2
+    m_Bits: 0
+  groundCheckDistance: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
   direccion: {x: -1, y: 0}
+  velocidad: 13
+  lifetime: 1
   useRigidbody: 1
-  homing: 1
-  homingTurnSpeed: 5
+  "da\xF1o": 1
 --- !u!50 &-3415099261832993460
 Rigidbody2D:
   serializedVersion: 5

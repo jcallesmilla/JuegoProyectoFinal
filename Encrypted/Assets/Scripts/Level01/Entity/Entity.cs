@@ -83,6 +83,7 @@ public class Entity : MonoBehaviour
             Die();
         }
     }
+    
 
     private void PlayDamageFeedback()
     {
@@ -191,5 +192,14 @@ public class Entity : MonoBehaviour
             GameManager.Instance.AddCoins(1);
         }
     }
+public virtual void BalaDamage(int damageAmount)
+{
+    currentHealth = currentHealth - damageAmount;
+    PlayDamageFeedback();
 
+    if (currentHealth <= 0)
+    {
+        Die();
+    }
+}
 }

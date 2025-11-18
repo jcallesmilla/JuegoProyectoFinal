@@ -131,11 +131,14 @@ public class DisparoJEFE1 : MonoBehaviour
                 if (haciaIzquierda) dir = -dir;
             }
 
-            bala.direccion = dir.normalized;
-            bala.velocidad = velocidadBala;
-            // La línea para asignar bala.daño ha sido eliminada.
-            bala.lifetime = lifetimeBala;
-            bala.useRigidbody = true;
+            if (bala != null)
+{
+    bala.direccion = dir.normalized;
+    bala.velocidad = velocidadBala;
+    bala.lifetime = lifetimeBala;
+    bala.useRigidbody = true;
+    bala.daño = 1; // O crea una variable pública en DisparoJEFE1 para controlarlo
+}
         }
         else
         {

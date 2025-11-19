@@ -2,70 +2,104 @@ using UnityEngine;
 
 public class TerminalSeguridad : MonoBehaviour
 {
-    public ListaPreguntas listaPreguntas; // puedes asignar en Start o desde inspector si quieres
+    public GameObject candado;
+    public ScreenFlash screenFlash;
+    public ListaPreguntas listaPreguntas;
+
+    private bool terminalResuelta = false;
+    private bool preguntaEnCurso = false;
 
     private void Start()
     {
-        Debug.Log("✅ TerminalSeguridad inicializada en: " + gameObject.name);
-
-        // Si no le asignaste preguntas desde editor, crea una lista básica aquí
         if (listaPreguntas == null)
         {
             listaPreguntas = new ListaPreguntas();
-            listaPreguntas.Agregar(new Pregunta("¿Cuál de estas contraseñas es más segura?", new string[] { "12345", "qwerty", "C@0sM1c#21" }, 2));
-            listaPreguntas.Agregar(new Pregunta("¿Qué debes evitar al crear una contraseña?", new string[] { "Usar tu nombre", "Combinar letras y símbolos", "Hacerla larga" }, 0));
-            listaPreguntas.Agregar(new Pregunta("¿Qué mejora la seguridad de una cuenta?", new string[] { "2FA", "Reutilizar contraseñas", "Compartir claves" }, 0));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "¿Cuál clave es más segura?",
+                new string[] { "12345", "qwerty", "C@m21#" }, 2));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "Evita usar en claves:",
+                new string[] { "TuNombre", "Símbolos", "FraseLarga" }, 0));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "Mayor seguridad:",
+                new string[] { "Compartir", "Reusar", "2FA" }, 2));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "Correo sospechoso:",
+                new string[] { "LinkRaro", "LogoHD", "Formal" }, 0));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "Link extraño:",
+                new string[] { "Ignorar", "Abrir", "Responder" }, 0));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "No publiques:",
+                new string[] { "Clave", "Comida", "Viaje" }, 0));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "Malware es:",
+                new string[] { "AppMala", "Editor", "Mapa" }, 0));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "Fuerza bruta:",
+                new string[] { "MilesClaves", "HackFísico", "ApagarWiFi" }, 0));
+
+            listaPreguntas.Agregar(new Pregunta(
+                "WiFi pública:",
+                new string[] { "Banco", "Google", "Videos" }, 0));
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("🔵 OnTriggerEnter2D detectado con: " + other.name);
+        if (!other.CompareTag("Player")) return;
+        if (terminalResuelta) return;
+        if (preguntaEnCurso) return;
 
-        if (other.CompareTag("Player"))
+        MostrarNuevaPregunta();
+    }
+
+    private void MostrarNuevaPregunta()
+    {
+        preguntaEnCurso = true;
+
+        Pregunta p = listaPreguntas.ObtenerPreguntaAleatoria();
+        UIManager.Instance.MostrarPanelPregunta(p, this);
+
+        Time.timeScale = 0f;
+    }
+
+    public void ResolverPregunta(bool correcta)
+    {
+        // RESPUESTA CORRECTA → TERMINA TERMINAL
+        if (correcta)
         {
-            Debug.Log("🟢 Jugador detectado. Mostrando pregunta...");
-            Pregunta p = listaPreguntas.ObtenerPreguntaAleatoria();
+            terminalResuelta = true;
+            preguntaEnCurso = false;
 
-            if (UIManager.Instance == null)
-            {
-                Debug.LogError("❌ UIManager.Instance es NULL. Asegúrate de que CanvasPreguntas con UIManager esté en la escena y activo.");
-                return;
-            }
+            if (candado != null)
+                candado.SetActive(false);
 
-            UIManager.Instance.MostrarPanelPregunta(p, this);
-            Time.timeScale = 0f; // pausa
+            UIManager.Instance.CerrarPanelPregunta();
+            Time.timeScale = 1f;
+
+            Debug.Log("Terminal desbloqueada.");
         }
         else
         {
-            Debug.Log("⚪ Trigger detectó objeto que no es Player: " + other.tag);
-        }
-    }
+            // RESPUESTA INCORRECTA
+            if (screenFlash != null)
+                screenFlash.FlashRed();
 
-    // Llamado por UIManager cuando el jugador responde
-    public void ResolverPregunta(bool acierto)
-    {
-        Time.timeScale = 1f; // reanuda el juego
-        if (acierto)
-        {
-            Debug.Log("✅ Respuesta correcta. Terminal desbloqueada.");
-            // Aquí puedes activar checkpoint, abrir puerta, guardar progreso, etc.
-        }
-        else
-        {
-            Debug.Log("❌ Respuesta incorrecta. Spawnear virus...");
-            // Lógica para spawnear enemigos: llama a tu EnemySpawner o instancia prefabs
-        }
-    }
+            UIManager.Instance.CerrarPanelPregunta();
 
-    // Aux: dibujar el collider en escena si quieres verificar visualmente
-    void OnDrawGizmosSelected()
-    {
-        Collider2D c = GetComponent<Collider2D>();
-        if (c != null)
-        {
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawWireCube(c.bounds.center, c.bounds.size);
+            Debug.Log("Incorrecta. Nueva pregunta.");
+
+            // NUEVA PREGUNTA INMEDIATA (PAUSA ACTIVA)
+            MostrarNuevaPregunta();
         }
     }
 }

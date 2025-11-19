@@ -8,10 +8,9 @@ public class UIManager : MonoBehaviour
 
     [Header("Referencias UI")]
     public GameObject panelPregunta;
-    public TMP_Text textoPregunta;               // TextMeshProUGUI
-    public Button[] botonesOpciones;             // botones que muestran las opciones
+    public TMP_Text textoPregunta;
+    public Button[] botonesOpciones;
 
-    // Estado actual
     private Pregunta preguntaActual;
     private TerminalSeguridad terminalActual;
 
@@ -20,11 +19,10 @@ public class UIManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            Debug.Log("✅ UIManager inicializado correctamente en " + gameObject.name);
+            Debug.Log("UIManager inicializado en: " + gameObject.name);
         }
         else
         {
-            Debug.LogWarning("⚠️ UIManager duplicado destruido.");
             Destroy(gameObject);
             return;
         }
@@ -33,25 +31,11 @@ public class UIManager : MonoBehaviour
             panelPregunta.SetActive(false);
     }
 
-    // Mostrar un panel con la pregunta que pasa un terminal
     public void MostrarPanelPregunta(Pregunta p, TerminalSeguridad terminal)
     {
-        if (p == null)
-        {
-            Debug.LogError("UIManager: la pregunta es null.");
-            return;
-        }
-
         preguntaActual = p;
         terminalActual = terminal;
 
-        if (panelPregunta == null || textoPregunta == null || botonesOpciones == null)
-        {
-            Debug.LogError("UIManager: referencias UI no asignadas en el Inspector.");
-            return;
-        }
-
-        // Mostrar texto y botones
         panelPregunta.SetActive(true);
         textoPregunta.text = preguntaActual.textoPregunta;
 
@@ -60,17 +44,10 @@ public class UIManager : MonoBehaviour
             if (i < preguntaActual.opciones.Length)
             {
                 botonesOpciones[i].gameObject.SetActive(true);
-                // si el child del botón tiene TMP text, lo asignamos:
+
                 TMP_Text t = botonesOpciones[i].GetComponentInChildren<TMP_Text>();
                 if (t != null) t.text = preguntaActual.opciones[i];
-                else
-                {
-                    // fallback: si usas legacy Text
-                    Text tLegacy = botonesOpciones[i].GetComponentInChildren<Text>();
-                    if (tLegacy != null) tLegacy.text = preguntaActual.opciones[i];
-                }
 
-                // listeners
                 int index = i;
                 botonesOpciones[i].onClick.RemoveAllListeners();
                 botonesOpciones[i].onClick.AddListener(() => BotonOpcionPresionado(index));
@@ -80,25 +57,28 @@ public class UIManager : MonoBehaviour
                 botonesOpciones[i].gameObject.SetActive(false);
             }
         }
-
-        Debug.Log("🧠 UIManager: mostrando pregunta -> " + preguntaActual.textoPregunta);
     }
 
-    void BotonOpcionPresionado(int indice)
+    private void BotonOpcionPresionado(int indice)
     {
-        bool correcta = (preguntaActual != null) && (indice == preguntaActual.respuestaCorrecta);
+        bool correcta = (preguntaActual != null && indice == preguntaActual.respuestaCorrecta);
 
-        // Cerrar panel
+        var tmpTerminal = terminalActual;
+
+        // Limpiar ANTES de cerrar
+        terminalActual = null;
+        preguntaActual = null;
+
         panelPregunta.SetActive(false);
 
-        // Notificar al terminal (si existe)
-        if (terminalActual != null)
-            terminalActual.ResolverPregunta(correcta);
+        if (tmpTerminal != null)
+            tmpTerminal.ResolverPregunta(correcta);
         else
-            Debug.LogWarning("UIManager: terminalActual es null al validar respuesta.");
+            Debug.LogWarning("UIManager: terminalActual era null al validar.");
+    }
 
-        // Limpiar estado
-        preguntaActual = null;
-        terminalActual = null;
+    public void CerrarPanelPregunta()
+    {
+        panelPregunta.SetActive(false);
     }
 }

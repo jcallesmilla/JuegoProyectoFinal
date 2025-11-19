@@ -2781,10 +2781,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1209510133}
-  - {fileID: 1661835575}
   - {fileID: 773021662}
   - {fileID: 28145835}
   - {fileID: 1578544673}
+  - {fileID: 1661835575}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5337,7 +5337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pass all security terminals
+  m_text: pass all security terminals
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 56a4c6c78ead54840b2e84f7252b6d97, type: 2}
   m_sharedMaterial: {fileID: 4782561449227099803, guid: 56a4c6c78ead54840b2e84f7252b6d97, type: 2}
@@ -23495,7 +23495,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mission: '
+  m_text: 'mission: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ee8dd5d90f9842fcaa31ae6c9358433, type: 2}
   m_sharedMaterial: {fileID: 4782561449227099803, guid: 1ee8dd5d90f9842fcaa31ae6c9358433, type: 2}

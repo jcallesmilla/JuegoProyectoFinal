@@ -13658,7 +13658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mission: '
+  m_text: 'mission: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1ee8dd5d90f9842fcaa31ae6c9358433, type: 2}
   m_sharedMaterial: {fileID: 4782561449227099803, guid: 1ee8dd5d90f9842fcaa31ae6c9358433, type: 2}

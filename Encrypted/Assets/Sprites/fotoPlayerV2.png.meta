@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 4928f83182eb9e54f900624fd49d8e0a
+guid: ca309d73a2fb4574986dd5d3c4d17b63
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4100222516828045415
-    second: Holograma_0
+      213: 8012620950468156496
+    second: fotoPlayerV2_0
+  - first:
+      213: -3566224615290798609
+    second: fotoPlayerV2_1
+  - first:
+      213: -617782263554522927
+    second: fotoPlayerV2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Holograma_0
+      name: fotoPlayerV2_0
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 532
-        height: 383
+        x: 37
+        y: 37
+        width: 1243
+        height: 1511
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99ff76848551917c0800000000000000
-      internalID: -4100222516828045415
+      spriteID: 05cd1804d4c823f60800000000000000
+      internalID: 8012620950468156496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fotoPlayerV2_1
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1543
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed76586b99328ec0800000000000000
+      internalID: -3566224615290798609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fotoPlayerV2_2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1543
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0cb40fd423d67f0800000000000000
+      internalID: -617782263554522927
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Holograma_0: -4100222516828045415
+      fotoPlayerV2_0: 8012620950468156496
+      fotoPlayerV2_1: -3566224615290798609
+      fotoPlayerV2_2: -617782263554522927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

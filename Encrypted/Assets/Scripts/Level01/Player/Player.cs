@@ -106,6 +106,13 @@ public class Player : Entity
         base.TakeDamage();
         healthBarPlayer.SetHealth(currentHealth);
     }
+
+    public override void BalaDamage(int damageAmount)
+{
+    base.BalaDamage(damageAmount);
+    healthBarPlayer.SetHealth(currentHealth);
+}
+
     protected override void Die()
     {
         base.Die();

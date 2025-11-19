@@ -93,7 +93,7 @@ public class PasswordUI : MonoBehaviour
     }
     else
     {
-        feedbackText.text = "Wrong password! Try again.";
+        feedbackText.text = "Wrong password!";
         feedbackText.color = Color.red;
         passwordInputField.text = "";
         passwordInputField.ActivateInputField();

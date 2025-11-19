@@ -169,7 +169,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   direccion: {x: -1, y: 0}
-  velocidad: 13
+  velocidad: 22
   lifetime: 1
   useRigidbody: 1
   "da\xF1o": 1

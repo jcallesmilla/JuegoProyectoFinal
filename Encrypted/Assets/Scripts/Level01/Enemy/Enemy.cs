@@ -59,14 +59,21 @@ public class Enemy : Entity
         transform.localScale = s;
     }
 
-    protected override void TakeDamage()
+protected override void TakeDamage()
+{
+    base.TakeDamage();
+    
+    if (anim != null)
     {
-        base.TakeDamage(); // sigue restando vida y reproduce feedback
-        if (healthBar != null)
-        {
-            healthBar.SetHealth(currentHealth, maxHealth);
-        }
+        anim.SetTrigger("hurt");
     }
+    
+    if (healthBar != null)
+    {
+        healthBar.SetHealth(currentHealth, maxHealth);
+    }
+}
+
 
     protected override void HandleCollision()
     {

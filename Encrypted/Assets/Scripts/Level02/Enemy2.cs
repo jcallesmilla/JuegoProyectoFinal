@@ -19,7 +19,18 @@ public class Enemy2 : Enemy
 
     protected override void Update()
     {
-        base.Update();
+        HandleCollision();
+        HandleMovement();
+        HandleAnimations();
+        HandleFlip();
+    }
+
+    protected new void HandleAnimations()
+    {
+        if (anim == null) return;
+        anim.SetFloat("xVelocity", Mathf.Abs(rb.linearVelocity.x));
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("yVelocity", rb.linearVelocity.y);
     }
 
     protected override void HandleCollision()
@@ -108,6 +119,7 @@ public class Enemy2 : Enemy
         }
     }
 }
+
 
 
 

@@ -73,17 +73,23 @@ public class Entity : MonoBehaviour
         }
     }
 
-    protected virtual void TakeDamage()
+protected virtual void TakeDamage()
+{
+    currentHealth = currentHealth - 1;
+    
+    if (anim != null && gameObject.CompareTag("Player"))
     {
-        currentHealth = currentHealth - 1;
-        PlayDamageFeedback();
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        anim.SetTrigger("hurt");
     }
     
+    //PlayDamageFeedback();
+
+    if (currentHealth <= 0)
+    {
+        Die();
+    }
+}
+
 
     private void PlayDamageFeedback()
     {
@@ -195,11 +201,18 @@ public class Entity : MonoBehaviour
 public virtual void BalaDamage(int damageAmount)
 {
     currentHealth = currentHealth - damageAmount;
-    PlayDamageFeedback();
+    
+    if (anim != null && gameObject.CompareTag("Player"))
+    {
+        anim.SetTrigger("hurt");
+    }
+    
+    //PlayDamageFeedback();
 
     if (currentHealth <= 0)
     {
         Die();
     }
 }
+
 }

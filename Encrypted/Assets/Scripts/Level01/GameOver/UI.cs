@@ -4,14 +4,38 @@ using UnityEngine.SceneManagement;
 public class UI : MonoBehaviour
 {
     public static UI instance;
+
+    [Header("Game Over ")]
     [SerializeField] private GameObject gameOverUI;
+
+    [Header("Pause Menu")]
+    [SerializeField] private GameObject pauseScreen;
+
+
 
     private void Awake()
     {
         gameOverUI.SetActive(false);
         instance = this;
         Time.timeScale = 1;
+        pauseScreen.SetActive(false);
     }
+
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(pauseScreen.activeInHierarchy)
+            {
+                PauseGame(false);
+            }
+            else
+            {
+                PauseGame(true);
+            }
+        }
+    }
+
+    #region Game Over
 
     public void EnableGameOverUI()
     {
@@ -35,7 +59,28 @@ public class UI : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-    }
-}
 
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+    }
+
+    #endregion
+
+    #region Pause Menu
+    public void PauseGame(bool status)
+    {
+        pauseScreen.SetActive(status);
+        if (status)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+            }
+    #endregion
+
+}
 

@@ -24,15 +24,28 @@ public class Jefe1 : Enemy
     private bool canDetectPlayer;
     private float shootCooldown;
 
-    protected override void Awake()
+protected override void Awake()
+{
+    base.Awake();
+    
+    if (disparoController == null)
     {
-        base.Awake();
+        disparoController = GetComponent<DisparoJEFE1>();
+    }
+    
+    GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+    if (playerObject != null)
+    {
+        Collider2D playerCollider = playerObject.GetComponent<Collider2D>();
+        Collider2D bossCollider = GetComponent<Collider2D>();
         
-        if (disparoController == null)
+        if (playerCollider != null && bossCollider != null)
         {
-            disparoController = GetComponent<DisparoJEFE1>();
+            Physics2D.IgnoreCollision(bossCollider, playerCollider);
         }
     }
+}
+
 
     protected override void Update()
     {

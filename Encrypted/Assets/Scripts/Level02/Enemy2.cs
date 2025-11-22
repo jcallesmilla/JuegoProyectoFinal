@@ -79,12 +79,19 @@ public class Enemy2 : Enemy
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
+{
+    if (collision.gameObject.name == "suelo")
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            DamagePlayer(collision.gameObject);
-        }
+        Destroy(gameObject);
+        return;
     }
+    
+    if (collision.gameObject.CompareTag("Player"))
+    {
+        DamagePlayer(collision.gameObject);
+    }
+}
+
 
     private void OnCollisionStay2D(Collision2D collision)
     {

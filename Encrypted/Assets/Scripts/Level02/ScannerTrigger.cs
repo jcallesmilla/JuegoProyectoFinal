@@ -6,13 +6,14 @@ public class ScannerTrigger : MonoBehaviour
     public GameObject warningCanvas;
     public GameObject pantallaRojaCanvas;
     
-    [Header("Flashing Settings")]
-    public float flashInterval = 3f;
+    [Header("Blink Settings")]
+    public float blinkInterval = 0.5f;
     
     private bool triggered = false;
-    private float timer = 0f;
-    private bool isPantallaRojaVisible = false;
     private Player player;
+    private bool isBlinking = false;
+    private float blinkTimer = 0f;
+    private bool isPantallaRojaVisible = false;
 
     void Start()
     {
@@ -25,24 +26,13 @@ public class ScannerTrigger : MonoBehaviour
 
     void Update()
     {
-        if (triggered && player != null && player.currentHealth > 0)
+        if (triggered && (player == null || player.currentHealth <= 0))
         {
-            timer += Time.deltaTime;
-            
-            if (timer >= flashInterval)
-            {
-                isPantallaRojaVisible = !isPantallaRojaVisible;
-                pantallaRojaCanvas.SetActive(isPantallaRojaVisible);
-                timer = 0f;
-            }
+            StopBlinking();
         }
-        else if (triggered && (player == null || player.currentHealth <= 0))
+        else if (isBlinking)
         {
-            if (warningCanvas != null)
-                warningCanvas.SetActive(false);
-                
-            if (pantallaRojaCanvas != null)
-                pantallaRojaCanvas.SetActive(false);
+            HandleBlinking();
         }
     }
 
@@ -58,10 +48,50 @@ public class ScannerTrigger : MonoBehaviour
                 
                 if (warningCanvas != null)
                     warningCanvas.SetActive(true);
+                    
+                StartBlinking();
             }
         }
     }
+    
+    private void StartBlinking()
+    {
+        isBlinking = true;
+        blinkTimer = 0f;
+        
+        if (pantallaRojaCanvas != null)
+        {
+            pantallaRojaCanvas.SetActive(true);
+            isPantallaRojaVisible = true;
+        }
+    }
+    
+    private void StopBlinking()
+    {
+        isBlinking = false;
+        
+        if (warningCanvas != null)
+            warningCanvas.SetActive(false);
+            
+        if (pantallaRojaCanvas != null)
+            pantallaRojaCanvas.SetActive(false);
+    }
+    
+    private void HandleBlinking()
+    {
+        blinkTimer += Time.deltaTime;
+        
+        if (blinkTimer >= blinkInterval)
+        {
+            blinkTimer = 0f;
+            isPantallaRojaVisible = !isPantallaRojaVisible;
+            
+            if (pantallaRojaCanvas != null)
+                pantallaRojaCanvas.SetActive(isPantallaRojaVisible);
+        }
+    }
 }
+
 
 
 

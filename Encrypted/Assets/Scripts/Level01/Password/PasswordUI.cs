@@ -8,8 +8,8 @@ public class PasswordUI : MonoBehaviour
     public static PasswordUI Instance { get; private set; }
 
     [Header("Password Settings")]
-    [SerializeField] private string correctPassword = "12345";
-    [SerializeField] private string nextSceneName = "JEFE1";
+    [SerializeField] private string correctPassword ;
+    [SerializeField] private string nextSceneName ;
 
     [Header("UI References")]
     [SerializeField] private GameObject passwordPanel;

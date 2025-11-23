@@ -2910,7 +2910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   anim: {fileID: 0}
-  maxHealth: 1
+  maxHealth: 10
   currentHealth: 0
   healthBar: {fileID: 1559285558}
   damageMaterial: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}

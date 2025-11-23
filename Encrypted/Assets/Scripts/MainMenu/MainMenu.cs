@@ -8,6 +8,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(1);
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadSceneAsync(3);
+    }
+
     public void OpenCharacterSelect()
     {
         SceneManager.LoadScene("CharacterSelect");

@@ -202,13 +202,22 @@ protected override void Awake()
 {
     currentHealth -= damage;
     
-    base.TakeDamage();
+    if (anim != null)
+    {
+        anim.SetTrigger("hurt");
+    }
+    
+    if (healthBar != null)
+    {
+        healthBar.SetHealth(currentHealth, maxHealth);
+    }
     
     if (currentHealth <= 0)
     {
         Die();
     }
 }
+
 
 
 }

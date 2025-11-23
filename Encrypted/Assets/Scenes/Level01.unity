@@ -2646,6 +2646,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &303252717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303252707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891e1fa2589384e4fb86852056727507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
+  bulletPrefab: {fileID: 7835597924345902040, guid: 41cda4500de562a4bb5e460dc590be15, type: 3}
+  firePoint: {fileID: 1132758696}
+  bulletSpeed: 10
+  shootCooldown: 0.25
+  animationDelay: 0.1
 --- !u!1 &341295118
 GameObject:
   m_ObjectHideFlags: 0
@@ -6148,6 +6165,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   playerStats: {fileID: 0}
   totalCoins: 0
+--- !u!4 &1132758696 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6217621599253569032, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
+  m_PrefabInstance: {fileID: 6362831004797770826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1157248875
 GameObject:
   m_ObjectHideFlags: 0
@@ -26203,6 +26225,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6217621599253569032, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217621599253569032, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.21
+      objectReference: {fileID: 0}
     - target: {fileID: 6632064499443315916, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.08
@@ -26226,6 +26256,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 478044898355740138, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 303252712}
+    - targetCorrespondingSourceObject: {fileID: 478044898355740138, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 303252717}
   m_SourcePrefab: {fileID: 100100000, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

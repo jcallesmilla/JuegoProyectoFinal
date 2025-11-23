@@ -125,5 +125,12 @@ public class Player : Entity
     {
         anim.SetTrigger("shoot");
     }
+    
+    PlayerShoot shootScript = GetComponent<PlayerShoot>();
+    if (shootScript != null)
+    {
+        shootScript.Shoot();
+    }
 }
+
 }

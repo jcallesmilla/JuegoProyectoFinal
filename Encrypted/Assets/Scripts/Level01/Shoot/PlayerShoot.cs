@@ -10,43 +10,29 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private float shootCooldown = 0.25f;
     [SerializeField] private float animationDelay = 0.1f;
 
-    [Header("Referencias")]
-    [SerializeField] private Animator animator;
-
+    private Entity playerEntity;
+    private Animator animator;
     private bool canShoot = true;
     private bool isShooting = false;
-    private const string SHOOT_PARAM = "shoot";
 
     private void Start()
     {
-        if (animator == null)
-        {
-            animator = GetComponentInChildren<Animator>();
-        }
+        playerEntity = GetComponent<Entity>();
+        animator = GetComponentInChildren<Animator>();
 
         if (firePoint == null)
         {
             GameObject fp = new GameObject("FirePoint");
             fp.transform.SetParent(transform);
-            fp.transform.localPosition = new Vector3(-3.0f, 1.5f, 0f);
+            fp.transform.localPosition = new Vector3(0.5f, 0.5f, 0f);
             firePoint = fp.transform;
-        }
-
-        if (animator != null)
-        {
-            Debug.Log("Animator encontrado correctamente");
-        }
-        else
-        {
-            Debug.LogError("No se encontró el Animator. Asegúrate de que el Player tiene un hijo con Animator.");
         }
     }
 
-    private void Update()
+    public void Shoot()
     {
-        if (Input.GetMouseButtonDown(0) && canShoot && !isShooting)
+        if (canShoot && !isShooting)
         {
-            Debug.Log("Click detectado - Iniciando disparo");
             StartCoroutine(ShootCoroutine());
         }
     }
@@ -56,20 +42,9 @@ public class PlayerShoot : MonoBehaviour
         isShooting = true;
         canShoot = false;
 
-        if (animator != null)
-        {
-            Debug.Log("Activando animación de disparo");
-            animator.SetBool(SHOOT_PARAM, true);
-        }
-
         yield return new WaitForSeconds(animationDelay);
 
         SpawnBullet();
-
-        if (animator != null)
-        {
-            animator.SetBool(SHOOT_PARAM, false);
-        }
 
         yield return new WaitForSeconds(shootCooldown);
 
@@ -79,21 +54,10 @@ public class PlayerShoot : MonoBehaviour
 
     private void SpawnBullet()
     {
-        if (bulletPrefab == null)
-        {
-            Debug.LogWarning("No hay BulletPrefab asignado en el Inspector");
-            return;
-        }
+        if (bulletPrefab == null || firePoint == null) return;
 
-        if (firePoint == null)
-        {
-            Debug.LogWarning("No hay FirePoint asignado");
-            return;
-        }
+        int direction = playerEntity != null ? GetFacingDirection() : 1;
 
-        int direction = transform.localScale.x > 0 ? 1 : -1;
-
-        Debug.Log($"Disparando bala en dirección: {direction}");
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         
         Bullet bulletScript = bullet.GetComponent<Bullet>();
@@ -101,9 +65,10 @@ public class PlayerShoot : MonoBehaviour
         {
             bulletScript.Initialize(direction, bulletSpeed);
         }
-        else
-        {
-            Debug.LogError("El prefab de bala no tiene el script Bullet.cs");
-        }
+    }
+
+    private int GetFacingDirection()
+    {
+        return transform.localScale.x > 0 ? 1 : -1;
     }
 }

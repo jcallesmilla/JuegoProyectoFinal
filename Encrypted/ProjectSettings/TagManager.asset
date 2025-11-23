@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Coin
   - Pared
+  - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX

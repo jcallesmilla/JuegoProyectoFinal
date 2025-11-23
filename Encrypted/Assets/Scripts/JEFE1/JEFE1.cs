@@ -197,6 +197,20 @@ protected override void Awake()
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, shootingRange);
     }
+
+    public void TakeDamage(int damage)
+{
+    currentHealth -= damage;
+    
+    base.TakeDamage();
+    
+    if (currentHealth <= 0)
+    {
+        Die();
+    }
+}
+
+
 }
 
 

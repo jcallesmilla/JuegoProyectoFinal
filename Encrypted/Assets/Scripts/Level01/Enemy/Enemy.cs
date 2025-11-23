@@ -89,4 +89,18 @@ protected override void TakeDamage()
             Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
         }
     }
+
+    public void TakeDamage(int damage)
+{
+    currentHealth -= damage;
+    
+    TakeDamage();
+    
+    if (currentHealth <= 0)
+    {
+        Die();
+    }
+}
+
+
 }

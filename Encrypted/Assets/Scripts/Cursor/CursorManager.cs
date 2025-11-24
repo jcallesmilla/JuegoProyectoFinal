@@ -118,4 +118,3 @@ public class CursorManager : MonoBehaviour
 
     private static CursorManager instance;
 }
-

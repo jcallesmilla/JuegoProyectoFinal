@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Speed
   description: Increases Speed
-  icon: {fileID: 0}
+  icon: {fileID: -3186728623107148326, guid: f85b78f6914f34b41af97961eda69941, type: 3}
   baseCost: 1
   costMultiplier: 1.5
   upgradeType: 0

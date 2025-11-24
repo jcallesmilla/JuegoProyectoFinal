@@ -14,11 +14,13 @@ public class PlayerShoot : MonoBehaviour
     private Animator animator;
     private bool canShoot = true;
     private bool isShooting = false;
+    private Camera mainCamera;
 
     private void Start()
     {
         playerEntity = GetComponent<Entity>();
         animator = GetComponentInChildren<Animator>();
+        mainCamera = Camera.main;
 
         if (firePoint == null)
         {
@@ -54,9 +56,10 @@ public class PlayerShoot : MonoBehaviour
 
     private void SpawnBullet()
     {
-        if (bulletPrefab == null || firePoint == null) return;
+        if (bulletPrefab == null || firePoint == null || mainCamera == null) return;
 
-        int direction = playerEntity != null ? GetFacingDirection() : 1;
+        Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mousePosition - (Vector2)firePoint.position).normalized;
 
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         

@@ -7,7 +7,6 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float lifetime = 3f;
 
     private Rigidbody2D rb;
-    private int direction = 1;
     private float speed = 10f;
     private bool hasHit = false;
 
@@ -19,18 +18,30 @@ public class Bullet : MonoBehaviour
 
     public void Initialize(int dir, float bulletSpeed)
     {
-        direction = dir;
         speed = bulletSpeed;
 
         if (rb != null)
         {
-            rb.linearVelocity = new Vector2(direction * speed, 0f);
+            rb.linearVelocity = new Vector2(dir * speed, 0f);
         }
 
-        if (direction < 0)
+        if (dir < 0)
         {
             transform.rotation = Quaternion.Euler(0f, 0f, 180f);
         }
+    }
+
+    public void Initialize(Vector2 direction, float bulletSpeed)
+    {
+        speed = bulletSpeed;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = direction.normalized * speed;
+        }
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

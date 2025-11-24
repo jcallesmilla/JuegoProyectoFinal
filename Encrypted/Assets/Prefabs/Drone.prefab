@@ -206,6 +206,10 @@ MonoBehaviour:
   warningCanvas: {fileID: 0}
   pantallaRojaCanvas: {fileID: 0}
   blinkInterval: 0.5
+  flyDronePrefab: {fileID: 4507823344939138214, guid: 49d08b99ecc18924b8bb6cad75126ebb, type: 3}
+  spawnCount: 3
+  minSpawnDistance: 10
+  maxSpawnDistance: 15
 --- !u!1 &8200928059854572059
 GameObject:
   m_ObjectHideFlags: 0

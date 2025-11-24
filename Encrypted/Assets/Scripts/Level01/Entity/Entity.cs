@@ -91,7 +91,7 @@ protected virtual void TakeDamage()
 }
 
 
-    private void PlayDamageFeedback()
+    protected void PlayDamageFeedback()
     {
         if (damageFeedbackCoroutine != null)
         {
@@ -100,7 +100,7 @@ protected virtual void TakeDamage()
         StartCoroutine(DamageFeedbackCo());
     }
 
-    private IEnumerator DamageFeedbackCo()
+    protected IEnumerator DamageFeedbackCo()
     {
         Material originalMaterial = sr.material;
         sr.material = damageMaterial;
@@ -207,7 +207,7 @@ public virtual void BalaDamage(int damageAmount)
         anim.SetTrigger("hurt");
     }
     
-    //PlayDamageFeedback();
+    PlayDamageFeedback();
 
     if (currentHealth <= 0)
     {

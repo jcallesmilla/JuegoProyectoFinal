@@ -1000,6 +1000,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f1b0787cc8c440929e1070562659f2d, type: 3}
+--- !u!114 &104292827 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8203789566077577052, guid: 8f8f2c5832e20a046b573b9b69eaefb3, type: 3}
+  m_PrefabInstance: {fileID: 469203736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbf62670f1694e72bc790e27ccda79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthBar_Behaviour
 --- !u!1001 &104668575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3284,7 +3295,7 @@ PrefabInstance:
     - target: {fileID: 5202704871367218721, guid: 8f8f2c5832e20a046b573b9b69eaefb3, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 104292827}
     - target: {fileID: 5202704871367218721, guid: 8f8f2c5832e20a046b573b9b69eaefb3, type: 3}
       propertyPath: maxHealth
       value: 5
@@ -4075,6 +4086,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625314022}
   m_CullTransparentMesh: 1
+--- !u!114 &650837057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8203789566077577052, guid: 8f8f2c5832e20a046b573b9b69eaefb3, type: 3}
+  m_PrefabInstance: {fileID: 1399116051}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbf62670f1694e72bc790e27ccda79e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthBar_Behaviour
 --- !u!1 &680907482
 GameObject:
   m_ObjectHideFlags: 0
@@ -35618,7 +35640,7 @@ PrefabInstance:
     - target: {fileID: 5202704871367218721, guid: 8f8f2c5832e20a046b573b9b69eaefb3, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 650837057}
     - target: {fileID: 5202704871367218721, guid: 8f8f2c5832e20a046b573b9b69eaefb3, type: 3}
       propertyPath: maxHealth
       value: 5

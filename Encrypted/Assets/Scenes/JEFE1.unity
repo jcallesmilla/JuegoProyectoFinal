@@ -14933,6 +14933,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988725813}
   m_CullTransparentMesh: 1
+--- !u!1 &1005425829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1005425831}
+  - component: {fileID: 1005425830}
+  m_Layer: 0
+  m_Name: CursorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1005425830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005425829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b79d693d27d02f409166427d6486a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorManager
+  defaultCursor: {fileID: 2800000, guid: 97d598855f10d234688f392a7f4040b4, type: 3}
+  rightClickCursor: {fileID: 2800000, guid: c9b175bc86ae48d42a55339eb1830eca, type: 3}
+  cursorHotspot: {x: 16, y: 16}
+  cursorScale: 1
+--- !u!4 &1005425831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005425829}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.47, y: 2.60137, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1035342688
 GameObject:
   m_ObjectHideFlags: 0
@@ -16127,7 +16175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1649511131}
   - component: {fileID: 1649511133}
-  - component: {fileID: 1649511132}
+  - component: {fileID: 1649511135}
   m_Layer: 5
   m_Name: 'JEFE1Bar '
   m_TagString: Untagged
@@ -16155,22 +16203,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.84, y: 212.1}
+  m_AnchoredPosition: {x: 189.84, y: 219.3}
   m_SizeDelta: {x: 154.0948, y: 24.7069}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1649511132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649511130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd689737d44ed427ab38c2080412774a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthBarPlayer
-  slider: {fileID: 1649511133}
 --- !u!114 &1649511133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16222,6 +16257,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1649511135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649511130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd689737d44ed427ab38c2080412774a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthBarPlayer
+  slider: {fileID: 1649511133}
 --- !u!1 &1654529002
 GameObject:
   m_ObjectHideFlags: 0
@@ -16605,7 +16653,7 @@ GameObject:
   - component: {fileID: 1772384222}
   m_Layer: 7
   m_Name: JEFE1
-  m_TagString: Boss
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16713,10 +16761,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JEFE1
   anim: {fileID: 0}
-  maxHealth: 1
-  currentHealth: 0
+  maxHealth: 30
+  currentHealth: 30
   healthBar: {fileID: 0}
-  damageMaterial: {fileID: 0}
+  damageMaterial: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}
   damageFeedbackDuration: 0.1
   useScaleFlip: 0
   maxJumps: 2
@@ -16737,6 +16785,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   disparoController: {fileID: 1772384221}
+  jefeHealthBar: {fileID: 1649511135}
 --- !u!114 &1772384221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17471,3 +17520,4 @@ SceneRoots:
   - {fileID: 1785812222}
   - {fileID: 810435455}
   - {fileID: 1035342690}
+  - {fileID: 1005425831}

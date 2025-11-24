@@ -17,6 +17,7 @@ public class Jefe1 : Enemy
     
     [Header("References")]
     [SerializeField] private DisparoJEFE1 disparoController;
+    [SerializeField] private HealthBarPlayer jefeHealthBar;
 
     private BossState currentState = BossState.Idle;
     private float shootingTimer;
@@ -24,28 +25,32 @@ public class Jefe1 : Enemy
     private bool canDetectPlayer;
     private float shootCooldown;
 
-protected override void Awake()
-{
-    base.Awake();
-    
-    if (disparoController == null)
+    protected override void Awake()
     {
-        disparoController = GetComponent<DisparoJEFE1>();
-    }
-    
-    GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-    if (playerObject != null)
-    {
-        Collider2D playerCollider = playerObject.GetComponent<Collider2D>();
-        Collider2D bossCollider = GetComponent<Collider2D>();
+        base.Awake();
         
-        if (playerCollider != null && bossCollider != null)
+        if (disparoController == null)
         {
-            Physics2D.IgnoreCollision(bossCollider, playerCollider);
+            disparoController = GetComponent<DisparoJEFE1>();
+        }
+        
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            Collider2D playerCollider = playerObject.GetComponent<Collider2D>();
+            Collider2D bossCollider = GetComponent<Collider2D>();
+            
+            if (playerCollider != null && bossCollider != null)
+            {
+                Physics2D.IgnoreCollision(bossCollider, playerCollider);
+            }
+        }
+        
+        if (jefeHealthBar != null)
+        {
+            jefeHealthBar.setMaxHealth(maxHealth);
         }
     }
-}
-
 
     protected override void Update()
     {
@@ -199,27 +204,24 @@ protected override void Awake()
     }
 
     public void TakeDamage(int damage)
-{
-    currentHealth -= damage;
-    
-    if (anim != null)
     {
-        anim.SetTrigger("hurt");
+        currentHealth -= damage;
+        
+        if (anim != null)
+        {
+            anim.SetTrigger("hurt");
+        }
+        
+        if (jefeHealthBar != null)
+        {
+            jefeHealthBar.SetHealth(currentHealth);
+        }
+        
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
-    
-    if (healthBar != null)
-    {
-        healthBar.SetHealth(currentHealth, maxHealth);
-    }
-    
-    if (currentHealth <= 0)
-    {
-        Die();
-    }
-}
-
-
-
 }
 
 

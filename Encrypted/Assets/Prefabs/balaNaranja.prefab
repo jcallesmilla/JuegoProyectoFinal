@@ -107,6 +107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FlyDroneBullet
   bulletSpeed: 8
   lifetime: 5
+  ignoreGroundCollision: 1
+  ignoreWallCollision: 1
 --- !u!50 &3566519200788597028
 Rigidbody2D:
   serializedVersion: 5

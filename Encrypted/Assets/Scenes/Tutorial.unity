@@ -515,7 +515,7 @@ MonoBehaviour:
   followY: 1
   verticalDeadZone: 0.3
   verticalSmoothSpeed: 0.5
-  verticalOffset: 2.6
+  verticalOffset: 3
 --- !u!114 &83265539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +603,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2080,6 +2080,7 @@ MonoBehaviour:
   feedbackText: {fileID: 1662985866}
   submitButton: {fileID: 706579133}
   cancelButton: {fileID: 202299590}
+  textoPista: {fileID: 0}
 --- !u!114 &392375633
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,8 +8,8 @@ public class PasswordUI : MonoBehaviour
     public static PasswordUI Instance { get; private set; }
 
     [Header("Password Settings")]
-    [SerializeField] private string correctPassword ;
-    [SerializeField] private string nextSceneName ;
+    [SerializeField] private string correctPassword;
+    [SerializeField] private string nextSceneName;
 
     [Header("UI References")]
     [SerializeField] private GameObject passwordPanel;
@@ -17,6 +17,7 @@ public class PasswordUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI feedbackText;
     [SerializeField] private Button submitButton;
     [SerializeField] private Button cancelButton;
+    [SerializeField] private TextMeshProUGUI textoPista;
 
     private void Awake()
     {
@@ -33,17 +34,17 @@ public class PasswordUI : MonoBehaviour
     private void Start()
     {
         passwordPanel.SetActive(false);
-        
+
         if (submitButton != null)
         {
             submitButton.onClick.AddListener(CheckPassword);
         }
-        
+
         if (cancelButton != null)
         {
             cancelButton.onClick.AddListener(ClosePasswordPanel);
         }
-        
+
         if (passwordInputField != null)
         {
             passwordInputField.onSubmit.AddListener((_) => CheckPassword());
@@ -56,10 +57,16 @@ public class PasswordUI : MonoBehaviour
         passwordInputField.text = "";
         feedbackText.text = "Enter the password:";
         feedbackText.color = Color.white;
+
+        if (textoPista != null && PasswordManager.Instance != null)
+        {
+            textoPista.text = $"Hint: {PasswordManager.Instance.ObtenerPistaActual()}";
+        }
+
         passwordInputField.ActivateInputField();
-        
+
         Time.timeScale = 0f;
-        
+
         Player player = FindFirstObjectByType<Player>();
         if (player != null)
         {
@@ -67,11 +74,12 @@ public class PasswordUI : MonoBehaviour
         }
     }
 
+
     public void ClosePasswordPanel()
     {
         passwordPanel.SetActive(false);
         Time.timeScale = 1f;
-        
+
         Player player = FindFirstObjectByType<Player>();
         if (player != null)
         {
@@ -80,25 +88,32 @@ public class PasswordUI : MonoBehaviour
     }
 
     private void CheckPassword()
-{
-    string enteredPassword = passwordInputField.text;
+    {
+        string enteredPassword = passwordInputField.text;
+        string correctPassword = "";
 
-    if (enteredPassword == correctPassword)
-    {
-        feedbackText.text = "Correct! Loading...";
-        feedbackText.color = Color.green;
-        
-        Time.timeScale = 1f;
-        LoadNextScene();
+        if (PasswordManager.Instance != null)
+        {
+            correctPassword = PasswordManager.Instance.ObtenerContraseñaCompleta();
+        }
+
+        if (enteredPassword == correctPassword)
+        {
+            feedbackText.text = "Correct! Loading...";
+            feedbackText.color = Color.green;
+
+            Time.timeScale = 1f;
+            LoadNextScene();
+        }
+        else
+        {
+            feedbackText.text = "Wrong password!";
+            feedbackText.color = Color.red;
+            passwordInputField.text = "";
+            passwordInputField.ActivateInputField();
+        }
     }
-    else
-    {
-        feedbackText.text = "Wrong password!";
-        feedbackText.color = Color.red;
-        passwordInputField.text = "";
-        passwordInputField.ActivateInputField();
-    }
-}
+
 
 
     private void LoadNextScene()

@@ -9,6 +9,10 @@ public class TerminalSeguridad : MonoBehaviour
     private bool terminalResuelta = false;
     private bool preguntaEnCurso = false;
 
+    [Header("Password Fragment")]
+    public int indiceFragmento = 0;
+
+
     private void Start()
     {
         if (listaPreguntas == null)
@@ -74,7 +78,6 @@ public class TerminalSeguridad : MonoBehaviour
 
     public void ResolverPregunta(bool correcta)
     {
-        // RESPUESTA CORRECTA → TERMINA TERMINAL
         if (correcta)
         {
             terminalResuelta = true;
@@ -86,11 +89,15 @@ public class TerminalSeguridad : MonoBehaviour
             UIManager.Instance.CerrarPanelPregunta();
             Time.timeScale = 1f;
 
+            if (PasswordManager.Instance != null)
+            {
+                PasswordManager.Instance.RevelarFragmento(indiceFragmento);
+            }
+
             Debug.Log("Terminal desbloqueada.");
         }
         else
         {
-            // RESPUESTA INCORRECTA
             if (screenFlash != null)
                 screenFlash.FlashRed();
 
@@ -98,8 +105,8 @@ public class TerminalSeguridad : MonoBehaviour
 
             Debug.Log("Incorrecta. Nueva pregunta.");
 
-            // NUEVA PREGUNTA INMEDIATA (PAUSA ACTIVA)
             MostrarNuevaPregunta();
         }
     }
+
 }

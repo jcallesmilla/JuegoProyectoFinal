@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 3044436fa144e2d479e566e4df266fa3
+guid: 9934d6aff6cc1a04cbeac7e55a97d63e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8432218156423572855
-    second: Attack4_1_0
+      213: -4951237078557161900
+    second: fotoDataRider_0
   - first:
-      213: 2902888929404879010
-    second: Attack4_1_1
+      213: -1739609205558349355
+    second: fotoDataRider_1
   - first:
-      213: -7857581085198084718
-    second: Attack4_1_2
-  - first:
-      213: -7239024488961195021
-    second: Attack4_1_3
+      213: 7730890111925594544
+    second: fotoDataRider_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,89 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack4_1_0
+      name: fotoDataRider_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 92
-        height: 75
+        x: 37
+        y: 39
+        width: 1243
+        height: 1513
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98216c5334ebafa80800000000000000
-      internalID: -8432218156423572855
+      spriteID: 4568bdd1c1ca94bb0800000000000000
+      internalID: -4951237078557161900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack4_1_1
+      name: fotoDataRider_1
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 92
-        height: 74
+        x: 604
+        y: 1547
+        width: 23
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a08793e912294820800000000000000
-      internalID: 2902888929404879010
+      spriteID: 5d1f1b6f4aaabd7e0800000000000000
+      internalID: -1739609205558349355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attack4_1_2
+      name: fotoDataRider_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 97
-        height: 74
+        x: 684
+        y: 1547
+        width: 21
+        height: 6
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29590fe52a344f290800000000000000
-      internalID: -7857581085198084718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attack4_1_3
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 0
-        width: 91
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 2, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f34d1fc491d98b90800000000000000
-      internalID: -7239024488961195021
+      spriteID: 0b9a7e6c893a94b60800000000000000
+      internalID: 7730890111925594544
       vertices: []
       indices: 
       edges: []
@@ -213,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9632b86f3e6419c43adcc803b1d25438
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Attack4_1_0: -8432218156423572855
-      Attack4_1_1: 2902888929404879010
-      Attack4_1_2: -7857581085198084718
-      Attack4_1_3: -7239024488961195021
+      fotoDataRider_0: -4951237078557161900
+      fotoDataRider_1: -1739609205558349355
+      fotoDataRider_2: 7730890111925594544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

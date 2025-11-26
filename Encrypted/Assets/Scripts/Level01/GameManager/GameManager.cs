@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
         {
             playerStats = gameObject.AddComponent<PlayerStats>();
         }
+        
+        if (GetComponent<CharacterClassInitializer>() == null)
+        {
+            gameObject.AddComponent<CharacterClassInitializer>();
+        }
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -99,6 +104,7 @@ public class GameManager : MonoBehaviour
     {
         return totalCoins >= amount;
     }
+    
     public void ResetGameProgress()
     {
         totalCoins = 0;

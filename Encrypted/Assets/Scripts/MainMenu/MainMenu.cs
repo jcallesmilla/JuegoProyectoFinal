@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
     public void OpenCharacterSelect()
     {
         StopMenuMusicIfAny();
-        SceneManager.LoadScene("CharacterSelect");
+        SceneManager.LoadScene("Character Select");
     }
 
     public void QuitGame()

@@ -75,20 +75,31 @@ public class Entity : MonoBehaviour
 
 protected virtual void TakeDamage()
 {
-    currentHealth = currentHealth - 1;
+    int damageAmount = 1;
     
-    if (anim != null && gameObject.CompareTag("Player"))
+    if (gameObject.CompareTag("Player"))
     {
-        anim.SetTrigger("hurt");
+        PlayerStats playerStats = GameManager.Instance?.playerStats;
+        if (playerStats != null)
+        {
+            int defense = playerStats.GetCurrentDefense();
+            damageAmount = Mathf.Max(1, damageAmount - defense);
+        }
+        
+        if (anim != null)
+        {
+            anim.SetTrigger("hurt");
+        }
     }
     
-    //PlayDamageFeedback();
+    currentHealth -= damageAmount;
 
     if (currentHealth <= 0)
     {
         Die();
     }
 }
+
 
 
     protected void PlayDamageFeedback()
@@ -200,13 +211,24 @@ protected virtual void TakeDamage()
     }
 public virtual void BalaDamage(int damageAmount)
 {
-    currentHealth = currentHealth - damageAmount;
+    int finalDamage = damageAmount;
     
-    if (anim != null && gameObject.CompareTag("Player"))
+    if (gameObject.CompareTag("Player"))
     {
-        anim.SetTrigger("hurt");
+        PlayerStats playerStats = GameManager.Instance?.playerStats;
+        if (playerStats != null)
+        {
+            int defense = playerStats.GetCurrentDefense();
+            finalDamage = Mathf.Max(1, damageAmount - defense);
+        }
+        
+        if (anim != null)
+        {
+            anim.SetTrigger("hurt");
+        }
     }
     
+    currentHealth -= finalDamage;
     PlayDamageFeedback();
 
     if (currentHealth <= 0)
@@ -214,5 +236,8 @@ public virtual void BalaDamage(int damageAmount)
         Die();
     }
 }
+
+
+
 
 }

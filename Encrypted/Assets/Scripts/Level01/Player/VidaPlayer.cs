@@ -51,20 +51,30 @@ public class VidaPlayer : MonoBehaviour
         }
     }
 
-    public void QuitarVida(int cantidad)
+public void QuitarVida(int cantidad)
+{
+    int finalDamage = cantidad;
+    
+    if (playerStats != null)
     {
-        cantidadDeVida -= cantidad;
-        Debug.Log($"QuitarVida called: -{cantidad}, nueva vida={cantidadDeVida}");
-        if (cantidadDeVida <= 0)
-        {
-            cantidadDeVida = 0;
-            UpdateBar();
-            Destroy(gameObject);
-            return;
-        }
-
-        UpdateBar();
+        int defense = playerStats.GetCurrentDefense();
+        finalDamage = Mathf.Max(1, cantidad - defense);
     }
+    
+    cantidadDeVida -= finalDamage;
+    Debug.Log($"QuitarVida called: -{finalDamage} (original: {cantidad}, defense reduced), nueva vida={cantidadDeVida}");
+    
+    if (cantidadDeVida <= 0)
+    {
+        cantidadDeVida = 0;
+        UpdateBar();
+        Destroy(gameObject);
+        return;
+    }
+
+    UpdateBar();
+}
+
 
     public void Curar(int cantidad)
     {

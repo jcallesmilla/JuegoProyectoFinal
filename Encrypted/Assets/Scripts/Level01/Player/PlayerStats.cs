@@ -7,6 +7,8 @@ public class PlayerStats : MonoBehaviour
     public float baseSpeed = 5.0f;
     public float baseJumpForce = 15.0f;
     public int baseMaxHealth = 100;
+    public int baseDamage = 1;
+    public int baseDefense = 0;
 
     [Header("Upgrade Levels")]
     private Dictionary<UpgradeType, int> upgradeLevels = new Dictionary<UpgradeType, int>();
@@ -52,22 +54,36 @@ public class PlayerStats : MonoBehaviour
     }
 
     public float GetCurrentValue(UpgradeType type)
-    {
-        int level = GetUpgradeLevel(type);
-        float increment = upgradeIncrements.ContainsKey(type) ? upgradeIncrements[type] : 0f;
+{
+    int level = GetUpgradeLevel(type);
+    float increment = upgradeIncrements.ContainsKey(type) ? upgradeIncrements[type] : 0f;
 
-        switch (type)
-        {
-            case UpgradeType.Speed:
-                return baseSpeed + (level * increment);
-            case UpgradeType.Jump:
-                return baseJumpForce + (level * increment);
-            case UpgradeType.Health:
-                return baseMaxHealth + (level * increment);
-            default:
-                return 0f;
-        }
+    switch (type)
+    {
+        case UpgradeType.Speed:
+            return baseSpeed + (level * increment);
+        case UpgradeType.Jump:
+            return baseJumpForce + (level * increment);
+        case UpgradeType.Health:
+            return baseMaxHealth + (level * increment);
+        case UpgradeType.Damage:
+            return baseDamage + (level * increment);
+        case UpgradeType.Defense:
+            return baseDefense + (level * increment);
+        default:
+            return 0f;
     }
+}
+public int GetCurrentDamage()
+{
+    return Mathf.RoundToInt(GetCurrentValue(UpgradeType.Damage));
+}
+
+public int GetCurrentDefense()
+{
+    return Mathf.RoundToInt(GetCurrentValue(UpgradeType.Defense));
+}
+
 
     public float GetCurrentSpeed()
     {

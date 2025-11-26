@@ -4879,8 +4879,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 0.0011746}
-  m_SizeDelta: {x: 2320.5, y: 1079.7}
+  m_AnchoredPosition: {x: -200.01, y: -0.00013542}
+  m_SizeDelta: {x: 2320.5, y: 846.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838258843
 MonoBehaviour:
@@ -41052,11 +41052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1619238073190741548, guid: 15afd6bf126a688408734497ac402409, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.07
+      value: 4.15
       objectReference: {fileID: 0}
     - target: {fileID: 1619238073190741548, guid: 15afd6bf126a688408734497ac402409, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 1619238073190741548, guid: 15afd6bf126a688408734497ac402409, type: 3}
       propertyPath: m_LocalPosition.z
@@ -41118,6 +41118,18 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3351123002244491616, guid: 15afd6bf126a688408734497ac402409, type: 3}
+      propertyPath: availableUpgrades.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3351123002244491616, guid: 15afd6bf126a688408734497ac402409, type: 3}
+      propertyPath: 'availableUpgrades.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 21de93afa87f1e94ca45688189183858, type: 2}
+    - target: {fileID: 3351123002244491616, guid: 15afd6bf126a688408734497ac402409, type: 3}
+      propertyPath: 'availableUpgrades.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 705bcb5bf013d6543b51fc397bd91408, type: 2}
     - target: {fileID: 4015582320517915409, guid: 15afd6bf126a688408734497ac402409, type: 3}
       propertyPath: m_RaycastTarget
       value: 1
@@ -41128,7 +41140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4289614331113052246, guid: 15afd6bf126a688408734497ac402409, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5403204142047957291, guid: 15afd6bf126a688408734497ac402409, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x

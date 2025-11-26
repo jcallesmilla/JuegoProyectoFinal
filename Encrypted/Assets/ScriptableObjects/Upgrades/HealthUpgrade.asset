@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HealthUpgrade
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
   upgradeName: Max Health
-  description: Increases maximum health
+  description: Increases max health
   icon: {fileID: 2676381041428780300, guid: a9cd4d088f5791947bb590124b985b33, type: 3}
   baseCost: 1
   costMultiplier: 1.5

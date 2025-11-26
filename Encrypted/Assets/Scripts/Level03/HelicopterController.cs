@@ -154,20 +154,23 @@ public class HelicopterController : Entity
     }
     
     private void SpawnBullet()
+{
+    if (bulletPrefab == null || firePoint == null || mainCamera == null) return;
+    
+    Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+    Vector2 direction = (mousePosition - (Vector2)firePoint.position).normalized;
+    
+    GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+    
+    Bullet bulletScript = bullet.GetComponent<Bullet>();
+    if (bulletScript != null)
     {
-        if (bulletPrefab == null || firePoint == null || mainCamera == null) return;
-        
-        Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        Vector2 direction = (mousePosition - (Vector2)firePoint.position).normalized;
-        
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        
-        Bullet bulletScript = bullet.GetComponent<Bullet>();
-        if (bulletScript != null)
-        {
-            bulletScript.Initialize(direction, bulletSpeed);
-        }
+        PlayerStats stats = GameManager.Instance.playerStats;
+        int currentDamage = stats != null ? stats.GetCurrentDamage() : 1;
+        bulletScript.Initialize(direction, bulletSpeed, currentDamage);
     }
+}
+
     
     private void ResetShoot()
     {

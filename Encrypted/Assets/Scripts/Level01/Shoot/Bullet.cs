@@ -16,33 +16,37 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    public void Initialize(int dir, float bulletSpeed)
+    public void Initialize(int dir, float bulletSpeed, int damageAmount)
+{
+    damage = damageAmount;
+    speed = bulletSpeed;
+
+    if (rb != null)
     {
-        speed = bulletSpeed;
-
-        if (rb != null)
-        {
-            rb.linearVelocity = new Vector2(dir * speed, 0f);
-        }
-
-        if (dir < 0)
-        {
-            transform.rotation = Quaternion.Euler(0f, 0f, 180f);
-        }
+        rb.linearVelocity = new Vector2(dir * speed, 0f);
     }
 
-    public void Initialize(Vector2 direction, float bulletSpeed)
+    if (dir < 0)
     {
-        speed = bulletSpeed;
-
-        if (rb != null)
-        {
-            rb.linearVelocity = direction.normalized * speed;
-        }
-
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        transform.rotation = Quaternion.Euler(0f, 0f, 180f);
     }
+}
+
+
+    public void Initialize(Vector2 direction, float bulletSpeed, int damageAmount)
+{
+    damage = damageAmount;
+    speed = bulletSpeed;
+
+    if (rb != null)
+    {
+        rb.linearVelocity = direction.normalized * speed;
+    }
+
+    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+    transform.rotation = Quaternion.Euler(0f, 0f, angle);
+}
+
 
     private void OnTriggerEnter2D(Collider2D collision)
 {

@@ -90,14 +90,18 @@ public class PasswordUI : MonoBehaviour
     private void CheckPassword()
     {
         string enteredPassword = passwordInputField.text;
-        string correctPassword = "";
+        string passwordToCheck = "";
 
         if (PasswordManager.Instance != null)
         {
-            correctPassword = PasswordManager.Instance.ObtenerContraseñaCompleta();
+            passwordToCheck = PasswordManager.Instance.ObtenerContraseñaCompleta();
+        }
+        else
+        {
+            passwordToCheck = this.correctPassword;
         }
 
-        if (enteredPassword == correctPassword)
+        if (enteredPassword == passwordToCheck)
         {
             feedbackText.text = "Correct! Loading...";
             feedbackText.color = Color.green;
@@ -113,6 +117,7 @@ public class PasswordUI : MonoBehaviour
             passwordInputField.ActivateInputField();
         }
     }
+
 
 
 

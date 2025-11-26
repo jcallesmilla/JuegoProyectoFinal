@@ -2073,7 +2073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fbc8c8f91275064b90a74ed86c605bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasswordUI
-  correctPassword: 12345
+  correctPassword: 123456
   nextSceneName: Level01
   passwordPanel: {fileID: 1274378972}
   passwordInputField: {fileID: 1103955119}
@@ -19277,7 +19277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "para continuar ingresa la contrase\xF1a 12345"
+  m_text: "para continuar ingresa la contrase\xF1a 123456"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 56a4c6c78ead54840b2e84f7252b6d97, type: 2}
   m_sharedMaterial: {fileID: 4782561449227099803, guid: 56a4c6c78ead54840b2e84f7252b6d97, type: 2}

@@ -6,7 +6,10 @@ public class PasswordManager : MonoBehaviour
     public static PasswordManager Instance { get; private set; }
 
     [Header("Password Configuration")]
+    [SerializeField] private bool usarContraseñaFija = false;
+    [SerializeField] private string contraseñaFija = "123456";
     [SerializeField] private int longitudContraseña = 6;
+
     [SerializeField] private int digitosPorFragmento = 2;
 
     [Header("UI References")]
@@ -35,10 +38,17 @@ public class PasswordManager : MonoBehaviour
 
     private void GenerarContraseñaAleatoria()
     {
-        contraseñaCompleta = "";
-        for (int i = 0; i < longitudContraseña; i++)
+        if (usarContraseñaFija)
         {
-            contraseñaCompleta += Random.Range(0, 10).ToString();
+            contraseñaCompleta = contraseñaFija;
+        }
+        else
+        {
+            contraseñaCompleta = "";
+            for (int i = 0; i < longitudContraseña; i++)
+            {
+                contraseñaCompleta += Random.Range(0, 10).ToString();
+            }
         }
 
         int numFragmentos = Mathf.CeilToInt((float)longitudContraseña / digitosPorFragmento);

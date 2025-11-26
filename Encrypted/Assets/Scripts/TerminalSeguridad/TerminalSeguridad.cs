@@ -20,40 +20,40 @@ public class TerminalSeguridad : MonoBehaviour
             listaPreguntas = new ListaPreguntas();
 
             listaPreguntas.Agregar(new Pregunta(
-                "¿Cuál clave es más segura?",
+                "¿Cuál de estas contraseñas es la más segura?",
                 new string[] { "12345", "qwerty", "C@m21#" }, 2));
 
             listaPreguntas.Agregar(new Pregunta(
-                "Evita usar en claves:",
-                new string[] { "TuNombre", "Símbolos", "FraseLarga" }, 0));
+                "¿Qué deberías evitar usar al crear una contraseña?",
+                new string[] { "Tu nombre", "símbolos", "frase larga" }, 0));
 
             listaPreguntas.Agregar(new Pregunta(
-                "Mayor seguridad:",
-                new string[] { "Compartir", "Reusar", "2FA" }, 2));
+                "¿Qué opción proporciona mayor seguridad a tus cuentas?",
+                new string[] { "Compartir", "reusar", "2FA" }, 2));
 
             listaPreguntas.Agregar(new Pregunta(
-                "Correo sospechoso:",
-                new string[] { "LinkRaro", "LogoHD", "Formal" }, 0));
+                "¿Qué hace sospechoso a un correo electrónico?",
+                new string[] { "Link raro", "logo HD", "redacción formal" }, 0));
 
             listaPreguntas.Agregar(new Pregunta(
-                "Link extraño:",
-                new string[] { "Ignorar", "Abrir", "Responder" }, 0));
+                "Si recibes un enlace extraño, ¿qué es lo más seguro hacer?",
+                new string[] { "Ignorar", "abrir", "responder" }, 0));
 
             listaPreguntas.Agregar(new Pregunta(
-                "No publiques:",
-                new string[] { "Clave", "Comida", "Viaje" }, 0));
+                "¿Qué no deberías publicar en redes sociales?",
+                new string[] { "Clave", "comida", "viaje" }, 0));
 
             listaPreguntas.Agregar(new Pregunta(
-                "Malware es:",
-                new string[] { "AppMala", "Editor", "Mapa" }, 0));
+                "¿Qué es el malware?",
+                new string[] { "App mala", "editor", "mapa" }, 0));
 
             listaPreguntas.Agregar(new Pregunta(
-                "Fuerza bruta:",
-                new string[] { "MilesClaves", "HackFísico", "ApagarWiFi" }, 0));
+                "¿Cómo intentan acceder las fuerzas brutas a una cuenta?",
+                new string[] { "Probar claves", "hack físico", "apagar wifi" }, 0));
 
             listaPreguntas.Agregar(new Pregunta(
-                "WiFi pública:",
-                new string[] { "Banco", "Google", "Videos" }, 0));
+                "¿Qué actividad es riesgosa en una red wifi pública?",
+                new string[] { "Abrir app banco", "hacer compras", "ver videos" }, 0));
         }
     }
 
@@ -108,5 +108,4 @@ public class TerminalSeguridad : MonoBehaviour
             MostrarNuevaPregunta();
         }
     }
-
 }

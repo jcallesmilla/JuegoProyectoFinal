@@ -17,6 +17,11 @@ public class JEFE2 : Enemy
     [SerializeField] private float aboveThreshold = 2f;
     [SerializeField] private LayerMask helicopteroLayer;
     
+    [Header("Movement Pattern")]
+    [SerializeField] private Transform targetPared;
+    [SerializeField] private float walkInterval = 3f;
+    [SerializeField] private float reachedDistance = 0.5f;
+    
     [Header("References")]
     [SerializeField] private DisparoJEFE2 disparoController;
     [SerializeField] private HealthBarPlayer jefeHealthBar;
@@ -26,6 +31,10 @@ public class JEFE2 : Enemy
     private float distanceToHelicoptero;
     private bool canDetectHelicoptero;
     private Transform helicoptero;
+    
+    private float walkTimer;
+    private bool isWalking = false;
+    private bool hasReachedPared = false;
 
     protected override void Awake()
     {
@@ -52,7 +61,7 @@ public class JEFE2 : Enemy
             
             if (helicopteroCollider != null && bossCollider != null)
             {
-                Physics2D.IgnoreCollision(bossCollider, helicopteroCollider);
+                //Physics2D.IgnoreCollision(bossCollider, helicopteroCollider);
             }
         }
         else
@@ -64,16 +73,72 @@ public class JEFE2 : Enemy
         {
             jefeHealthBar.setMaxHealth(maxHealth);
         }
+        
+        walkTimer = walkInterval;
     }
 
     protected override void Update()
     {
-        if (helicoptero == null) return;
-
+            if (helicoptero != null)
+    {
         UpdateHelicopteroDetection();
-        UpdateState();
-        HandleAnimations();
-        HandleCollision();
+    }
+    
+    UpdateMovementPattern();
+    HandleAnimations();
+    HandleCollision();
+    }
+
+    private void UpdateMovementPattern()
+    {
+        if (targetPared == null || hasReachedPared) 
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            ChangeState(BossState.Idle);
+            return;
+        }
+
+        float distanceToPared = Vector2.Distance(transform.position, targetPared.position);
+        
+        if (distanceToPared <= reachedDistance)
+        {
+            hasReachedPared = true;
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            ChangeState(BossState.Idle);
+            return;
+        }
+
+        walkTimer -= Time.deltaTime;
+
+        if (walkTimer <= 0f)
+        {
+            isWalking = !isWalking;
+            walkTimer = walkInterval;
+
+            if (isWalking)
+            {
+                ChangeState(BossState.Walking);
+            }
+            else
+            {
+                ChangeState(BossState.Idle);
+            }
+        }
+
+        if (isWalking)
+        {
+            float direction = Mathf.Sign(targetPared.position.x - transform.position.x);
+            rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+            
+            if (sr != null)
+            {
+                sr.flipX = direction < 0;
+            }
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+        }
     }
 
     private void UpdateHelicopteroDetection()
@@ -303,6 +368,13 @@ public class JEFE2 : Enemy
         {
             Gizmos.DrawLine(transform.position, helicoptero.position);
         }
+        
+        Gizmos.color = Color.green;
+        if (targetPared != null)
+        {
+            Gizmos.DrawLine(transform.position, targetPared.position);
+            Gizmos.DrawWireSphere(targetPared.position, reachedDistance);
+        }
     }
 
     public void TakeDamage(int damage)
@@ -334,6 +406,27 @@ public class JEFE2 : Enemy
         
         base.Die();
     }
+
+        public override void BalaDamage(int damageAmount)
+{
+    currentHealth -= damageAmount;
+    
+    if (anim != null)
+    {
+        anim.SetTrigger("hurt");
+        //PlayDamageFeedback();
+    }
+    
+    if (jefeHealthBar != null)
+    {
+        jefeHealthBar.SetHealth(currentHealth);
+    }
+    
+    if (currentHealth <= 0)
+    {
+        Die();
+    }
+}
 }
 
 

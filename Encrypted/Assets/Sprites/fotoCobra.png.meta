@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c3433c98733e88246b87565f7d5bb9e1
+guid: f38fbc784b6bc0343b47a94cf71b7c23
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2124855762172580258
-    second: Foto player_0
+      213: -2724698792434807111
+    second: fotoCobra_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Foto player_0
+      name: fotoCobra_0
       rect:
         serializedVersion: 2
-        x: 208
-        y: 38
-        width: 1151
-        height: 1401
+        x: 16
+        y: 13
+        width: 566
+        height: 701
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a11d37ce010d7d10800000000000000
-      internalID: 2124855762172580258
+      spriteID: 9beccf462ecef2ad0800000000000000
+      internalID: -2724698792434807111
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Foto player_0: 2124855762172580258
+      fotoCobra_0: -2724698792434807111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

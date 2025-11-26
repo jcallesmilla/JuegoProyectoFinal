@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b49ba73272f18ea4a9257f4fe6a0e603
+guid: 734f2e1f09903ef4cbe9cbcb99e01813
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4835217378219332488
-    second: Next buttom_0
+      213: -533713608019544277
+    second: Boss1(1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Next buttom_0
+      name: Boss1(1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1317
-        height: 756
+        width: 1365
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8831f8066942a1340800000000000000
-      internalID: 4835217378219332488
+      spriteID: b27f33e1d4ed798f0800000000000000
+      internalID: -533713608019544277
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Next buttom_0: 4835217378219332488
+      Boss1(1)_0: -533713608019544277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

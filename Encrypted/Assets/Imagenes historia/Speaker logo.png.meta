@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9391092d8693fa94db7a6b00079afdd1
+guid: be9e371dcce88fb4c8eb4ccbb607bf62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -873215581655391243
-    second: Mutant viruses_0
+      213: 685014577099081921
+    second: Speaker logo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mutant viruses_0
+      name: Speaker logo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 449
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f328131e07b1e3f0800000000000000
-      internalID: -873215581655391243
+      spriteID: 1c884f5e029a18900800000000000000
+      internalID: 685014577099081921
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mutant viruses_0: -873215581655391243
+      Speaker logo_0: 685014577099081921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

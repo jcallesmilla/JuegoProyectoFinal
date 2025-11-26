@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1656cc18bac789a46a74e8845c0de24d
+guid: 1e778afbad61232488afced4a01e8aab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6396433133745544722
-    second: The Last Guardian of The Net_0
+      213: -8256582225121617716
+    second: Level1(3)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: The Last Guardian of The Net_0
+      name: Level1(3)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 1365
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee1ee8164fd4b37a0800000000000000
-      internalID: -6396433133745544722
+      spriteID: cc852d4263aba6d80800000000000000
+      internalID: -8256582225121617716
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      The Last Guardian of The Net_0: -6396433133745544722
+      Level1(3)_0: -8256582225121617716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a2ca41523a72ef4e9aa8cabb94723aa
+guid: 59d623ccaa058044690c2e17dcee32ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3043677500033220367
-    second: Recovered fragments_0
+      213: 7659751848474970715
+    second: Level2(1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Recovered fragments_0
+      name: Level2(1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 1365
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0f34586f805d3a20800000000000000
-      internalID: 3043677500033220367
+      spriteID: b5a0efb19b7ec4a60800000000000000
+      internalID: 7659751848474970715
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Recovered fragments_0: 3043677500033220367
+      Level2(1)_0: 7659751848474970715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

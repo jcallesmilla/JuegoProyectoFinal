@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: da0a788b5d25ca44aa70aa27940ba0b9
+guid: af4a3d599e68e6b40bc4431a771e0c6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1832798518597481775
-    second: Amid the ruins of Firewall City_0
+      213: -3668287504739808190
+    second: Next logo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Amid the ruins of Firewall City_0
+      name: Next logo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 592
+        height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f257dd5ca886f6910800000000000000
-      internalID: 1832798518597481775
+      spriteID: 24ccaf923ff971dc0800000000000000
+      internalID: -3668287504739808190
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Amid the ruins of Firewall City_0: 1832798518597481775
+      Next logo_0: -3668287504739808190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

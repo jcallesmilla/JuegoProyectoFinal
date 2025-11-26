@@ -4,53 +4,78 @@ using UnityEngine.SceneManagement;
 
 public class StoryMode : MonoBehaviour
 {
-	[Header("Story Images")]
-	[Tooltip("Asigna 'The Last Guardian of The Net.png'")]
-	[SerializeField] private Sprite guardianImage;
-	[Tooltip("Asigna 'Amid the ruins of Firewall City.png'")]
-	[SerializeField] private Sprite firewallImage;
-	[Tooltip("Asigna 'Mutant viruses.png'")]
-	[SerializeField] private Sprite virusesImage;
-	[Tooltip("Asigna 'Recovered fragments.png'")]
-	[SerializeField] private Sprite fragmentsImage;
+    [Header("Story Images (Orden de la historia)")]
+    [SerializeField] private Sprite[] storyImages;
 
-	[Header("UI References")]
-	[SerializeField] private Image storyImage;
-	[SerializeField] private Button nextButton;
+    [Header("Story Audio Clips (Mismo orden que las imágenes)")]
+    [SerializeField] private AudioClip[] storyAudios;
 
-	private int currentImageIndex = 0;
-	private Sprite[] storySequence;
+    [Header("UI References")]
+    [SerializeField] private Image storyImage;
+    [SerializeField] private Button nextButton;
+    [SerializeField] private Button speakerButton;
 
-	private void Start()
-	{
-		// Definir el orden específico de las imágenes
-		storySequence = new Sprite[] { guardianImage, // 1. The Last Guardian of The Net
-										firewallImage, // 2. Amid the ruins of Firewall City
-										virusesImage, // 3. Mutant viruses
-										fragmentsImage // 4. Recovered Fragments
-									  };
+    private int currentIndex = 0;
+    private AudioSource audioSource;
 
-		// Mostrar la primera imagen
-		if (storySequence.Length > 0)
-		{
-			storyImage.sprite = storySequence[0];
-		}
+    private void Start()
+    {
+        // Validación
+        if (storyImages.Length == 0)
+        {
+            Debug.LogError("No se asignaron imágenes para el Story Mode.");
+            return;
+        }
 
-		nextButton.onClick.AddListener(NextImage);
-	}
+        if (storyAudios.Length != storyImages.Length)
+        {
+            Debug.LogWarning("El número de audios no coincide con el número de imágenes.");
+        }
 
-	private void NextImage()
-	{
-		currentImageIndex++;
-		if (currentImageIndex < storySequence.Length)
-		{
-			storyImage.sprite = storySequence[currentImageIndex];
-		}
-		else
-		{
-			// Cuando se terminan las imágenes, cargar el nivel del juego
-			SceneManager.LoadSceneAsync(2); // Ajustar este número según donde esté tu nivel en el build settings
-		}
-	}
+        // Mostrar primera imagen
+        storyImage.sprite = storyImages[0];
+
+        // Crear o recuperar AudioSource
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.playOnAwake = false;
+
+        // Eventos de botones
+        nextButton.onClick.AddListener(NextImage);
+        speakerButton.onClick.AddListener(PlayCurrentAudio);
+    }
+
+    private void NextImage()
+    {
+        currentIndex++;
+
+        if (currentIndex < storyImages.Length)
+        {
+            storyImage.sprite = storyImages[currentIndex];
+        }
+        else
+        {
+            // Fin de la historia → cambiar escena
+            SceneManager.LoadSceneAsync(2);
+        }
+    }
+
+    public void PlayCurrentAudio()
+    {
+        if (currentIndex >= 0 && currentIndex < storyAudios.Length)
+        {
+            if (storyAudios[currentIndex] != null)
+                audioSource.PlayOneShot(storyAudios[currentIndex]);
+        }
+    }
+
+    public AudioClip GetCurrentAudio()
+    {
+    if (currentIndex >= 0 && currentIndex < storyAudios.Length)
+        return storyAudios[currentIndex];
+
+    return null;
+    }
 }
-

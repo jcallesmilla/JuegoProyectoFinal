@@ -20,9 +20,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JEFE1.unity
     guid: 57979c28f73b1da40b8ac278e690cfdc
+  - enabled: 1
+    path: Assets/Scenes/Helicopter.unity
+    guid: 970253ce15ad02c448a741a466cd3809
+  - enabled: 1
+    path: Assets/Scenes/Level03.unity
+    guid: 04475c13da71ced419a661bec4ffdc1a
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Character Select.unity
+    guid: 6f72d6aac180c214faea18daf070ae68
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

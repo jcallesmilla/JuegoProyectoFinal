@@ -33905,7 +33905,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -33952,7 +33952,7 @@ MonoBehaviour:
   followY: 1
   verticalDeadZone: 0.3
   verticalSmoothSpeed: 0.125
-  verticalOffset: 1.5
+  verticalOffset: 2
 --- !u!114 &1049584868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36343,7 +36343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1904732213256443924, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2405951472350036649, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
       propertyPath: m_Controller
@@ -39589,6 +39589,10 @@ PrefabInstance:
       propertyPath: damageMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 6fe9d2182454f4444a9963a5a2d59afa, type: 2}
+    - target: {fileID: 5506796813252842223, guid: 8f8f2c5832e20a046b573b9b69eaefb3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8055230361436095248, guid: 8f8f2c5832e20a046b573b9b69eaefb3, type: 3}
       propertyPath: slider
       value: 

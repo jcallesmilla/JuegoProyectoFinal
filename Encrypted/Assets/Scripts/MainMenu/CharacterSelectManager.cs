@@ -97,60 +97,88 @@ public class CharacterSelectManager : MonoBehaviour
         }
     }
 
-    private void OnSelectCharacter()
+private void OnSelectCharacter()
+{
+    if (currentNode != null && currentNode.item != null)
     {
-        if (currentNode != null && currentNode.item != null)
+        CharacterData selectedCharacter = currentNode.item;
+        
+        PlayerPrefs.SetInt("SelectedCharacterID", selectedCharacter.characterID);
+        PlayerPrefs.SetString("SelectedCharacterName", selectedCharacter.characterName);
+        
+        PlayerPrefs.Save();
+        
+        Debug.Log($"✓ Class selected: {selectedCharacter.characterName} (ID: {selectedCharacter.characterID})");
+        
+        if (characterNameText != null)
         {
-            CharacterData selectedCharacter = currentNode.item;
-            
-            PlayerPrefs.SetInt("SelectedCharacterID", selectedCharacter.characterID);
-            
-            if (selectedCharacter.animatorController != null)
+            characterNameText.text = $"✓ {selectedCharacter.characterName} Selected!";
+        }
+        
+        if (selectButton != null)
+        {
+            TextMeshProUGUI buttonText = selectButton.GetComponentInChildren<TextMeshProUGUI>();
+            if (buttonText != null)
             {
-                PlayerPrefs.SetString("SelectedCharacterAnimator", selectedCharacter.animatorController.name);
+                buttonText.text = "Selected!";
             }
-            
-            PlayerPrefs.Save();
-            
-            Debug.Log($"Selected character: {selectedCharacter.characterName}");
-            
-            SceneManager.LoadScene(gameSceneName);
         }
     }
+}
 
+
+
+        
     private void OnBack()
     {
         SceneManager.LoadScene("Main Menu");
     }
 
     private void UpdateUI()
+{
+    if (currentNode == null || currentNode.item == null) return;
+
+    CharacterData currentCharacter = currentNode.item;
+
+    if (characterPreviewImage != null && currentCharacter.characterPreviewImage != null)
     {
-        if (currentNode == null || currentNode.item == null) return;
-
-        CharacterData currentCharacter = currentNode.item;
-
-        if (characterPreviewImage != null && currentCharacter.characterPreviewImage != null)
-        {
-            characterPreviewImage.sprite = currentCharacter.characterPreviewImage;
-        }
-        
-        if (characterNameText != null)
-        {
-            characterNameText.text = currentCharacter.characterName;
-        }
-        
-        if (characterDescriptionText != null)
-        {
-            characterDescriptionText.text = currentCharacter.description;
-        }
-        
-        if (characterCounterText != null)
-        {
-            int currentIndex = GetCurrentIndex() + 1;
-            int totalCount = characterList.GetCount();
-            characterCounterText.text = $"{currentIndex} / {totalCount}";
-        }
+        characterPreviewImage.sprite = currentCharacter.characterPreviewImage;
     }
+    
+    if (characterNameText != null)
+    {
+        characterNameText.text = currentCharacter.characterName;
+    }
+    
+    if (characterDescriptionText != null)
+    {
+        string displayText = currentCharacter.description + "\n\n";
+        displayText += "<b>STARTING STATS:</b>\n";
+        displayText += $"Health: {currentCharacter.startingMaxHealth} {GetStarRating(currentCharacter.healthRating)}\n";
+        displayText += $"Speed: {currentCharacter.startingSpeed:F1} {GetStarRating(currentCharacter.speedRating)}\n";
+        displayText += $"Jump: {currentCharacter.startingJumpForce:F1} {GetStarRating(currentCharacter.jumpRating)}";
+        
+        characterDescriptionText.text = displayText;
+    }
+    
+    if (characterCounterText != null)
+    {
+        int currentIndex = GetCurrentIndex() + 1;
+        int totalCount = characterList.GetCount();
+        characterCounterText.text = $"{currentIndex} / {totalCount}";
+    }
+}
+
+private string GetStarRating(int rating)
+{
+    string stars = "";
+    for (int i = 0; i < 5; i++)
+    {
+        stars += i < rating ? "★" : "☆";
+    }
+    return stars;
+}
+
 
     private int GetCurrentIndex()
     {

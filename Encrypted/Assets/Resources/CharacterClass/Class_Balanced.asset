@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f5a3f2824cf9ac42bc43dfb5ef80aec, type: 3}
+  m_Name: Class_Balanced
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: Balanced
+  characterID: 0
+  characterIcon: {fileID: 0}
+  characterPreviewImage: {fileID: 7815371044791450175, guid: c2bd5cc6597332e4fbafe29f89350af7, type: 3}
+  animatorController: {fileID: 0}
+  description: Well-rounded fighter with balanced stats. Good for beginners.
+  startingSpeed: 5
+  startingJumpForce: 15
+  startingMaxHealth: 100
+  healthRating: 3
+  speedRating: 3
+  jumpRating: 3

@@ -124,6 +124,24 @@ public class Enemy2 : Enemy
             Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
         }
     }
+
+    public override void BalaDamage(int damageAmount)
+{
+    currentHealth -= damageAmount;
+    
+    if (healthBar != null)
+    {
+        healthBar.SetHealth(currentHealth, maxHealth);
+    }
+    
+    PlayDamageFeedback();
+
+    if (currentHealth <= 0)
+    {
+        Die();
+    }
+}
+
 }
 
 

@@ -222,6 +222,28 @@ public class Jefe1 : Enemy
             Die();
         }
     }
+
+    public override void BalaDamage(int damageAmount)
+{
+    currentHealth -= damageAmount;
+    
+    if (anim != null)
+    {
+        anim.SetTrigger("hurt");
+        PlayDamageFeedback();
+    }
+    
+    if (jefeHealthBar != null)
+    {
+        jefeHealthBar.SetHealth(currentHealth);
+    }
+    
+    if (currentHealth <= 0)
+    {
+        Die();
+    }
+}
+
 }
 
 

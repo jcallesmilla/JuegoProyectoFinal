@@ -45,19 +45,20 @@ public class Bullet : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
+{
+    if (hasHit) return;
+
+    if (collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
     {
-        if (hasHit) return;
-
-        if (collision.CompareTag("Enemy") || collision.CompareTag("Boss"))
+        Entity enemyEntity = collision.GetComponent<Entity>();
+        if (enemyEntity != null)
         {
-            var enemy = collision.GetComponent<MonoBehaviour>();
-            if (enemy != null)
-            {
-                enemy.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
-            }
-
-            hasHit = true;
-            Destroy(gameObject);
+            enemyEntity.BalaDamage(damage);
         }
+
+        hasHit = true;
+        Destroy(gameObject);
     }
+}
+
 }

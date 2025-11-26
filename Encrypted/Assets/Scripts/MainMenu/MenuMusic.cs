@@ -1,11 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-/// <summary>
-/// Reproduce música de fondo para el menú. 
-/// - Arrastra un AudioClip en el inspector.
-/// - Por defecto persiste entre escenas. Desactiva `persistAcrossScenes` si quieres que sólo suene en el menú.
-/// </summary>
 public class MenuMusic : MonoBehaviour
 {
     public static MenuMusic Instance { get; private set; }
@@ -23,7 +18,6 @@ public class MenuMusic : MonoBehaviour
 
     void Awake()
     {
-        // Singleton simple: sólo una instancia reproducirá música
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -37,7 +31,6 @@ public class MenuMusic : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
 
-        // Aseguramos que exista un AudioSource
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
@@ -57,16 +50,21 @@ public class MenuMusic : MonoBehaviour
 
     void OnValidate()
     {
-        // Mantener el volumen actualizado en el editor
         if (audioSource == null)
             audioSource = GetComponent<AudioSource>();
         if (audioSource != null)
             audioSource.volume = volume;
     }
 
-    /// <summary>
-    /// Permite iniciar la música desde otro script si hace falta.
-    /// </summary>
+    public void SetVolume(float newVolume)
+    {
+        volume = newVolume;
+        if (audioSource != null)
+        {
+            audioSource.volume = newVolume;
+        }
+    }
+
     public void Play()
     {
         if (audioSource == null)
@@ -83,9 +81,6 @@ public class MenuMusic : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Parar la música (útil si quieres detenerla al lanzar el juego desde el menú).
-    /// </summary>
     public void Stop()
     {
         if (audioSource != null)

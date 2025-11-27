@@ -18,7 +18,7 @@ MonoBehaviour:
   baseCost: 10
   costMultiplier: 1.5
   upgradeType: 4
-  incrementValue: 1
+  incrementValue: 0.78
   maxLevel: 5
   statFormat: '{0:F1}'
   statLabel: Defense

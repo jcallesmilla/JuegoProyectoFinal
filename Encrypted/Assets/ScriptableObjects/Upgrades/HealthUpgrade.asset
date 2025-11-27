@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeName: Max Health
   description: Increases max health
   icon: {fileID: 2676381041428780300, guid: a9cd4d088f5791947bb590124b985b33, type: 3}
-  baseCost: 1
+  baseCost: 5
   costMultiplier: 1.5
   upgradeType: 2
   incrementValue: 10

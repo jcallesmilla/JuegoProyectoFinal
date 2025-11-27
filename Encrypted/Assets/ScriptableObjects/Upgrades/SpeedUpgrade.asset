@@ -15,10 +15,10 @@ MonoBehaviour:
   upgradeName: Speed
   description: Increased Speed
   icon: {fileID: -3186728623107148326, guid: f85b78f6914f34b41af97961eda69941, type: 3}
-  baseCost: 1
+  baseCost: 8
   costMultiplier: 1.5
   upgradeType: 0
-  incrementValue: 10
+  incrementValue: 0.5
   maxLevel: 5
   statFormat: '{0:F1}'
   statLabel: Speed

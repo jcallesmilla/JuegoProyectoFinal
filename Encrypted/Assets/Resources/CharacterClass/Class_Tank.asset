@@ -18,9 +18,9 @@ MonoBehaviour:
   characterPreviewImage: {fileID: 7815371044791450175, guid: c2bd5cc6597332e4fbafe29f89350af7, type: 3}
   animatorController: {fileID: 0}
   description: Heavy armor, slow movement. Takes punishment and keeps going.
-  startingSpeed: 1
-  startingJumpForce: 30
-  startingMaxHealth: 185
+  startingSpeed: 3
+  startingJumpForce: 10
+  startingMaxHealth: 200
   healthRating: 3
   speedRating: 3
   jumpRating: 3

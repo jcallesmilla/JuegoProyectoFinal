@@ -3,8 +3,8 @@ guid: be9e371dcce88fb4c8eb4ccbb607bf62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 685014577099081921
-    second: Speaker logo_0
+      213: 991029843290995952
+    second: Speaker Logo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Speaker logo_0
+      name: Speaker Logo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 449
-        height: 388
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c884f5e029a18900800000000000000
-      internalID: 685014577099081921
+      spriteID: 0fcbb2b4468d0cd00800000000000000
+      internalID: 991029843290995952
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Speaker logo_0: 685014577099081921
+      Speaker Logo_0: 991029843290995952
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

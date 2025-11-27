@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class StoryMode4 : MonoBehaviour
+public class StoryMode4 : StoryModeBase
 {
 }

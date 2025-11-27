@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Jefe1 : Enemy
 {
@@ -243,6 +244,17 @@ public class Jefe1 : Enemy
         Die();
     }
 }
+
+protected override void Die()
+{
+    if (anim != null)
+    {
+        anim.SetTrigger("death");
+    }
+    
+    SceneManager.LoadScene("SM Level 2");
+}
+
 
 }
 

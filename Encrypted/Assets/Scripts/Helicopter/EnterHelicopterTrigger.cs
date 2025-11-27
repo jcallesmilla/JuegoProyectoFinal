@@ -119,7 +119,7 @@ public class EnterHelicopterTrigger : MonoBehaviour
             }
         }
         
-        SceneManager.LoadScene("Level03");
+        SceneManager.LoadScene("SM Level 3");
     }
     
     private void ResetTrigger()

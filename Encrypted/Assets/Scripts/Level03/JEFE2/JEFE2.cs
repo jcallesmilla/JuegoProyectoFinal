@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class JEFE2 : Enemy
 {
@@ -397,15 +399,16 @@ public class JEFE2 : Enemy
         }
     }
 
-    protected override void Die()
+protected override void Die()
+{
+    if (anim != null)
     {
-        if (anim != null)
-        {
-            anim.SetTrigger("death");
-        }
-        
-        base.Die();
+        anim.SetTrigger("death");
     }
+    
+    SceneManager.LoadScene("SM Final");
+}
+
 
         public override void BalaDamage(int damageAmount)
 {
@@ -427,6 +430,8 @@ public class JEFE2 : Enemy
         Die();
     }
 }
+
+
 }
 
 

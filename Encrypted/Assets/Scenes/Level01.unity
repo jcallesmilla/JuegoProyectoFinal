@@ -3475,7 +3475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasswordUI
   correctPassword: 12345
-  nextSceneName: JEFE1
+  nextSceneName: SM JEFE1
   passwordPanel: {fileID: 28145834}
   passwordInputField: {fileID: 1093097008}
   feedbackText: {fileID: 1019011240}

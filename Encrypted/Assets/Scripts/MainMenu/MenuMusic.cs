@@ -86,4 +86,15 @@ public class MenuMusic : MonoBehaviour
         if (audioSource != null)
             audioSource.Stop();
     }
+    
+    public void ChangeMusic(AudioClip newClip)
+    {
+        if (audioSource != null && newClip != null)
+        {
+            audioSource.Stop();
+            audioSource.clip = newClip;
+            audioSource.Play();
+        }
+    }
 }
+

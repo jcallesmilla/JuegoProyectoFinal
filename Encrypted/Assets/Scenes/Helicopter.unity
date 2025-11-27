@@ -1092,6 +1092,57 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 417320967}
   m_SourcePrefab: {fileID: 100100000, guid: 1af214fb05b2e6e49ba98241859883fc, type: 3}
+--- !u!1 &923427556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 923427558}
+  - component: {fileID: 923427557}
+  m_Layer: 5
+  m_Name: MenuMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &923427557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923427556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0469701eabbdab40943b523645cc38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuMusic
+  musicClip: {fileID: 8300000, guid: 84c607b0b85e460429e40461ec4e699f, type: 3}
+  volume: 0.6
+  persistAcrossScenes: 0
+--- !u!224 &923427558
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923427556}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5365449, y: 0.5365449, z: 0.5365449}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 960.777, y: 539.5634}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &932872377
 GameObject:
   m_ObjectHideFlags: 0
@@ -5630,3 +5681,4 @@ SceneRoots:
   - {fileID: 600835452}
   - {fileID: 1245885723}
   - {fileID: 612766796}
+  - {fileID: 923427558}
